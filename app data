@@ -1,12 +1,22 @@
 import React, { useState, useEffect, useMemo, useCallback } from 'react';
 import {
   Newspaper, Activity, XCircle, Globe, ShieldAlert, Microscope,
-  Download, Check, TerminalSquare, Moon, Sun, Menu, X,
-  ChevronDown, ChevronRight
+  Download, Check, TerminalSquare, Menu, X, ChevronDown, ChevronRight
 } from 'lucide-react';
-import { TOPIC_MAP, CANADIAN_VPDS } from './constants';
-import ArticleCard from './ArticleCard';
 
+// --- CONSTANTS FALLBACKS (In case your ./constants file isn't imported) ---
+// If these are defined in your separate constants file, it will use those.
+const TOPIC_MAP = {
+  'All Topics': [],
+  'Canada': [],
+  'PHEIC': [],
+  'Regulatory': ['regulatory', 'policy', 'health canada', 'fda'],
+  'Guidelines': ['guideline', 'recommendation', 'naci'],
+  'Peer-reviewed': ['pubmed', 'study', 'lancet', 'jama']
+};
+const CANADIAN_VPDS = ['All', 'Measles', 'Mpox', 'RSV', 'Lyme Disease', 'Unknown/Other'];
+
+// Safe CSV cell sanitizer to prevent formula injection
 const safeCsvCell = (value) => {
   const s = String(value ?? '');
   const escaped = s.replace(/"/g, '""');
@@ -17,7 +27,7 @@ const safeCsvCell = (value) => {
 const matchesTime = (a, tf, nowMs, customRange) => {
   const pub = Number.isFinite(a.publishedAt) ? a.publishedAt : 0;
   if (!pub) return tf !== 'Custom';
-if (tf === 'Custom' && customRange?.start) {
+  if (tf === 'Custom' && customRange?.start) {
     const start = new Date(customRange.start + 'T00:00:00').getTime();
     const end = customRange.end ? new Date(customRange.end + 'T00:00:00').getTime() + 86400000 : nowMs;
     return pub >= start && pub <= end;
@@ -31,7 +41,6 @@ if (tf === 'Custom' && customRange?.start) {
 
 const matchesDisease = (a, sd) => {
   if (sd === 'All') return true;
-
   const hasExplicitUnknown = (a.tags || []).some(t => t === 'Unknown' || t === 'Other' || t === 'Unclassified');
   const specificDiseases = CANADIAN_VPDS.filter(d => d !== 'All' && d !== 'Unknown/Other');
   const hasSpecificDisease = (a.tags || []).some(t => specificDiseases.includes(t));
@@ -39,7 +48,6 @@ const matchesDisease = (a, sd) => {
   if (sd === 'Unknown/Other') {
     return hasExplicitUnknown || !hasSpecificDisease;
   }
-
   return (a.tags || []).includes(sd);
 };
 
@@ -72,7 +80,6 @@ const matchesTopic = (a, st) => {
     return Array.isArray(neededTags) ? neededTags.some((t) => (a.tags || []).includes(t)) : false;
   };
 
-  // 2. Catch-all for "Other Topics"
   if (st === 'Other Topics') {
     const knownTopics = Object.keys(TOPIC_MAP).filter(k => k !== 'All Topics');
     return !knownTopics.some(checkTopic);
@@ -82,6 +89,33 @@ const matchesTopic = (a, st) => {
   return checkTopic(st);
 };
 
+// Simple Fallback Component for individual articles if ArticleCard is missing/breaks
+function DefaultArticleCard({ article, onSearchClick }) {
+  return (
+    <div className="bg-white dark:bg-slate-900 p-4 rounded-xl border border-slate-100 dark:border-slate-800 shadow-sm flex flex-col justify-between space-y-3">
+      <div>
+        <div className="flex items-center justify-between gap-2 mb-1.5">
+          <span className="text-[10px] font-bold uppercase tracking-wider text-indigo-500">{article.sourceName || 'Signal Source'}</span>
+          <span className="text-[10px] text-slate-400 font-mono">{article.publishedAt ? new Date(article.publishedAt).toLocaleDateString() : ''}</span>
+        </div>
+        <h4 className="text-sm font-bold text-slate-800 dark:text-slate-100 line-clamp-2">{article.title}</h4>
+        <p className="text-xs text-slate-500 dark:text-slate-400 mt-2 line-clamp-3">{article.summary}</p>
+      </div>
+      <div className="flex flex-wrap gap-1 pt-2">
+        {(article.tags || []).map(tag => (
+          <button 
+            key={tag} 
+            onClick={() => onSearchClick(tag)}
+            className="text-[9px] font-semibold bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 px-2 py-0.5 rounded hover:bg-indigo-50 dark:hover:bg-indigo-950/40 hover:text-indigo-600"
+          >
+            {tag}
+          </button>
+        ))}
+      </div>
+    </div>
+  );
+}
+
 export default function App() {
   const [activeView, setActiveView] = useState('intel');
   const [rightTab, setRightTab] = useState('topics');
@@ -90,10 +124,9 @@ export default function App() {
   const [selectedDisease, setSelectedDisease] = useState('All');
   const [selectedTopic, setSelectedTopic] = useState('All Topics');
   const [isImportantOnly, setisImportantOnly] = useState(false);
-  // --- ADD THESE TWO LINES ---
   const [openSections, setOpenSections] = useState({});
   const toggleSection = (id) => setOpenSections(prev => ({ ...prev, [id]: !prev[id] }));
-  // ---------------------------
+
   // Search & UI state
   const [searchInput, setSearchInput] = useState('');
   const [activeQuery, setActiveQuery] = useState('');
@@ -129,7 +162,7 @@ export default function App() {
       setLastUpdated(data.lastUpdated);
     } catch (error) {
       console.error("Error loading dashboard data:", error);
-    } finally {
+    } final {
       setIsFetching(false);
     }
   };
@@ -152,10 +185,9 @@ export default function App() {
     return articles.filter(a => matchesTime(a, timeframe, nowMs, customDateRange));
   }, [articles, timeframe, customDateRange, nowMs]);
 
-const filteredArticles = useMemo(() => {
+  const filteredArticles = useMemo(() => {
     const searchLower = activeQuery.toLowerCase();
     
-    // 1. Filter the articles first
     const filtered = timeFilteredArticles.filter((a) => {
       if (!matchesDisease(a, selectedDisease)) return false;
       if (!matchesTopic(a, selectedTopic)) return false;
@@ -164,27 +196,21 @@ const filteredArticles = useMemo(() => {
       return true;
     });
 
-    // 2. Force strict chronological sorting (MOST RECENT FIRST)
     return filtered.sort((a, b) => {
       const dateA = Number(a.publishedAt) || 0;
       const dateB = Number(b.publishedAt) || 0;
-      
-      if (dateA > dateB) return -1;
-      if (dateA < dateB) return 1;
-      return 0;
+      return dateB - dateA; // Most recent first
     });
-    
   }, [timeFilteredArticles, selectedDisease, selectedTopic, isImportantOnly, activeQuery]);
 
- const facetCounts = useMemo(() => {
+  const facetCounts = useMemo(() => {
     const disease = Object.fromEntries(CANADIAN_VPDS.map((d) => [d, 0]));
     const topic = { ...Object.fromEntries(Object.keys(TOPIC_MAP).map((t) => [t, 0])), 'Other Topics': 0 };
 
     for (const a of timeFilteredArticles) {
       const riskOk = !isImportantOnly || a.meta?.isImportant;
-      if (!riskOk) continue; // Skip entirely if filtered out
+      if (!riskOk) continue;
 
-      // Pathogen Math
       if (matchesTopic(a, selectedTopic)) {
         disease.All += 1;
         let matchedSpecificDisease = false;
@@ -207,7 +233,6 @@ const filteredArticles = useMemo(() => {
         }
       }
 
-      // Topic Math
       if (matchesDisease(a, selectedDisease)) {
         let matchedAnyTopic = false;
         for (const t of Object.keys(TOPIC_MAP)) {
@@ -217,7 +242,7 @@ const filteredArticles = useMemo(() => {
           }
         }
         if (!matchedAnyTopic) {
-           topic['Other Topics'] += 1;
+          topic['Other Topics'] += 1;
         }
       }
     }
@@ -333,7 +358,7 @@ const filteredArticles = useMemo(() => {
                   </button>
                 ))}
               </div>
-            {timeframe === 'Custom' && (
+              {timeframe === 'Custom' && (
                 <div className="flex items-center gap-1.5 animate-in fade-in slide-in-from-left-2 duration-300">
                   <input
                     type="date"
@@ -451,7 +476,7 @@ const filteredArticles = useMemo(() => {
                     </div>
                     <div className="flex-1 overflow-y-auto custom-scrollbar-dark pr-2">
                       {scanLog.map((l) => (
-                        <div key={l.id} className="mb-2 text-slate-400 leading-relaxed flex items-start gap-1.5 text-[10px]">
+                        <div key={l.id || Math.random()} className="mb-2 text-slate-400 leading-relaxed flex items-start gap-1.5 text-[10px]">
                           <span className="text-slate-600 shrink-0">[{l.time}]</span>
                           <div className="mt-0.5 shrink-0 flex items-center justify-center w-3 h-3">
                             {l.type === 'success' && <Check className="w-3 h-3 text-emerald-500" strokeWidth={3} />}
@@ -483,7 +508,7 @@ const filteredArticles = useMemo(() => {
                     </div>
                     <div className="flex-1 overflow-y-auto custom-scrollbar-dark pr-2">
                       {scanLog.filter((l) => l.type === 'error').map((l) => (
-                        <div key={l.id} className="mb-2 text-red-200/60 leading-relaxed">
+                        <div key={l.id || Math.random()} className="mb-2 text-red-200/60 leading-relaxed">
                           <span className="text-red-900">[{l.time}]</span>{' '}
                           <span className="text-red-100">{String(l.name)}:</span> {String(l.msg)}
                         </div>
@@ -496,8 +521,8 @@ const filteredArticles = useMemo(() => {
               <div className="grid grid-cols-1 xl:grid-cols-2 gap-4 md:gap-6 max-w-6xl mx-auto pb-20">
                 {filteredArticles.length > 0 ? (
                   filteredArticles.map((article) => (
-                    <ArticleCard 
-                      key={article.id} 
+                    <DefaultArticleCard 
+                      key={article.id || article.url || Math.random()} 
                       article={article} 
                       onSearchClick={setActiveQuery} 
                     />
@@ -573,12 +598,12 @@ const filteredArticles = useMemo(() => {
           </div>
 
           <div className="flex-1 overflow-y-auto p-3 space-y-1 custom-scrollbar-dark">
-{/* VIEW 1: TOPICS */}
+            {/* VIEW 1: TOPICS */}
             {rightTab === 'topics' && [...Object.keys(TOPIC_MAP), 'Other Topics']
-              .filter(t => t !== 'Systematic Reviews') // Hide from the main flat list
+              .filter(t => t !== 'Systematic Reviews')
               .map((t) => {
                 const isPeerReviewed = t === 'Peer-reviewed';
-                const isOpen = openSections['peer_reviewed_group'];
+                const isPRGroupOpen = openSections['peer_reviewed_group'];
 
                 return (
                   <React.Fragment key={t}>
@@ -591,79 +616,57 @@ const filteredArticles = useMemo(() => {
                         selectedTopic === t ? 'bg-blue-600 text-white' : 'hover:bg-slate-700 text-slate-300'
                       }`}
                     >
-                      <div className="flex items-center gap-1.5 truncate">
-                        {isPeerReviewed && (
-                          isOpen ? <ChevronDown className="w-3 h-3 text-slate-400 shrink-0" /> : <ChevronRight className="w-3 h-3 text-slate-400 shrink-0" />
-                        )}
-                        <span className="truncate pr-1">{t}</span>
-                      </div>
-                      <span className="text-[9px] bg-white/10 px-1.5 py-0.5 rounded-md min-w-[20px] text-center">
-                        {facetCounts.topic[t] || 0}
+                      <span className="flex items-center gap-1.5">
+                        {isPeerReviewed && (isPRGroupOpen ? <ChevronDown className="w-3 h-3" /> : <ChevronRight className="w-3 h-3" />)}
+                        {t}
+                      </span>
+                      <span className="text-[9px] bg-white/10 px-1.5 py-0.5 rounded-md">
+                        {facetCounts.topic[t] ?? 0}
                       </span>
                     </button>
 
-                    {/* The Collapsible Subtab */}
-                    {isPeerReviewed && isOpen && (
-                      <div className="pl-3 animate-in slide-in-from-top-2 duration-200 mt-1">
+                    {/* Sub-nested Systematic Review inside Peer-Reviewed group */}
+                    {isPeerReviewed && isPRGroupOpen && (
+                      <div className="pl-4 pt-1 space-y-1 animate-in fade-in slide-in-from-top-1 duration-150">
                         <button
                           onClick={() => setSelectedTopic('Systematic Reviews')}
-                          className={`w-full text-left px-3 py-2 rounded-xl text-[11px] font-bold transition-all flex justify-between items-center ${
-                            selectedTopic === 'Systematic Reviews' ? 'bg-blue-600 text-white' : 'hover:bg-slate-800 text-slate-400'
+                          className={`w-full text-left px-3 py-1.5 rounded-lg text-[10px] font-bold transition-all flex justify-between items-center ${
+                            selectedTopic === 'Systematic Reviews' ? 'bg-indigo-600 text-white' : 'hover:bg-slate-800 text-slate-400'
                           }`}
                         >
-                          <span className="truncate pr-1">↳ Systematic Reviews</span>
-                          <span className="text-[9px] bg-slate-800/80 px-1.5 py-0.5 rounded-md min-w-[20px] text-center">
-                            {facetCounts.topic['Systematic Reviews'] || 0}
+                          <span>Systematic Reviews</span>
+                          <span className="text-[9px] bg-white/5 px-1 rounded">
+                            {articles.filter(a => (a.tags || []).some(tag => tag.toLowerCase() === 'systematic review')).length}
                           </span>
                         </button>
                       </div>
                     )}
                   </React.Fragment>
                 );
-            })}
+              })}
 
-            {/* VIEW 2: AI FEED */}
+            {/* VIEW 2: AI SEARCH */}
             {rightTab === 'ai' && (
-              <div className="space-y-3">
-                {articles.filter(a => (a.tags || []).includes('🤖 AI Insight')).length > 0 ? (
-                  articles.filter(a => (a.tags || []).includes('🤖 AI Insight')).map((aiArticle, idx) => (
-                    <div key={idx} className="bg-slate-800/50 p-3 rounded-xl border border-slate-700/50 hover:border-emerald-500/50 transition-colors">
-                      <a href={aiArticle.url} target="_blank" rel="noopener noreferrer" className="text-[11px] font-bold text-slate-200 block mb-1.5 hover:text-emerald-400">
-                        {aiArticle.title}
-                      </a>
-                      <p className="text-[10px] text-slate-400 line-clamp-4 leading-relaxed">
-                        {aiArticle.summary}
-                      </p>
-                      <div className="mt-2 flex flex-wrap gap-1">
-                       {(aiArticle.tags || []).map(tag => (
-                          <span key={tag} className="text-[8px] uppercase font-black bg-slate-900 text-slate-400 px-1.5 py-0.5 rounded border border-slate-700">
-                            {tag}
-                          </span>
-                        ))}
-                      </div>
-                    </div>
-                  ))
-                ) : (
-                  <div className="text-center py-10 opacity-50">
-                    <span className="text-[10px] uppercase font-black tracking-widest block mb-2">No AI Results</span>
-                    <span className="text-[9px]">Run your ChatGPT agent to populate this feed.</span>
-                  </div>
-                )}
+              <div className="p-2 space-y-3 text-center pt-8">
+                <span className="text-2xl">🔮</span>
+                <h5 className="text-xs font-bold text-slate-300 uppercase tracking-wider">Semantic Discovery</h5>
+                <p className="text-[11px] text-slate-500 leading-relaxed">
+                  Query natural concepts like <span className="italic text-slate-400">"Ontario pathogen policy updates"</span> or vector clusters.
+                </p>
+                <div className="pt-4">
+                  <input 
+                    type="text"
+                    disabled
+                    placeholder="AI Agent Offline"
+                    className="w-full bg-slate-900/60 border border-slate-800 rounded-lg p-2 text-[10px] text-center text-slate-600 cursor-not-allowed"
+                  />
+                </div>
               </div>
             )}
           </div>
         </aside>
-      </div>
 
-      <style
-        dangerouslySetInnerHTML={{
-          __html: `
-        .custom-scrollbar-dark::-webkit-scrollbar { width: 4px; }
-        .custom-scrollbar-dark::-webkit-scrollbar-thumb { background: #475569; border-radius: 10px; }
-        .line-clamp-3 { display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }        
-      `,
-        }}
-      />
+      </div>
     </div>
   );
 }
