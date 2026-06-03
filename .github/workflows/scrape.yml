@@ -2,7 +2,7 @@ name: Data Pipeline
 
 on:
   schedule:
-   - cron: '0 14 * * *'
+    - cron: '0 14 * * *'
   workflow_dispatch: 
 
 permissions:
@@ -24,7 +24,7 @@ jobs:
         run: npm install jsdom --no-save
 
       - name: Run Scraper
-        run: node scraper.cjs
+        run: node scaper.cjs
 
       - name: Commit and Push new data
         run: |
@@ -32,6 +32,5 @@ jobs:
           git config --global user.email "schoolbaclic@gmail.com"
           git add public/news_data.json
           git commit -m "Automated data refresh" || echo "No changes to commit"
-          git reset --hard HEAD
           git pull --rebase origin main
           git push origin main
