@@ -1,0 +1,28 @@
+name: Receive ChatGPT Summary
+on:
+  repository_dispatch:
+    types: [chatgpt_summary]
+
+permissions:
+  contents: write 
+
+jobs:
+  add-summary:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v3
+
+      - name: Save Summary to File
+        run: |
+          mkdir -p ai_inputs
+          # Adds a unique ID to the filename so GPTs never overwrite each other
+          jq '.client_payload' $GITHUB_EVENT_PATH > ai_inputs/ai_summary_${{ github.run_id }}.json
+
+      - name: Commit and Push
+        run: |
+          git config user.name "new_vaccine_dashboard"
+          git config user.email "schoolbaclic@gmail.com"
+          git add ai_inputs/
+          git commit -m "Added new ChatGPT summary" || echo "No changes to commit"
+          git push
