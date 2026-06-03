@@ -1,0 +1,669 @@
+import React, { useState, useEffect, useMemo, useCallback } from 'react';
+import {
+  Newspaper, Activity, XCircle, Globe, ShieldAlert, Microscope,
+  Download, Check, TerminalSquare, Moon, Sun, Menu, X,
+  ChevronDown, ChevronRight
+} from 'lucide-react';
+import { TOPIC_MAP, CANADIAN_VPDS } from './constants';
+import ArticleCard from './ArticleCard';
+
+const safeCsvCell = (value) => {
+  const s = String(value ?? '');
+  const escaped = s.replace(/"/g, '""');
+  const formulaRisk = /^[=+\-@]/.test(escaped);
+  return `"${formulaRisk ? "'" : ""}${escaped}"`;
+};
+
+const matchesTime = (a, tf, nowMs, customRange) => {
+  const pub = Number.isFinite(a.publishedAt) ? a.publishedAt : 0;
+  if (!pub) return tf !== 'Custom';
+if (tf === 'Custom' && customRange?.start) {
+    const start = new Date(customRange.start + 'T00:00:00').getTime();
+    const end = customRange.end ? new Date(customRange.end + 'T00:00:00').getTime() + 86400000 : nowMs;
+    return pub >= start && pub <= end;
+  }
+  const age = nowMs - pub;
+  if (tf === 'Today') return age <= 86400000;
+  if (tf === 'Last Week') return age <= 604800000;
+  if (tf === 'Last Two Weeks') return age <= 1209600000;
+  return true;
+};
+
+const matchesDisease = (a, sd) => {
+  if (sd === 'All') return true;
+
+  const hasExplicitUnknown = (a.tags || []).some(t => t === 'Unknown' || t === 'Other' || t === 'Unclassified');
+  const specificDiseases = CANADIAN_VPDS.filter(d => d !== 'All' && d !== 'Unknown/Other');
+  const hasSpecificDisease = (a.tags || []).some(t => specificDiseases.includes(t));
+
+  if (sd === 'Unknown/Other') {
+    return hasExplicitUnknown || !hasSpecificDisease;
+  }
+
+  return (a.tags || []).includes(sd);
+};
+
+const matchesTopic = (a, st) => {
+  const lowerTags = (a.tags || []).map(t => String(t).toLowerCase());
+
+  // 1. SMART EPI SUPPRESSION
+  if (
+    lowerTags.includes('epidemiology') && 
+    !lowerTags.includes('study') && 
+    !lowerTags.includes('preprint') &&
+    !lowerTags.includes('clinical trial') &&
+    !lowerTags.includes('⭐ pubmed')
+  ) {
+    return false;
+  }
+
+  const checkTopic = (topicName) => {
+    if (topicName === 'Canada') return Boolean(a.meta?.isCanadian);
+    if (topicName === 'PHEIC') return Boolean(a.meta?.isPHEIC); 
+    if (topicName === 'Regulatory') {
+      const isBlocked = lowerTags.some(t => t === 'translate' || t === 'translation' || t === 'portuguese' || t === 'medrxiv' || t === 'biorxiv');
+      if (isBlocked) return false;
+    }
+    if (topicName === 'Guidelines') {
+      const isPreprint = lowerTags.some(t => t === 'medrxiv' || t === 'biorxiv');
+      if (isPreprint) return false;
+    }
+    const neededTags = TOPIC_MAP[topicName];
+    return Array.isArray(neededTags) ? neededTags.some((t) => (a.tags || []).includes(t)) : false;
+  };
+
+  // 2. Catch-all for "Other Topics"
+  if (st === 'Other Topics') {
+    const knownTopics = Object.keys(TOPIC_MAP).filter(k => k !== 'All Topics');
+    return !knownTopics.some(checkTopic);
+  }
+
+  if (st === 'All Topics') return true;
+  return checkTopic(st);
+};
+
+export default function App() {
+  const [activeView, setActiveView] = useState('intel');
+  const [rightTab, setRightTab] = useState('topics');
+  const [timeframe, setTimeframe] = useState('Last Week');
+  const [customDateRange, setCustomDateRange] = useState({ start: '', end: '' });
+  const [selectedDisease, setSelectedDisease] = useState('All');
+  const [selectedTopic, setSelectedTopic] = useState('All Topics');
+  const [isImportantOnly, setisImportantOnly] = useState(false);
+  // --- ADD THESE TWO LINES ---
+  const [openSections, setOpenSections] = useState({});
+  const toggleSection = (id) => setOpenSections(prev => ({ ...prev, [id]: !prev[id] }));
+  // ---------------------------
+  // Search & UI state
+  const [searchInput, setSearchInput] = useState('');
+  const [activeQuery, setActiveQuery] = useState('');
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  
+  // Data state
+  const [articles, setArticles] = useState([]);
+  const [scanLog, setScanLog] = useState([]);
+  const [scanMetrics, setScanMetrics] = useState({ total: 0, completed: 0, successful: 0, failed: 0, rawFetched: 0, rejectedOld: 0, rejectedScore0: 0, accepted: 0, dedupedUnique: 0 });
+  const [lastUpdated, setLastUpdated] = useState(null);
+  const [isFetching, setIsFetching] = useState(true);
+  const [nowMs, setNowMs] = useState(Date.now());
+  const [copied, setCopied] = useState(false);
+  
+  // Export state
+  const [isExportModalOpen, setIsExportModalOpen] = useState(false);
+  const [exportFields, setExportFields] = useState({ title: true, date: true, sourceName: true, publisherName: true, category: true, summary: true, url: true, tags: true, score: true });
+
+  useEffect(() => {
+    const t = setInterval(() => setNowMs(Date.now()), 60000);
+    return () => clearInterval(t);
+  }, []);
+
+  const fetchCleanData = async () => {
+    setIsFetching(true);
+    try {
+      const res = await fetch(`/news_data.json?t=${Date.now()}`);
+      if (!res.ok) throw new Error("Failed to fetch data");
+      const data = await res.json();
+      setArticles(data.articles || []);
+      setScanLog(data.scanLog || []);
+      setScanMetrics(data.scanMetrics || { total: 0, completed: 0, successful: 0, failed: 0, rawFetched: 0, rejectedOld: 0, rejectedScore0: 0, accepted: 0, dedupedUnique: 0 });
+      setLastUpdated(data.lastUpdated);
+    } catch (error) {
+      console.error("Error loading dashboard data:", error);
+    } finally {
+      setIsFetching(false);
+    }
+  };
+
+  useEffect(() => { fetchCleanData(); }, []);
+
+  const handleSearchEnter = (e) => {
+    if (e.key === 'Enter') {
+      setActiveQuery(searchInput);
+      setSearchInput('');
+    }
+  };
+
+  const handleClearSearch = () => {
+    setSearchInput('');
+    setActiveQuery('');
+  };
+
+  const timeFilteredArticles = useMemo(() => {
+    return articles.filter(a => matchesTime(a, timeframe, nowMs, customDateRange));
+  }, [articles, timeframe, customDateRange, nowMs]);
+
+const filteredArticles = useMemo(() => {
+    const searchLower = activeQuery.toLowerCase();
+    
+    // 1. Filter the articles first
+    const filtered = timeFilteredArticles.filter((a) => {
+      if (!matchesDisease(a, selectedDisease)) return false;
+      if (!matchesTopic(a, selectedTopic)) return false;
+      if (isImportantOnly && !a.meta?.isImportant) return false;
+      if (activeQuery && !`${a.title} ${a.summary} ${a.sourceName} ${(a.tags || []).join(' ')}`.toLowerCase().includes(searchLower)) return false;
+      return true;
+    });
+
+    // 2. Force strict chronological sorting (MOST RECENT FIRST)
+    return filtered.sort((a, b) => {
+      const dateA = Number(a.publishedAt) || 0;
+      const dateB = Number(b.publishedAt) || 0;
+      
+      if (dateA > dateB) return -1;
+      if (dateA < dateB) return 1;
+      return 0;
+    });
+    
+  }, [timeFilteredArticles, selectedDisease, selectedTopic, isImportantOnly, activeQuery]);
+
+ const facetCounts = useMemo(() => {
+    const disease = Object.fromEntries(CANADIAN_VPDS.map((d) => [d, 0]));
+    const topic = { ...Object.fromEntries(Object.keys(TOPIC_MAP).map((t) => [t, 0])), 'Other Topics': 0 };
+
+    for (const a of timeFilteredArticles) {
+      const riskOk = !isImportantOnly || a.meta?.isImportant;
+      if (!riskOk) continue; // Skip entirely if filtered out
+
+      // Pathogen Math
+      if (matchesTopic(a, selectedTopic)) {
+        disease.All += 1;
+        let matchedSpecificDisease = false;
+        let addedUnknownOther = false;
+
+        for (const tag of a.tags || []) {
+          if (tag === 'Unknown' || tag === 'Other' || tag === 'Unclassified') {
+            if (!addedUnknownOther) {
+              disease['Unknown/Other'] += 1;
+              addedUnknownOther = true;
+            }
+          } else if (disease[tag] !== undefined) {
+            disease[tag] += 1;
+            matchedSpecificDisease = true;
+          }
+        }
+        
+        if (!matchedSpecificDisease && !addedUnknownOther) {
+          disease['Unknown/Other'] += 1;
+        }
+      }
+
+      // Topic Math
+      if (matchesDisease(a, selectedDisease)) {
+        let matchedAnyTopic = false;
+        for (const t of Object.keys(TOPIC_MAP)) {
+          if (matchesTopic(a, t)) {
+            topic[t] += 1;
+            if (t !== 'All Topics') matchedAnyTopic = true;
+          }
+        }
+        if (!matchedAnyTopic) {
+           topic['Other Topics'] += 1;
+        }
+      }
+    }
+    return { disease, topic };
+  }, [timeFilteredArticles, isImportantOnly, selectedTopic, selectedDisease]);
+
+  const handleExportCSV = () => {
+    const headers = Object.keys(exportFields).filter(f => exportFields[f]);
+    const lines = [
+      headers.join(','),
+      ...filteredArticles.map(a =>
+        headers.map(h => {
+          if (h === 'date') return safeCsvCell(a.publishedAt ? new Date(a.publishedAt).toLocaleDateString() : '');
+          if (h === 'tags') return safeCsvCell((a.tags || []).join(', '));
+          if (h === 'publisherName') return safeCsvCell(a.publisherName || a.sourceName || '');
+          return safeCsvCell(a[h] || '');
+        }).join(',')
+      )
+    ];
+
+    const blob = new Blob([lines.join('\n')], { type: 'text/csv;charset=utf-8;' });
+    const url = URL.createObjectURL(blob);
+    const link = document.createElement('a');
+    link.href = url;
+    link.download = `VPI_Report_${new Date().toISOString().slice(0, 10)}.csv`;
+    document.body.appendChild(link);
+    link.click();
+    link.remove();
+    URL.revokeObjectURL(url);
+    setIsExportModalOpen(false);
+  };
+
+  const stats = useMemo(() => {
+    const health = scanMetrics.total > 0 ? Math.round((scanMetrics.successful / scanMetrics.total) * 100) : 0;
+    const importantTotal = articles.filter((a) => a.meta?.isImportant).length;
+    const importantFiltered = filteredArticles.filter((a) => a.meta?.isImportant).length;
+    return { health, importantTotal, importantFiltered, totalSignals: articles.length, filteredSignals: filteredArticles.length };
+  }, [scanMetrics, articles, filteredArticles]);
+
+  const handleCopyErrors = useCallback(async () => {
+    const text = scanLog.filter((l) => l.type === 'error').map((l) => `[${l.time}] ${l.name}: ${l.msg}`).join('\n');
+    try {
+      if (navigator?.clipboard?.writeText) await navigator.clipboard.writeText(text);
+      else {
+        const el = document.createElement('textarea'); el.value = text;
+        document.body.appendChild(el); el.select(); document.execCommand('copy'); document.body.removeChild(el);
+      }
+      setCopied(true); setTimeout(() => setCopied(false), 2000);
+    } catch {}
+  }, [scanLog]);
+
+  return (
+    <div className="flex h-screen font-sans overflow-hidden selection:bg-indigo-100 dark">
+      <div className="flex-1 flex w-full h-full bg-gray-50 dark:bg-slate-950">
+        
+        {/* Mobile Sidebar Overlay */}
+        {isMobileMenuOpen && (
+          <div 
+            className="fixed inset-0 bg-black/60 z-40 md:hidden backdrop-blur-sm"
+            onClick={() => setIsMobileMenuOpen(false)}
+          />
+        )}
+
+        {/* LEFT SIDEBAR (Pathogens) */}
+        <aside className={`fixed inset-y-0 left-0 z-50 w-[180px] bg-[#0B1120] text-gray-300 flex flex-col h-full border-r border-gray-800 p-3 overflow-y-auto transform transition-transform duration-300 ease-in-out md:relative md:translate-x-0 ${isMobileMenuOpen ? 'translate-x-0' : '-translate-x-full'}`}>
+          <div className="flex items-center justify-between mb-4 px-2">
+            <h3 className="text-[10px] font-black uppercase text-slate-400 tracking-widest flex items-center gap-2">
+              <Microscope className="w-3.5 h-3.5" /> Pathogens
+            </h3>
+            <button className="md:hidden text-slate-400" onClick={() => setIsMobileMenuOpen(false)}>
+              <X className="w-4 h-4" />
+            </button>
+          </div>
+          <div className="space-y-1">
+            {CANADIAN_VPDS.map((d) => (
+              <button
+                key={d}
+                onClick={() => { setSelectedDisease(d); setIsMobileMenuOpen(false); }}
+                className={`w-full text-left px-3 py-2 rounded-xl text-[11px] font-bold transition-all flex justify-between items-center ${
+                  selectedDisease === d ? 'bg-blue-600 text-white' : 'hover:bg-slate-700 text-slate-300'
+                }`}
+              >
+                <span className="truncate pr-1">{d}</span>
+                <span className="text-[9px] bg-white/10 px-1.5 py-0.5 rounded-md min-w-[20px] text-center">
+                  {facetCounts.disease[d] || 0}
+                </span>
+              </button>
+            ))}
+          </div>
+        </aside>
+
+        <main className="flex-1 flex flex-col h-full relative w-full overflow-hidden">
+          <header className="px-4 py-2.5 border-b border-slate-100 dark:border-slate-800 flex flex-wrap items-center justify-between gap-3 bg-white dark:bg-slate-900 z-10 w-full relative">
+            
+            <div className="flex items-center gap-2">
+              <button 
+                className="md:hidden p-1.5 bg-slate-100 dark:bg-slate-800 rounded-lg text-slate-600 dark:text-slate-300"
+                onClick={() => setIsMobileMenuOpen(true)}
+              >
+                <Menu className="w-4 h-4" />
+              </button>
+              
+              <div className="bg-slate-50 dark:bg-slate-800/50 p-0.5 rounded-lg flex border border-slate-100 dark:border-slate-700 shadow-sm">
+                {['Today', 'Last Week', 'Last Two Weeks', 'Custom'].map((t) => (
+                  <button
+                    key={t}
+                    onClick={() => setTimeframe(t)}
+                    className={`px-2.5 py-1 text-[9px] font-black uppercase tracking-wide rounded-md transition-all ${
+                      timeframe === t ? 'bg-white dark:bg-slate-700 shadow-sm text-indigo-600 dark:text-indigo-400 border border-slate-200/50 dark:border-slate-600' : 'text-slate-500 dark:text-slate-400 hover:text-slate-700 dark:hover:text-slate-200'
+                    }`}
+                  >
+                    {t}
+                  </button>
+                ))}
+              </div>
+            {timeframe === 'Custom' && (
+                <div className="flex items-center gap-1.5 animate-in fade-in slide-in-from-left-2 duration-300">
+                  <input
+                    type="date"
+                    value={customDateRange.start}
+                    onChange={(e) => setCustomDateRange(prev => ({ ...prev, start: e.target.value }))}
+                    className="px-2 py-1 text-[10px] font-bold uppercase tracking-wide rounded-md border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 text-slate-600 dark:text-slate-300 focus:outline-none focus:border-indigo-400 shadow-sm"
+                  />
+                  <span className="text-slate-400 text-[10px] font-black uppercase">to</span>
+                  <input
+                    type="date"
+                    value={customDateRange.end}
+                    onChange={(e) => setCustomDateRange(prev => ({ ...prev, end: e.target.value }))}
+                    className="px-2 py-1 text-[10px] font-bold uppercase tracking-wide rounded-md border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 text-slate-600 dark:text-slate-300 focus:outline-none focus:border-indigo-400 shadow-sm"
+                  />
+                </div>
+              )}
+            </div>
+            <div className="flex items-center gap-1.5 shrink-0 flex-1 justify-end">
+              <div className="relative flex items-center w-full max-w-[200px]">
+                <input
+                  type="text"
+                  placeholder="Search"
+                  value={searchInput}
+                  onChange={(e) => setSearchInput(e.target.value)}
+                  onKeyDown={handleSearchEnter}
+                  className="px-2.5 py-1 text-[10px] font-medium rounded-lg border border-slate-200 dark:border-slate-700 focus:outline-none focus:border-indigo-400 bg-slate-50 dark:bg-slate-800 text-slate-700 dark:text-slate-200 w-full placeholder-slate-400 transition-colors shadow-sm pr-6"
+                />
+                {(searchInput || activeQuery) && (
+                  <button onClick={handleClearSearch} className="absolute right-1.5 text-slate-400 hover:text-red-500">
+                    <XCircle className="w-3 h-3" />
+                  </button>
+                )}
+              </div>
+
+              <button onClick={() => setisImportantOnly(!isImportantOnly)} className={`p-1.5 rounded-lg border transition-all ${isImportantOnly ? 'bg-red-500 text-white border-red-600 shadow-sm shadow-red-100 dark:shadow-none' : 'bg-white dark:bg-slate-800 text-slate-400 dark:text-slate-400 border-slate-200 dark:border-slate-700 hover:border-slate-300 dark:hover:border-slate-500 hover:text-slate-600'}`} title="Filter Important">
+                <ShieldAlert className="w-3.5 h-3.5" />
+              </button>
+
+              <button onClick={() => setActiveView(activeView === 'intel' ? 'diag' : 'intel')} className={`p-1.5 rounded-lg border transition-all ${activeView === 'diag' ? 'bg-slate-800 text-white border-slate-800 shadow-sm' : 'bg-white dark:bg-slate-800 text-slate-400 border-slate-200 dark:border-slate-700 hover:border-slate-300'}`} title="Diagnostics">
+                <Activity className="w-3.5 h-3.5" />
+              </button>
+
+              <button onClick={() => setIsExportModalOpen(true)} className="p-1.5 rounded-lg border bg-white dark:bg-slate-800 border-slate-200 dark:border-slate-700 text-slate-400 hover:text-blue-600 transition-all hidden sm:block" title="Export">
+                <Download className="w-3.5 h-3.5" />
+              </button>
+
+            </div>
+          </header>
+          
+          {/* Active Filter Badge */}
+          {activeQuery && (
+            <div className="bg-white dark:bg-slate-900 border-b border-slate-100 dark:border-slate-800 px-4 py-1.5 flex items-center justify-center gap-2">
+              <span className="text-[10px] font-black uppercase text-slate-400">Filtering by:</span>
+              <span className="bg-indigo-100 dark:bg-indigo-900/40 text-indigo-700 dark:text-indigo-300 text-[10px] font-bold px-2 py-0.5 rounded flex items-center gap-1.5 border border-indigo-200 dark:border-indigo-800">
+                {activeQuery}
+                <button onClick={handleClearSearch} className="hover:text-red-500"><X className="w-3 h-3" /></button>
+              </span>
+            </div>
+          )}
+
+          <div className="flex-1 overflow-y-auto p-4 md:p-6 relative">
+            {activeView === 'diag' ? (
+              <div className="max-w-4xl mx-auto space-y-6">
+                <div className="bg-white dark:bg-slate-900 py-6 rounded-2xl border border-slate-100 dark:border-slate-800 shadow-sm grid grid-cols-5 divide-x divide-slate-100 dark:divide-slate-800 w-full relative">
+                   <div className="flex flex-col items-center justify-center px-2">
+                      <span className="text-[9px] uppercase font-black tracking-widest text-slate-400 mb-0.5 text-center">Raw Fetched</span>
+                      <span className="text-xl md:text-3xl font-light text-slate-700 dark:text-slate-300">{scanMetrics.rawFetched}</span>
+                   </div>
+                   <div className="flex flex-col items-center justify-center px-2">
+                      <span className="text-[9px] uppercase font-black tracking-widest text-red-400 mb-0.5 text-center">Rejected (Old)</span>
+                      <span className="text-xl md:text-3xl font-light text-red-400">{scanMetrics.rejectedOld}</span>
+                   </div>
+                   <div className="flex flex-col items-center justify-center px-2">
+                      <span className="text-[9px] uppercase font-black tracking-widest text-amber-400 mb-0.5 text-center">Rejected (No Context)</span>
+                      <span className="text-xl md:text-3xl font-light text-amber-500">{scanMetrics.rejectedScore0}</span>
+                   </div>
+                   <div className="flex flex-col items-center justify-center px-2">
+                      <span className="text-[9px] uppercase font-black tracking-widest text-blue-500 mb-0.5 text-center">Accepted</span>
+                      <span className="text-xl md:text-3xl font-bold text-blue-600 dark:text-blue-500">{scanMetrics.accepted}</span>
+                   </div>
+                   <div className="flex flex-col items-center justify-center px-2">
+                      <span className="text-[9px] uppercase font-black tracking-widest text-emerald-500 mb-0.5 text-center">Deduped & Unique</span>
+                      <span className="text-xl md:text-3xl font-bold text-emerald-600 dark:text-emerald-500">{scanMetrics.dedupedUnique}</span>
+                   </div>
+                </div>
+                
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+                  <div className="bg-white dark:bg-slate-900 p-4 rounded-2xl border border-slate-100 dark:border-slate-800 shadow-sm">
+                    <span className="text-[9px] font-black text-slate-400 uppercase tracking-widest block mb-1">Database Age</span>
+                    <span className={`text-xl font-bold ${!lastUpdated ? 'text-slate-400' : 'text-emerald-500'}`}>
+                      {lastUpdated ? new Date(lastUpdated).toLocaleTimeString() : 'N/A'}
+                    </span>
+                  </div>
+                  <div className="bg-white dark:bg-slate-900 p-4 rounded-2xl border border-slate-100 dark:border-slate-800 shadow-sm">
+                    <span className="text-[9px] font-black text-slate-400 uppercase tracking-widest block mb-1">Backend Hooks</span>
+                    <span className="text-2xl font-light text-slate-700 dark:text-slate-300">
+                      {scanMetrics.successful}/{scanMetrics.total}
+                    </span>
+                  </div>
+                  <div className="bg-red-500 p-4 rounded-2xl shadow-lg shadow-red-100 dark:shadow-none text-white">
+                    <span className="text-[9px] font-black opacity-70 uppercase tracking-widest block mb-1">Important</span>
+                    <span className="text-2xl font-bold">
+                      {stats.importantFiltered}/{stats.importantTotal}
+                    </span>
+                   </div>
+                </div>
+
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 h-[400px]">
+                  <div className="bg-slate-900 rounded-2xl p-4 flex flex-col font-mono text-[11px] border border-slate-800 shadow-inner">
+                    <div className="flex justify-between items-center text-emerald-400 mb-3 border-b border-slate-800 pb-2">
+                      <span className="font-black uppercase flex items-center gap-2">
+                        <TerminalSquare className="w-4 h-4" /> Server Trace Log
+                      </span>
+                      <span className="opacity-50 text-[9px]">{scanLog.length} events</span>
+                    </div>
+                    <div className="flex-1 overflow-y-auto custom-scrollbar-dark pr-2">
+                      {scanLog.map((l) => (
+                        <div key={l.id} className="mb-2 text-slate-400 leading-relaxed flex items-start gap-1.5 text-[10px]">
+                          <span className="text-slate-600 shrink-0">[{l.time}]</span>
+                          <div className="mt-0.5 shrink-0 flex items-center justify-center w-3 h-3">
+                            {l.type === 'success' && <Check className="w-3 h-3 text-emerald-500" strokeWidth={3} />}
+                            {l.type === 'error' && <XCircle className="w-3 h-3 text-red-500" />}
+                            {l.type === 'info' && <div className="w-1.5 h-1.5 bg-blue-500 rounded-full"></div>}
+                          </div>
+                          <div className="flex-1">
+                            {l.name && <span className="text-slate-100 font-bold">{String(l.name)}: </span>}
+                            <span className={l.type === 'error' ? 'text-red-400' : l.type === 'success' ? 'text-emerald-400/80' : 'text-slate-300'}>
+                              {String(l.msg)}
+                            </span>
+                          </div>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+
+                  <div className="bg-red-950/20 rounded-2xl p-4 flex flex-col font-mono text-[11px] border border-red-900/10 shadow-inner">
+                    <div className="flex justify-between items-center text-red-400 mb-3 border-b border-red-900/10 pb-2">
+                      <span className="font-black uppercase flex items-center gap-2">
+                        <XCircle className="w-4 h-4" /> Signal Blockers
+                      </span>
+                      <button
+                        onClick={handleCopyErrors}
+                        className="bg-red-500 hover:bg-red-400 text-white px-2 py-0.5 rounded text-[9px] font-black uppercase transition-colors"
+                      >
+                        {copied ? 'Copied' : 'Copy'}
+                      </button>
+                    </div>
+                    <div className="flex-1 overflow-y-auto custom-scrollbar-dark pr-2">
+                      {scanLog.filter((l) => l.type === 'error').map((l) => (
+                        <div key={l.id} className="mb-2 text-red-200/60 leading-relaxed">
+                          <span className="text-red-900">[{l.time}]</span>{' '}
+                          <span className="text-red-100">{String(l.name)}:</span> {String(l.msg)}
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                </div>
+              </div>
+            ) : (
+              <div className="grid grid-cols-1 xl:grid-cols-2 gap-4 md:gap-6 max-w-6xl mx-auto pb-20">
+                {filteredArticles.length > 0 ? (
+                  filteredArticles.map((article) => (
+                    <ArticleCard 
+                      key={article.id} 
+                      article={article} 
+                      onSearchClick={setActiveQuery} 
+                    />
+                  ))
+                ) : (
+                  <div className="col-span-full py-32 flex flex-col items-center opacity-40">
+                    <Newspaper className="w-16 h-16 mb-4 text-slate-300 dark:text-slate-700" />
+                    <span className="text-[11px] font-black uppercase tracking-widest text-slate-400 dark:text-slate-600">
+                      {isFetching ? 'Fetching Database...' : 'Feed Silent'}
+                    </span>
+                  </div>
+                )}
+              </div>
+            )}
+          </div>
+          
+          {/* EXPORT MODAL */}
+          {isExportModalOpen && (
+            <div className="absolute inset-0 z-50 flex items-center justify-center bg-slate-900/40 backdrop-blur-sm p-4 animate-in fade-in duration-200">
+              <div className="bg-white dark:bg-slate-900 rounded-2xl shadow-2xl w-full max-w-sm overflow-hidden flex flex-col animate-in zoom-in-95 duration-200 border border-slate-200 dark:border-slate-800">
+                <div className="p-4 border-b border-slate-100 dark:border-slate-800 flex justify-between items-center bg-slate-50 dark:bg-slate-900">
+                  <h3 className="font-black text-slate-700 dark:text-slate-200 uppercase tracking-widest text-xs flex items-center gap-2">
+                    <Download className="w-4 h-4 text-indigo-500" /> Configure Export
+                  </h3>
+                  <button onClick={() => setIsExportModalOpen(false)} className="text-slate-400 hover:text-red-500 transition-colors">
+                    <XCircle className="w-5 h-5" />
+                  </button>
+                </div>
+                <div className="p-6 grid grid-cols-2 gap-y-4 gap-x-2">
+                  {Object.keys(exportFields).map(key => (
+                    <label key={key} className="flex items-center gap-2.5 text-xs font-bold text-slate-600 dark:text-slate-300 cursor-pointer group">
+                      <div className="relative flex items-center justify-center">
+                        <input 
+                          type="checkbox" 
+                          checked={exportFields[key]} 
+                          onChange={() => setExportFields(p => ({ ...p, [key]: !p[key] }))} 
+                          className="peer appearance-none w-4 h-4 border-2 border-slate-300 dark:border-slate-600 rounded bg-white dark:bg-slate-800 checked:bg-indigo-500 dark:checked:bg-indigo-500 transition-all cursor-pointer" 
+                        />
+                        <Check className="w-3 h-3 text-white absolute pointer-events-none opacity-0 peer-checked:opacity-100" strokeWidth={3} />
+                      </div>
+                      <span className="capitalize group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition-colors">{key.replace(/([A-Z])/g, ' $1').trim()}</span>
+                    </label>
+                  ))}
+                </div>
+                <div className="p-4 border-t border-slate-100 dark:border-slate-800 bg-slate-50 dark:bg-slate-900 flex justify-end gap-2">
+                  <button onClick={() => setIsExportModalOpen(false)} className="px-4 py-2 rounded-xl text-xs font-bold text-slate-500 dark:text-slate-400 hover:bg-slate-200/50 dark:hover:bg-slate-800 transition-colors">Cancel</button>
+                  <button onClick={handleExportCSV} className="bg-indigo-600 hover:bg-indigo-700 text-white px-5 py-2 rounded-xl text-xs font-bold shadow-sm shadow-indigo-200 dark:shadow-none transition-colors flex items-center gap-2">
+                    Download CSV
+                  </button>
+                </div>
+              </div>
+            </div>
+          )}
+        </main>
+
+        {/* RIGHT SIDEBAR (Topics & AI Feed) */}
+        <aside className="w-[240px] bg-[#0B1120] text-gray-300 flex-col h-full border-l border-gray-800 flex overflow-hidden shrink-0 hidden lg:flex">
+          
+          {/* TAB TOGGLES */}
+          <div className="flex border-b border-gray-800 bg-[#0B1120] shrink-0">
+            <button 
+              onClick={() => setRightTab('topics')}
+              className={`flex-1 py-3 text-[10px] font-black uppercase tracking-widest transition-colors ${rightTab === 'topics' ? 'text-blue-400 border-b-2 border-blue-500' : 'text-slate-500 hover:text-slate-300'}`}
+            >
+              <Globe className="w-3.5 h-3.5 inline mr-1.5 mb-0.5" /> Topics
+            </button>
+            <button 
+              onClick={() => setRightTab('ai')}
+              className={`flex-1 py-3 text-[10px] font-black uppercase tracking-widest transition-colors ${rightTab === 'ai' ? 'text-emerald-400 border-b-2 border-emerald-500' : 'text-slate-500 hover:text-slate-300'}`}
+            >
+              🤖 AI Search
+            </button>
+          </div>
+
+          <div className="flex-1 overflow-y-auto p-3 space-y-1 custom-scrollbar-dark">
+{/* VIEW 1: TOPICS */}
+            {rightTab === 'topics' && [...Object.keys(TOPIC_MAP), 'Other Topics']
+              .filter(t => t !== 'Systematic Reviews') // Hide from the main flat list
+              .map((t) => {
+                const isPeerReviewed = t === 'Peer-reviewed';
+                const isOpen = openSections['peer_reviewed_group'];
+
+                return (
+                  <React.Fragment key={t}>
+                    <button
+                      onClick={() => {
+                        setSelectedTopic(t);
+                        if (isPeerReviewed) toggleSection('peer_reviewed_group');
+                      }}
+                      className={`w-full text-left px-3 py-2 rounded-xl text-[11px] font-bold transition-all flex justify-between items-center ${
+                        selectedTopic === t ? 'bg-blue-600 text-white' : 'hover:bg-slate-700 text-slate-300'
+                      }`}
+                    >
+                      <div className="flex items-center gap-1.5 truncate">
+                        {isPeerReviewed && (
+                          isOpen ? <ChevronDown className="w-3 h-3 text-slate-400 shrink-0" /> : <ChevronRight className="w-3 h-3 text-slate-400 shrink-0" />
+                        )}
+                        <span className="truncate pr-1">{t}</span>
+                      </div>
+                      <span className="text-[9px] bg-white/10 px-1.5 py-0.5 rounded-md min-w-[20px] text-center">
+                        {facetCounts.topic[t] || 0}
+                      </span>
+                    </button>
+
+                    {/* The Collapsible Subtab */}
+                    {isPeerReviewed && isOpen && (
+                      <div className="pl-3 animate-in slide-in-from-top-2 duration-200 mt-1">
+                        <button
+                          onClick={() => setSelectedTopic('Systematic Reviews')}
+                          className={`w-full text-left px-3 py-2 rounded-xl text-[11px] font-bold transition-all flex justify-between items-center ${
+                            selectedTopic === 'Systematic Reviews' ? 'bg-blue-600 text-white' : 'hover:bg-slate-800 text-slate-400'
+                          }`}
+                        >
+                          <span className="truncate pr-1">↳ Systematic Reviews</span>
+                          <span className="text-[9px] bg-slate-800/80 px-1.5 py-0.5 rounded-md min-w-[20px] text-center">
+                            {facetCounts.topic['Systematic Reviews'] || 0}
+                          </span>
+                        </button>
+                      </div>
+                    )}
+                  </React.Fragment>
+                );
+            })}
+
+            {/* VIEW 2: AI FEED */}
+            {rightTab === 'ai' && (
+              <div className="space-y-3">
+                {articles.filter(a => (a.tags || []).includes('🤖 AI Insight')).length > 0 ? (
+                  articles.filter(a => (a.tags || []).includes('🤖 AI Insight')).map((aiArticle, idx) => (
+                    <div key={idx} className="bg-slate-800/50 p-3 rounded-xl border border-slate-700/50 hover:border-emerald-500/50 transition-colors">
+                      <a href={aiArticle.url} target="_blank" rel="noopener noreferrer" className="text-[11px] font-bold text-slate-200 block mb-1.5 hover:text-emerald-400">
+                        {aiArticle.title}
+                      </a>
+                      <p className="text-[10px] text-slate-400 line-clamp-4 leading-relaxed">
+                        {aiArticle.summary}
+                      </p>
+                      <div className="mt-2 flex flex-wrap gap-1">
+                       {(aiArticle.tags || []).map(tag => (
+                          <span key={tag} className="text-[8px] uppercase font-black bg-slate-900 text-slate-400 px-1.5 py-0.5 rounded border border-slate-700">
+                            {tag}
+                          </span>
+                        ))}
+                      </div>
+                    </div>
+                  ))
+                ) : (
+                  <div className="text-center py-10 opacity-50">
+                    <span className="text-[10px] uppercase font-black tracking-widest block mb-2">No AI Results</span>
+                    <span className="text-[9px]">Run your ChatGPT agent to populate this feed.</span>
+                  </div>
+                )}
+              </div>
+            )}
+          </div>
+        </aside>
+      </div>
+
+      <style
+        dangerouslySetInnerHTML={{
+          __html: `
+        .custom-scrollbar-dark::-webkit-scrollbar { width: 4px; }
+        .custom-scrollbar-dark::-webkit-scrollbar-thumb { background: #475569; border-radius: 10px; }
+        .line-clamp-3 { display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }        
+      `,
+        }}
+      />
+    </div>
+  );
+}
