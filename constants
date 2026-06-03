@@ -1,0 +1,18 @@
+export const DISEASE_RULES = [
+  { rx: /\b(measles|rubeola)\b/gi, w: 2.0, tag: 'Measles' },
+  { rx: /\b(rsv|respiratory syncytial virus)\b/gi, w: 2.0, tag: 'RSV' },
+  { rx: /\b(hpv|human papillomavirus)\b/gi, w: 2.0, tag: 'HPV' },
+  { rx: /\b(mpox|monkeypox)\b/gi, w: 2.0, tag: 'Mpox' },
+  { rx: /\brabies\b/gi, w: 2.0, tag: 'Rabies' },
+  { rx: /\b(lyme|lyme disease|borrelia|burgdorferi|blacklegged|deer tick|valneva|vla15)\b/gi, w: 2.0, tag: 'Lyme Disease' },
+];
+
+export const TOPIC_MAP = {
+  'All Topics': null, 'Guidelines': ['Guideline'], 'Regulatory': ['Regulatory'], 'Clinical Trials': ['Clinical Trial'],
+  'Peer-reviewed': ['Study'], 'Systematic Reviews': ['Systematic Review'], 'Preprints': ['Preprint'],'Safety': ['Safety'], 'Supply': ['Supply'], 'Econ & Modelling':['Economics'],
+  'Canada': ['Canada'], 'US': ['US'], 'Europe': ['Europe'], 'Asia-Pacific': ['Asia-Pac'], 'Global South': ['Global South'], 'NITAGs': ['NITAG']
+};
+
+export const CANADIAN_VPDS = [
+  'All', 'Emerging', ...DISEASE_RULES.map(d => d.tag).filter(t => t !== 'Emerging').sort(), 'Unknown/Other' // <--- Added Unknown/Other to the end
+];
