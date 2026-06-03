@@ -95,7 +95,8 @@ const EN_VIRAL_2 = '(hpv OR rabies)';
 const EN_CLINICAL_1 = '(lyme)';
 
 // 2. MASTER ACADEMIC QUERY (DATABASES)
-const ALL_PATHOGENS = `${EN_VIRAL_1} OR ${EN_VIRAL_2} OR ${EN_CLINICAL_1};
+//  FIXED: Added the missing closing backtick here
+const ALL_PATHOGENS = `${EN_VIRAL_1} OR ${EN_VIRAL_2} OR ${EN_CLINICAL_1}`; 
 const EN_VACCINE_DB = '(vaccin* OR immuni* OR inoculat*)';
 const MASTER_DB_QUERY = `(${ALL_PATHOGENS}) AND ${EN_VACCINE_DB}`;
 
