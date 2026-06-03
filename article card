@@ -1,0 +1,161 @@
+import React, { memo } from 'react';
+import { ExternalLink, AlertTriangle, Globe } from 'lucide-react';
+
+const HIDDEN_BOTTOM_TAGS = [
+  'translate', 'translation', 'needs translation',
+  'english', 'study', 'unclassified', 'medrxiv', 
+  'biorxiv', 'pubmed', 'amedeo', 'preprints', 'international organization'
+];
+
+// --- SMART TRANSLATE HELPER ---
+const getDirectTranslateUrl = (url, tags = []) => {
+try {
+    if (!url) return '#';
+    const u = new URL(url);
+    
+    // 1. Detect language from your existing tags
+    const lowerTags = tags.map(t => String(t).toLowerCase());
+    let sourceLang = 'auto';
+    
+    if (lowerTags.includes('portuguese')) sourceLang = 'pt';
+    else if (lowerTags.includes('spanish')) sourceLang = 'es';
+    else if (lowerTags.includes('french')) sourceLang = 'fr';
+    else if (lowerTags.includes('chinese')) sourceLang = 'zh-CN';
+    else if (lowerTags.includes('japanese')) sourceLang = 'ja';
+    else if (lowerTags.includes('german')) sourceLang = 'de';
+
+    // 2. THE GOOGLE NEWS TRAP
+    // If it's a Google News tracking link, we MUST route it to the manual website tool.
+// The proxy blocks redirects, and the iframe detects the redirect page as English.
+      if (u.hostname.includes('news.google')) {
+         return `https://translate.google.com/translate?hl=en&sl=auto&tl=en&u=${encodeURIComponent(article.url)}`;
+      }
+    
+    // 3. Direct links: Use the proxy to bypass strict iframe security blockers
+    const proxyHost = u.hostname.replace(/-/g, '--').replace(/\./g, '-') + '.translate.goog';
+    const proxyUrl = new URL(`https://${proxyHost}${u.pathname}${u.search}`);
+    
+    proxyUrl.searchParams.set('_x_tr_sl', sourceLang);
+    proxyUrl.searchParams.set('_x_tr_tl', 'en');
+    proxyUrl.searchParams.set('_x_tr_hl', 'en');
+    proxyUrl.searchParams.set('_x_tr_pto', 'wapp'); 
+    
+    return proxyUrl.toString();
+  } catch (err) {
+    // Ultimate fallback for completely broken URLs
+    return `https://translate.google.com/?sl=auto&tl=en&text=${encodeURIComponent(url)}&op=websites`;
+  }
+};
+// ------------------------------
+
+const ArticleCard = ({ article, onSearchClick }) => {
+  const cleanTags = [];
+  const seen = new Set();
+  
+// Check if it needs translation (case-insensitive for variations)
+  const needsTranslation = (article.tags || []).some(t => {
+    const lower = String(t).toLowerCase();
+    return lower === 'translate' || lower === 'translation';
+  });
+
+  if (article.category) {
+    seen.add(String(article.category).trim().toLowerCase());
+  }
+
+  for (const t of (article.tags || [])) {
+    const tagStr = String(t).trim();
+    const lower = tagStr.toLowerCase();
+
+    // Block 'regulatory' if translated
+    if (needsTranslation && lower === 'regulatory') continue;
+
+    if (!seen.has(lower)) {
+      seen.add(lower);
+      cleanTags.push(tagStr);
+    }
+  }
+
+  const uniqueSources =
+  String(article.sourceName || '').trim() ||
+  Array.from(new Set((article.sources || []).map((s) => s.name))).join(', ') ||
+  article.publisherName ||
+  'Unknown Source';
+
+  return (
+    <div
+      className={`bg-white dark:bg-slate-900 p-6 rounded-2xl border transition-all duration-300 group relative flex flex-col hover:-translate-y-1 ${
+        article.meta?.isImportant
+          ? 'border-amber-400 bg-amber-50/20 dark:bg-amber-900/10 shadow-[0_4px_15px_-3px_rgba(251,191,36,0.15)]'
+          : 'border-slate-200 dark:border-slate-800 hover:border-indigo-300 dark:hover:border-indigo-500 shadow-sm hover:shadow-[0_8px_30px_rgb(0,0,0,0.06)]'
+      }`}
+    >
+      <div className="flex justify-between items-start mb-3 gap-4">
+        <div className="flex gap-2 items-center flex-wrap">
+          <span className="text-[9px] font-black uppercase text-indigo-600 dark:text-indigo-400 bg-indigo-50 dark:bg-indigo-900/30 px-2 py-0.5 rounded border border-indigo-100 dark:border-indigo-800">
+            {uniqueSources}
+          </span>
+          
+          {article.meta?.isImportant && (
+            <span className="text-[9px] font-black uppercase text-red-600 dark:text-red-400 bg-red-50 dark:bg-red-900/30 px-2 py-0.5 rounded border border-red-200 dark:border-red-900 flex items-center gap-1">
+              <AlertTriangle className="w-2.5 h-2.5" /> Important
+            </span>
+          )}
+          
+          {needsTranslation && (
+            <a
+              href={getDirectTranslateUrl(article.url, article.tags)}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-[9px] font-black uppercase text-blue-600 dark:text-blue-400 bg-blue-50 dark:bg-blue-900/30 px-2 py-0.5 rounded border border-blue-200 dark:border-blue-900 flex items-center gap-1 hover:bg-blue-100 dark:hover:bg-blue-900/50 transition-colors cursor-pointer"
+              title="Read in English via Google Translate"
+            >
+              <Globe className="w-2.5 h-2.5" /> Translate
+            </a>
+          )}
+          {/* ----------------------------------------- */}
+
+        </div>
+        {/* ================================================== */}
+        <span className="text-[10px] font-bold text-slate-400 dark:text-slate-500 flex items-center gap-2 uppercase tracking-tight shrink-0">
+          {article.publishedAt ? new Date(article.publishedAt).toLocaleDateString() : 'Recent'}
+        </span>
+      </div>
+
+      <h4 className="text-[14px] font-bold text-slate-800 dark:text-slate-200 leading-tight mb-2 group-hover:text-indigo-700 dark:group-hover:text-indigo-400 transition-colors pr-6">
+        <a href={article.url} target="_blank" rel="noopener noreferrer" className="flex items-start gap-1">
+          {article.title}
+          <ExternalLink className="w-3 h-3 mt-0.5 opacity-0 group-hover:opacity-100 shrink-0 text-indigo-400 dark:text-indigo-500" />
+        </a>
+      </h4>
+      
+      <p className="text-[12px] text-slate-500 dark:text-slate-400 line-clamp-3 mb-4 leading-relaxed">{article.summary}</p>
+      
+    <div className="mt-auto flex flex-wrap gap-1.5">
+        {cleanTags
+          .filter((t) => {
+            const lower = String(t).toLowerCase();
+            return !HIDDEN_BOTTOM_TAGS.includes(lower);
+          })
+          .sort((a, b) => a === '⭐ PubMed' ? -1 : b === '⭐ PubMed' ? 1 : 0)
+          .slice(0, 10)
+          .map((tag) => (
+          <button
+            key={tag}
+            onClick={() => onSearchClick(tag)}
+            className={`text-[9px] font-black uppercase px-2 py-0.5 rounded-md border cursor-pointer transition-transform hover:-translate-y-0.5 ${
+              tag === '⭐ PubMed'
+                ? 'bg-indigo-50 dark:bg-indigo-900/30 text-indigo-700 dark:text-indigo-400 border-indigo-200 dark:border-indigo-800 shadow-sm'
+                : tag === 'Unclassified' || tag === 'Background'
+                ? 'bg-slate-50 dark:bg-slate-800/50 text-slate-400 dark:text-slate-500 border-slate-200 dark:border-slate-700'
+                : 'bg-slate-100 dark:bg-slate-800 text-slate-500 dark:text-slate-300 border-slate-200 dark:border-slate-700 hover:bg-slate-200 dark:hover:bg-slate-700'
+            }`}
+          >
+            {tag}
+          </button>
+        ))}
+      </div>
+    </div>
+  );
+};
+
+export default memo(ArticleCard);
