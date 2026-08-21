@@ -1,5 +1,5 @@
 {
-  "lastUpdated": 1787236964254,
+  "lastUpdated": 1787323233227,
   "articles": [
     {
       "sourceName": "HC DPD (Vaccines)",
@@ -113,38 +113,40 @@
       "id": "doi:10.1016/j.vaccine.2026.129004"
     },
     {
-      "sourceName": "BMJ",
-      "publisherName": "Sexually Transmitted Infections Journal",
-      "sourceType": "rss",
-      "category": "Epidemiology",
-      "title": "Modelling the impact of vaccination and sexual behaviour adaptations on mpox cases in the USA during the 2022 outbreak - Sexually Transmitted Infections Journal",
-      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE95Q2ZVVzJZeWJlOG1vQWN2ekxsRm9PemFBYlI3dGtfNkk1c3NyQnZUS3RPeFpKMklHdjFyWVBqRlBmT1ZGQXd0TjNBekwxMHE1aHBRUy1ZODNIa0xGeHpXNkZmVnA?oc=5",
-      "publishedAt": 1785968049000,
-      "summary": "Modelling the impact of vaccination and sexual behaviour adaptations on mpox cases in the USA during the 2022 outbreak Sexually Transmitted Infections Journal",
+      "sourceName": "PubMed",
+      "publisherName": "Vaccine",
+      "sourceType": "api",
+      "category": "publication",
+      "title": "Ethiopia missed opportunities for vaccination study: Cluster-randomized evaluation of 5-dose measles vaccine vials and a flexible open-vial policy, 2021-2022.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42623714/",
+      "publishedAt": 1787184000000,
+      "summary": "Authors: Wallace AS. Source: Vaccine.",
       "tags": [
-        "Mpox",
-        "Epidemiology",
+        "Measles",
+        "Guideline",
         "PHEIC",
-        "US",
-        "English"
+        "Study",
+        "PubMed"
       ],
-      "score": 6,
+      "score": 9.5,
       "sources": [
         {
-          "name": "BMJ",
-          "category": "Epidemiology",
-          "type": "rss"
+          "name": "PubMed",
+          "category": "publication",
+          "type": "api"
         }
       ],
-      "canonicalUrl": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE95Q2ZVVzJZeWJlOG1vQWN2ekxsRm9PemFBYlI3dGtfNkk1c3NyQnZUS3RPeFpKMklHdjFyWVBqRlBmT1ZGQXd0TjNBekwxMHE1aHBRUy1ZODNIa0xGeHpXNkZmVnA?oc=5",
-      "normalizedTitle": "Modelling the impact of vaccination and sexual behaviour adaptations on mpox cases in the USA during the 2022 outbreak",
+      "canonicalUrl": "https://pubmed.ncbi.nlm.nih.gov/42623714",
+      "normalizedTitle": "Ethiopia missed opportunities for vaccination study: Cluster-randomized evaluation of 5-dose measles vaccine vials and a flexible open-vial policy, 2021-2022.",
       "meta": {
-        "ids": {},
+        "ids": {
+          "pmid": "42623714"
+        },
         "isCanadian": false,
         "isImportant": true,
         "isPHEIC": true
       },
-      "id": "url:66vemh"
+      "id": "pmid:42623714"
     },
     {
       "sourceName": "Amedeo",
@@ -261,7 +263,7 @@
       "category": "Gavi",
       "title": "Nigeria's Borno State is wrestling its worst cholera outbreak in two decades - Gavi, the Vaccine Alliance",
       "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOQ19FSEx1bHNmM2taX0FyZEtYMTdOR0tyTTJWRTQwcW83cEp4OFJGaVhBRXM5UXVJbDQ1NE55UWhTSlRrTGtmZDBmNmkyT1YxZjNicGc3LU9qQ2VpbWFPWU1XN2diQkE3Y2hxSS1TVTBNc2JKYmFHVjZCTUVDUG5FZk9oYjVWRlNOS29nUDZCTTJLa0lnNDBsZEVHSWdyUVl1TUxKeA?oc=5",
-      "publishedAt": 1787235071000,
+      "publishedAt": 1787235295000,
       "summary": "Nigeria's Borno State is wrestling its worst cholera outbreak in two decades Gavi, the Vaccine Alliance",
       "tags": [
         "PHEIC",
@@ -371,8 +373,7 @@
         "Regulatory",
         "Epidemiology",
         "Economics",
-        "Study",
-        "⭐ PubMed"
+        "Study"
       ],
       "score": 23,
       "sources": [
@@ -380,11 +381,6 @@
           "name": "Amedeo",
           "category": "publication",
           "type": "html"
-        },
-        {
-          "name": "PubMed",
-          "category": "publication",
-          "type": "api"
         }
       ],
       "meta": {
@@ -395,8 +391,7 @@
         },
         "isCanadian": false,
         "isImportant": false,
-        "isPHEIC": false,
-        "isAmedeoMatch": true
+        "isPHEIC": false
       },
       "canonicalUrl": "https://pubmed.ncbi.nlm.nih.gov/42571751",
       "normalizedTitle": "Evaluating the cost-effectiveness of respiratory syncytial virus vaccination among risk-stratified older adults.",
@@ -479,40 +474,6 @@
       "canonicalUrl": "https://pubmed.ncbi.nlm.nih.gov/42570462",
       "normalizedTitle": "Cost-effectiveness and budget impact analyses of introducing typhoid conjugate vaccine into Indonesia's national immunisation program.",
       "id": "doi:10.1016/j.vaccine.2026.129008"
-    },
-    {
-      "sourceName": "IDSA",
-      "publisherName": "IDSA",
-      "sourceType": "rss",
-      "category": "Epidemiology",
-      "title": "IDSA statement on FDA approval of mRNA flu vaccine - IDSA",
-      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQWXlBaFBqUF9EeTdqTGJMTjJ6UjA1M29kZngyVDZKTGhBNkFDWXNUWG04VXMwdkxSU2ZCTE8tT2cwczY2RHN4VUJHVnF5aEw2WnQ2Z2JpVEJIaHN0UXNVbUt5d0dCNTI4ZkUxZ3FKYTZ4MlJabVJfd19CSUFadjNpTzJYaW10NmlYU096d2VUUzRtZTFMdURGLTZfTFNQcHUtNWpyQXE0SE1RWDJvYVhvNHVGMEY?oc=5",
-      "publishedAt": 1785999600000,
-      "summary": "IDSA statement on FDA approval of mRNA flu vaccine IDSA",
-      "tags": [
-        "Regulatory",
-        "Guideline",
-        "Epidemiology",
-        "Unclassified",
-        "English"
-      ],
-      "score": 14.5,
-      "sources": [
-        {
-          "name": "IDSA",
-          "category": "Epidemiology",
-          "type": "rss"
-        }
-      ],
-      "canonicalUrl": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQWXlBaFBqUF9EeTdqTGJMTjJ6UjA1M29kZngyVDZKTGhBNkFDWXNUWG04VXMwdkxSU2ZCTE8tT2cwczY2RHN4VUJHVnF5aEw2WnQ2Z2JpVEJIaHN0UXNVbUt5d0dCNTI4ZkUxZ3FKYTZ4MlJabVJfd19CSUFadjNpTzJYaW10NmlYU096d2VUUzRtZTFMdURGLTZfTFNQcHUtNWpyQXE0SE1RWDJvYVhvNHVGMEY?oc=5",
-      "normalizedTitle": "IDSA statement on FDA approval of mRNA flu vaccine",
-      "meta": {
-        "ids": {},
-        "isCanadian": false,
-        "isImportant": false,
-        "isPHEIC": false
-      },
-      "id": "url:hpioil"
     },
     {
       "sourceName": "JCVI, UKHSA",
@@ -886,40 +847,36 @@
       "id": "url:vm2uy0"
     },
     {
-      "sourceName": "Amedeo",
-      "publisherName": "PubMed",
-      "sourceType": "api",
-      "category": "publication",
-      "title": "The marketing authorization of vaccines is not an exact science: the 20-valent pneumococcal conjugate vaccine (PCV-20) is an example.",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/42561780/",
-      "publishedAt": 1786017600000,
-      "summary": "PMID: 42561780. DOI: 10.1016/j.vaccine.2026.128984. ",
+      "sourceName": "BMJ",
+      "publisherName": "BMJ Open",
+      "sourceType": "rss",
+      "category": "Epidemiology",
+      "title": "How were pregnant women included in emergency COVID-19 vaccine delivery in The Gambia? A qualitative study of perspectives of healthcare workers and policy influencers - BMJ Open",
+      "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE1NajZEWWhDN3NORVhVMDhIV2FrREQ5ejZkY3RTeldQQUhmWkY3akVrUkpacl9BRmZaVFFmR0EzT3JVTFpLVEZGb1RiS2ZGREpiSXg5bHB1UQ?oc=5",
+      "publishedAt": 1787246465000,
+      "summary": "How were pregnant women included in emergency COVID-19 vaccine delivery in The Gambia? A qualitative study of perspectives of healthcare workers and policy influencers BMJ Open",
       "tags": [
-        "Regulatory",
-        "Unclassified",
-        "Study"
+        "Guideline",
+        "Epidemiology",
+        "English"
       ],
-      "score": 9,
+      "score": 8.5,
       "sources": [
         {
-          "name": "Amedeo",
-          "category": "publication",
-          "type": "html"
+          "name": "BMJ",
+          "category": "Epidemiology",
+          "type": "rss"
         }
       ],
+      "canonicalUrl": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE1NajZEWWhDN3NORVhVMDhIV2FrREQ5ejZkY3RTeldQQUhmWkY3akVrUkpacl9BRmZaVFFmR0EzT3JVTFpLVEZGb1RiS2ZGREpiSXg5bHB1UQ?oc=5",
+      "normalizedTitle": "How were pregnant women included in emergency COVID-19 vaccine delivery in The Gambia? A qualitative study of perspectives of healthcare workers and policy influencers",
       "meta": {
-        "isAmedeoSource": true,
-        "ids": {
-          "pmid": "42561780",
-          "doi": "10.1016/j.vaccine.2026.128984"
-        },
+        "ids": {},
         "isCanadian": false,
         "isImportant": false,
         "isPHEIC": false
       },
-      "canonicalUrl": "https://pubmed.ncbi.nlm.nih.gov/42561780",
-      "normalizedTitle": "The marketing authorization of vaccines is not an exact science: the 20-valent pneumococcal conjugate vaccine (PCV-20) is an example.",
-      "id": "doi:10.1016/j.vaccine.2026.128984"
+      "id": "url:c5tmph"
     },
     {
       "sourceName": "MedicalXpress",
@@ -987,39 +944,6 @@
         "isPHEIC": false
       },
       "id": "url:vajatq"
-    },
-    {
-      "sourceName": "JAMA",
-      "publisherName": "JAMA",
-      "sourceType": "rss",
-      "category": "Epidemiology",
-      "title": "What to Know About the mRNA Flu Vaccine, Newly Approved by the FDA - JAMA",
-      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBTZFhrNDdWTExMS3R2TUtxOW9uYnd0ODltOVlkcm5tOEtSeXBYWGc3Z2xxTm83MEZ2UzZtZUlvQzdfUVhuejQxMDVLbUlnZjlvZFc3cFlEM3JBTTJYUXZhNE9IYlAwMjc5?oc=5",
-      "publishedAt": 1786733132000,
-      "summary": "What to Know About the mRNA Flu Vaccine, Newly Approved by the FDA JAMA",
-      "tags": [
-        "Regulatory",
-        "Epidemiology",
-        "Unclassified",
-        "English"
-      ],
-      "score": 8.5,
-      "sources": [
-        {
-          "name": "JAMA",
-          "category": "Epidemiology",
-          "type": "rss"
-        }
-      ],
-      "canonicalUrl": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBTZFhrNDdWTExMS3R2TUtxOW9uYnd0ODltOVlkcm5tOEtSeXBYWGc3Z2xxTm83MEZ2UzZtZUlvQzdfUVhuejQxMDVLbUlnZjlvZFc3cFlEM3JBTTJYUXZhNE9IYlAwMjc5?oc=5",
-      "normalizedTitle": "What to Know About the mRNA Flu Vaccine, Newly Approved by the FDA",
-      "meta": {
-        "ids": {},
-        "isCanadian": false,
-        "isImportant": false,
-        "isPHEIC": false
-      },
-      "id": "url:vjkeub"
     },
     {
       "sourceName": "Amedeo",
@@ -1194,39 +1118,6 @@
       "canonicalUrl": "https://pubmed.ncbi.nlm.nih.gov/42566982",
       "normalizedTitle": "A novel inactivated vaccine for cross-protection against Actinobacillus pleuropneumoniae in pigs.",
       "id": "doi:10.1016/j.vaccine.2026.129010"
-    },
-    {
-      "sourceName": "CIDRAP",
-      "publisherName": "CIDRAP",
-      "sourceType": "rss",
-      "category": "Epidemiology",
-      "title": "First mRNA flu shot gets FDA approval, raising hopes for a more effective vaccine - CIDRAP",
-      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNR1dicEVTYl8wSXgxR3pjbzRXSThfZHFEcFJwR29FLUhOODRhTnJRQi1RRk01dUtJemIyQWVwYklXbGlnbVJBN0J6ZEtWZnhjeXZvaGkyMmR4MEg1SUpZeXFTV1BjNTlqVUdKSXlMdjZfbkwyd203OWRrYkVmZ0ZSU0ltMnBfWFc3b2RxTjh0SzRrNUtCUmpZc2VTcVZEdWpuc0pWd2ZYT3pXVzA5NVFiektJOW0yOGtYaGdHYg?oc=5",
-      "publishedAt": 1785999600000,
-      "summary": "First mRNA flu shot gets FDA approval, raising hopes for a more effective vaccine CIDRAP",
-      "tags": [
-        "Regulatory",
-        "Epidemiology",
-        "Unclassified",
-        "English"
-      ],
-      "score": 8.5,
-      "sources": [
-        {
-          "name": "CIDRAP",
-          "category": "Epidemiology",
-          "type": "rss"
-        }
-      ],
-      "canonicalUrl": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNR1dicEVTYl8wSXgxR3pjbzRXSThfZHFEcFJwR29FLUhOODRhTnJRQi1RRk01dUtJemIyQWVwYklXbGlnbVJBN0J6ZEtWZnhjeXZvaGkyMmR4MEg1SUpZeXFTV1BjNTlqVUdKSXlMdjZfbkwyd203OWRrYkVmZ0ZSU0ltMnBfWFc3b2RxTjh0SzRrNUtCUmpZc2VTcVZEdWpuc0pWd2ZYT3pXVzA5NVFiektJOW0yOGtYaGdHYg?oc=5",
-      "normalizedTitle": "First mRNA flu shot gets FDA approval, raising hopes for a more effective vaccine",
-      "meta": {
-        "ids": {},
-        "isCanadian": false,
-        "isImportant": false,
-        "isPHEIC": false
-      },
-      "id": "url:72d20q"
     },
     {
       "sourceName": "CIDRAP",
@@ -1570,38 +1461,6 @@
       "id": "url:7ozr1d"
     },
     {
-      "sourceName": "STAT News",
-      "publisherName": "STAT",
-      "sourceType": "rss",
-      "category": "STAT News",
-      "title": "WHO says Trump’s latest vaccine policy order is misguided - STAT",
-      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQYkxOOEUyU2g4dmV5Y2VqTW5kQjdabk51ekpISUs2RnNiOHhCSWpjYVkwR1E0aEdMMGtBQnpDRHhFRVl2QU9faWs2N3Nmc2ZCV1dsTWdUbWZBUTFRMmNKRjkxaDRpTHo2OVZwckVtY19OQVBMY1c5anRGczh5SDhuVlJzWkx0ZHhhdERvbU9QaTRVVjMw?oc=5",
-      "publishedAt": 1786557935000,
-      "summary": "WHO says Trump’s latest vaccine policy order is misguided STAT",
-      "tags": [
-        "Guideline",
-        "News",
-        "English"
-      ],
-      "score": 7,
-      "sources": [
-        {
-          "name": "STAT News",
-          "category": "STAT News",
-          "type": "rss"
-        }
-      ],
-      "canonicalUrl": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQYkxOOEUyU2g4dmV5Y2VqTW5kQjdabk51ekpISUs2RnNiOHhCSWpjYVkwR1E0aEdMMGtBQnpDRHhFRVl2QU9faWs2N3Nmc2ZCV1dsTWdUbWZBUTFRMmNKRjkxaDRpTHo2OVZwckVtY19OQVBMY1c5anRGczh5SDhuVlJzWkx0ZHhhdERvbU9QaTRVVjMw?oc=5",
-      "normalizedTitle": "WHO says Trump’s latest vaccine policy order is misguided",
-      "meta": {
-        "ids": {},
-        "isCanadian": false,
-        "isImportant": false,
-        "isPHEIC": false
-      },
-      "id": "url:jw06rk"
-    },
-    {
       "sourceName": "Immunize.org",
       "publisherName": "Immunize.org",
       "sourceType": "rss",
@@ -1698,36 +1557,36 @@
       "id": "url:9ixj25"
     },
     {
-      "sourceName": "STAT News",
-      "publisherName": "STAT",
+      "sourceName": "Immunize.org",
+      "publisherName": "Immunize.org",
       "sourceType": "rss",
-      "category": "STAT News",
-      "title": "Trump returns to controversial vaccine policy with order questioning childhood schedule - STAT",
-      "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNUDFnOTYyNlhYU0FyeHpzU21MWlNjNW9jSm5HUzQ1b055MFpmNDlaaHA1Nmtva1A5bDF4SHVIUFZQZnQ3blU4VGt3QmVSODBuajcxTG5xbDBsMDd4LWpTNGxEQXJHQkIzNHRUVkdnZEZ6dURtVlhoR2xhcnkwcEFYRWF3d2lVOHdSTTNR?oc=5",
-      "publishedAt": 1786398928000,
-      "summary": "Trump returns to controversial vaccine policy with order questioning childhood schedule STAT",
+      "category": "Immunize.org",
+      "title": "Vaccine-Specific Recommendations Archives - Immunize.org",
+      "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE9jdmlyUlJLLVY4OWJFb3B3Q3J0MmVKN2tFNXppMDBUSlp0bnhoVm5YanhOQ0FvRC04TmpqcWpEQk5JOU5vOV9Da2ktdnNiQ1ptMWFvN3BUQy1xUm1kNTZEaTNLTGZWRlBUMjBWNFZjWElLUQ?oc=5",
+      "publishedAt": 1786345200000,
+      "summary": "Vaccine-Specific Recommendations Archives Immunize.org",
       "tags": [
         "Guideline",
-        "News",
+        "Unclassified",
         "English"
       ],
       "score": 7,
       "sources": [
         {
-          "name": "STAT News",
-          "category": "STAT News",
+          "name": "Immunize.org",
+          "category": "Immunize.org",
           "type": "rss"
         }
       ],
-      "canonicalUrl": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNUDFnOTYyNlhYU0FyeHpzU21MWlNjNW9jSm5HUzQ1b055MFpmNDlaaHA1Nmtva1A5bDF4SHVIUFZQZnQ3blU4VGt3QmVSODBuajcxTG5xbDBsMDd4LWpTNGxEQXJHQkIzNHRUVkdnZEZ6dURtVlhoR2xhcnkwcEFYRWF3d2lVOHdSTTNR?oc=5",
-      "normalizedTitle": "Trump returns to controversial vaccine policy with order questioning childhood schedule",
+      "canonicalUrl": "https://news.google.com/rss/articles/CBMickFVX3lxTE9jdmlyUlJLLVY4OWJFb3B3Q3J0MmVKN2tFNXppMDBUSlp0bnhoVm5YanhOQ0FvRC04TmpqcWpEQk5JOU5vOV9Da2ktdnNiQ1ptMWFvN3BUQy1xUm1kNTZEaTNLTGZWRlBUMjBWNFZjWElLUQ?oc=5",
+      "normalizedTitle": "Vaccine-Specific Recommendations Archives",
       "meta": {
         "ids": {},
         "isCanadian": false,
         "isImportant": false,
         "isPHEIC": false
       },
-      "id": "url:je3fhn"
+      "id": "url:3ia7w3"
     },
     {
       "sourceName": "Immunize.org",
@@ -1760,39 +1619,6 @@
         "isPHEIC": false
       },
       "id": "url:yft3oh"
-    },
-    {
-      "sourceName": "EMA",
-      "publisherName": "European Medicines Agency (EMA)",
-      "sourceType": "rss",
-      "category": "EMA",
-      "title": "Vaccine Monitoring Platform (VMP) research agenda – update 2026 - European Medicines Agency (EMA)",
-      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPSkZxMGlnODhoaTNvWVN4ME5XeEZGYmxVVlB4RHFLUUlIaFNvUVZfbjhqYWNoQ1B1dlFjdzIycnB0LXdMcEwxSDRPMVh3ZTdPMFRWc1JXdGZXQUxvTDBvV2ZacGItY0lpUWxWUy00QjZGUmpDSVEzVUhfZzFfTzlxdmlMWVo1Unl1RFRrZ2p0WWdjbXhYOTgxdDFFS1B0c0xRM0lN?oc=5",
-      "publishedAt": 1786345200000,
-      "summary": "Vaccine Monitoring Platform (VMP) research agenda – update 2026 European Medicines Agency (EMA)",
-      "tags": [
-        "Regulatory",
-        "Unclassified",
-        "Europe",
-        "English"
-      ],
-      "score": 7,
-      "sources": [
-        {
-          "name": "EMA",
-          "category": "EMA",
-          "type": "rss"
-        }
-      ],
-      "canonicalUrl": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPSkZxMGlnODhoaTNvWVN4ME5XeEZGYmxVVlB4RHFLUUlIaFNvUVZfbjhqYWNoQ1B1dlFjdzIycnB0LXdMcEwxSDRPMVh3ZTdPMFRWc1JXdGZXQUxvTDBvV2ZacGItY0lpUWxWUy00QjZGUmpDSVEzVUhfZzFfTzlxdmlMWVo1Unl1RFRrZ2p0WWdjbXhYOTgxdDFFS1B0c0xRM0lN?oc=5",
-      "normalizedTitle": "Vaccine Monitoring Platform (VMP) research agenda – update 2026",
-      "meta": {
-        "ids": {},
-        "isCanadian": false,
-        "isImportant": false,
-        "isPHEIC": false
-      },
-      "id": "url:nnc5aa"
     },
     {
       "sourceName": "Reuters",
@@ -1899,7 +1725,7 @@
       "category": "Gavi",
       "title": "Gavi welcomes recommendation to include existing Ebola vaccine Ervebo in clinical trials for Bundibugyo virus disease - Gavi, the Vaccine Alliance",
       "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxObThGQ0M2TEdKSGdpR0h1eHRfU2ZxaTFvSGRxQ2VIN1RWdnh6dkNrMXBCMHZYblZLeklta21qa04xYXQ3OW8wdU9zQmVNVTA2QVRZakdQVzgzYlRncmd6ZEUwSjYweF91UEFoSkozU3NSS1hlMU9oOTUxVG9HV2VENHE1VjltNVpYVG9OVWoxYkNvd09yUjhRTk9tWjZSS0pVSmh3bk1CbW5yVXJGTHdXRWlvRUxhQTRTOEk0?oc=5",
-      "publishedAt": 1786113779000,
+      "publishedAt": 1786086000000,
       "summary": "Gavi welcomes recommendation to include existing Ebola vaccine Ervebo in clinical trials for Bundibugyo virus disease Gavi, the Vaccine Alliance",
       "tags": [
         "Guideline",
@@ -1924,107 +1750,6 @@
         "isPHEIC": false
       },
       "id": "url:50etkt"
-    },
-    {
-      "sourceName": "PubMed",
-      "publisherName": "Eur J Health Econ",
-      "sourceType": "api",
-      "category": "publication",
-      "title": "Cost-effectiveness of a single dose of the adjuvanted respiratory syncytial virus preFusion protein 3 vaccine over 5 years and its potential public health impact among older adults in Italy.",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/42565962/",
-      "publishedAt": 1786060800000,
-      "summary": "Authors: Puggina A. Source: Eur J Health Econ.",
-      "tags": [
-        "RSV",
-        "Economics",
-        "Study",
-        "PubMed"
-      ],
-      "score": 7,
-      "sources": [
-        {
-          "name": "PubMed",
-          "category": "publication",
-          "type": "api"
-        }
-      ],
-      "canonicalUrl": "https://pubmed.ncbi.nlm.nih.gov/42565962",
-      "normalizedTitle": "Cost-effectiveness of a single dose of the adjuvanted respiratory syncytial virus preFusion protein 3 vaccine over 5 years and its potential public health impact among older adults in Italy.",
-      "meta": {
-        "ids": {
-          "pmid": "42565962"
-        },
-        "isCanadian": false,
-        "isImportant": false,
-        "isPHEIC": false
-      },
-      "id": "pmid:42565962"
-    },
-    {
-      "sourceName": "Reuters",
-      "publisherName": "Reuters",
-      "sourceType": "rss",
-      "category": "News",
-      "title": "US FDA approves first mRNA flu shot from Moderna - Reuters",
-      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNdkZQalpnY19jQUQySC1iT2VOTDVZV2JRZTdjS1Zxa1pkdi1HUnl1ZnQ3UkVNN2RYcXhSZDRZSnBNVFpMakIyVlV2bS1RNFp4ZzY1QmxjRXlkSEoxMUZBLTliYUF3VUsyOWNzSVczdk42N05LLTdjem1rczlnOVlqQ0dON3lWTE9iZHotcDQtZ2paa0pWaHVGZmxrNmpKd3BqWThXblNPNzE2QnFiS2QtQ3d2ZnNqdw?oc=5",
-      "publishedAt": 1785999600000,
-      "summary": "US FDA approves first mRNA flu shot from Moderna Reuters",
-      "tags": [
-        "Regulatory",
-        "Unclassified",
-        "Epidemiology",
-        "English"
-      ],
-      "score": 7,
-      "sources": [
-        {
-          "name": "Reuters",
-          "category": "News",
-          "type": "rss"
-        }
-      ],
-      "canonicalUrl": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNdkZQalpnY19jQUQySC1iT2VOTDVZV2JRZTdjS1Zxa1pkdi1HUnl1ZnQ3UkVNN2RYcXhSZDRZSnBNVFpMakIyVlV2bS1RNFp4ZzY1QmxjRXlkSEoxMUZBLTliYUF3VUsyOWNzSVczdk42N05LLTdjem1rczlnOVlqQ0dON3lWTE9iZHotcDQtZ2paa0pWaHVGZmxrNmpKd3BqWThXblNPNzE2QnFiS2QtQ3d2ZnNqdw?oc=5",
-      "normalizedTitle": "US FDA approves first mRNA flu shot from Moderna",
-      "meta": {
-        "ids": {},
-        "isCanadian": false,
-        "isImportant": false,
-        "isPHEIC": false
-      },
-      "id": "url:qig81b"
-    },
-    {
-      "sourceName": "BioPharma Dive",
-      "publisherName": "BioPharma Dive",
-      "sourceType": "rss",
-      "category": "BioPharma Dive",
-      "title": "FDA approves Moderna’s mRNA flu vaccine - BioPharma Dive",
-      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQZ3pWeWNrZktkUkxaS1NEWWJ1VGYxSHMyUUgzZGNFUHh3RGZCRHRDbnFKWmpqakNEeXp4QkV6OExqZTJZT2RPQUZ2ZjdfeU5RVGxlYm5NaC1uaWZiMC1jejczS205ZDdPV0hNaEtNNXgzajI0dXF4TFQ1dE9iY19kbmI4NkpTZW9NZkZ1alZMUjMzVGZq?oc=5",
-      "publishedAt": 1785999600000,
-      "summary": "FDA approves Moderna’s mRNA flu vaccine BioPharma Dive",
-      "tags": [
-        "Regulatory",
-        "Unclassified",
-        "News",
-        "English"
-      ],
-      "score": 7,
-      "sources": [
-        {
-          "name": "BioPharma Dive",
-          "category": "BioPharma Dive",
-          "type": "rss"
-        }
-      ],
-      "canonicalUrl": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQZ3pWeWNrZktkUkxaS1NEWWJ1VGYxSHMyUUgzZGNFUHh3RGZCRHRDbnFKWmpqakNEeXp4QkV6OExqZTJZT2RPQUZ2ZjdfeU5RVGxlYm5NaC1uaWZiMC1jejczS205ZDdPV0hNaEtNNXgzajI0dXF4TFQ1dE9iY19kbmI4NkpTZW9NZkZ1alZMUjMzVGZq?oc=5",
-      "normalizedTitle": "FDA approves Moderna’s mRNA flu vaccine",
-      "meta": {
-        "ids": {},
-        "isCanadian": false,
-        "isImportant": false,
-        "isPHEIC": false
-      },
-      "id": "url:vc4f79"
     },
     {
       "sourceName": "Immunize.org",
@@ -2169,7 +1894,7 @@
       "category": "publication",
       "title": "Erratum to \"The cost of respiratory syncytial virus (RSV) across all ages to the Australian healthcare system\" [Vaccine 88 (2026) 128922].",
       "url": "https://pubmed.ncbi.nlm.nih.gov/42575816/",
-      "publishedAt": 1786363200000,
+      "publishedAt": 1788048000000,
       "summary": "PMID: 42575816. DOI: 10.1016/j.vaccine.2026.129019. ",
       "tags": [
         "RSV",
@@ -2476,45 +2201,6 @@
       "id": "url:ey9arg"
     },
     {
-      "sourceName": "JCVI, UKHSA",
-      "publisherName": "GOV.UK",
-      "sourceType": "rss",
-      "category": "JCVI",
-      "title": "Respiratory syncytial virus (RSV) vaccination programme - GOV.UK",
-      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNd3RMNFBDMTJXaVJYcExtMkQ2d19DUVVGRkQxWnpjdGFuQ1NmbkdLU0F2VWhYbE8tbG9SS21VTEJIUl83YmEtMGFkNi0wbzItTFVvdTNDeFNoQ2cwWnU3VmZXaG11elFGNFpNZEZ0NXhNdnkwME5fSmRqbmpRNURKVFFHWUNYU2F0RG15T2VCNnFsb185dUtDTGNuTQ?oc=5",
-      "publishedAt": 1786345200000,
-      "summary": "Respiratory syncytial virus (RSV) vaccination programme GOV.UK",
-      "tags": [
-        "RSV",
-        "NITAG",
-        "Europe",
-        "English",
-        "PH Agency"
-      ],
-      "score": 4.5,
-      "sources": [
-        {
-          "name": "JCVI",
-          "category": "JCVI",
-          "type": "rss"
-        },
-        {
-          "name": "UKHSA",
-          "category": "UKHSA",
-          "type": "rss"
-        }
-      ],
-      "canonicalUrl": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNd3RMNFBDMTJXaVJYcExtMkQ2d19DUVVGRkQxWnpjdGFuQ1NmbkdLU0F2VWhYbE8tbG9SS21VTEJIUl83YmEtMGFkNi0wbzItTFVvdTNDeFNoQ2cwWnU3VmZXaG11elFGNFpNZEZ0NXhNdnkwME5fSmRqbmpRNURKVFFHWUNYU2F0RG15T2VCNnFsb185dUtDTGNuTQ?oc=5",
-      "normalizedTitle": "Respiratory syncytial virus (RSV) vaccination programme",
-      "meta": {
-        "ids": {},
-        "isCanadian": false,
-        "isImportant": false,
-        "isPHEIC": false
-      },
-      "id": "url:tdnpmr"
-    },
-    {
       "sourceName": "CIDRAP",
       "publisherName": "CIDRAP",
       "sourceType": "rss",
@@ -2545,116 +2231,6 @@
         "isPHEIC": false
       },
       "id": "url:vd9qn5"
-    },
-    {
-      "sourceName": "Amedeo",
-      "publisherName": "PubMed",
-      "sourceType": "api",
-      "category": "publication",
-      "title": "Clinical features and outcomes of pediatric breakthrough invasive pneumococcal disease (IPD) in vaccinated children in Calgary, Alberta, Canada, 2003-2024.",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/42561781/",
-      "publishedAt": 1786017600000,
-      "summary": "PMID: 42561781. DOI: 10.1016/j.vaccine.2026.128977. BackgroundSince the introduction of pneumococcal conjugate vaccines (PCV7 in 2002 and PCV13 in 2010) in Alberta, the overall burden of invasive pneumococcal disease (IPD) in children has declined. However, vaccine-type invasive pneumococcal disease (VT-IPD) continues to occur, including in vaccinated children.MethodsThe Calgary Area Streptococcus pneumoniae Epidemiology Research (CASPER) study is a prospective, population-based surveillance program capturing all IPD cases in the Calgary area. We compared clinical features and outcomes of 227 vaccinated children (<18 years, ≥2 PCV doses) with IPD between 2003 and 2024. Among these, 44 (19.4%) had breakthrough infection and 183 (80.6%) had non-vaccine-type IPD (NVT-IPD).ResultsIn multivariable analysis, pneumonia/empyema (OR: 5.9, 95% CI: 2.3-14.6) and IPD between 2018 and 2024 (OR: 4.0, 95% CI: 1.2-13.5) were associated with breakthrough infections, whereas comorbidities were not. Serotypes 3 (included in PCV13) and 19F (included in PCV7 and PCV13) accounted for most breakthrough infections. During the late PCV13 era, over 25% of IPD cases were breakthrough infections. Immunologic evaluation of a subset of children with breakthrough disease was largely unremarkable.ConclusionsAlthough PCVs remain highly effective overall, serotypes 3 and 19F continue to account for a disproportionate number of breakthrough IPD infections. Breakthrough disease became more common during the later PCV13 era and was associated with pneumonia/empyema but not underlying comorbidities, suggesting serotype specific factors may play a greater role than host susceptibility. Continued surveillance is needed to monitor breakthrough disease and the impact of evolving pneumococcal vaccine programs.",
-      "tags": [
-        "Epidemiology",
-        "Canada",
-        "Unclassified",
-        "Study"
-      ],
-      "score": 4.5,
-      "sources": [
-        {
-          "name": "Amedeo",
-          "category": "publication",
-          "type": "html"
-        }
-      ],
-      "meta": {
-        "isAmedeoSource": true,
-        "ids": {
-          "pmid": "42561781",
-          "doi": "10.1016/j.vaccine.2026.128977"
-        },
-        "isCanadian": true,
-        "isImportant": false,
-        "isPHEIC": false
-      },
-      "canonicalUrl": "https://pubmed.ncbi.nlm.nih.gov/42561781",
-      "normalizedTitle": "Clinical features and outcomes of pediatric breakthrough invasive pneumococcal disease (IPD) in vaccinated children in Calgary, Alberta, Canada, 2003-2024.",
-      "id": "doi:10.1016/j.vaccine.2026.128977"
-    },
-    {
-      "sourceName": "JCVI, UKHSA",
-      "publisherName": "GOV.UK",
-      "sourceType": "rss",
-      "category": "JCVI",
-      "title": "Respiratory syncytial virus (RSV) maternal vaccination coverage in England: March 2026 report - GOV.UK",
-      "url": "https://news.google.com/rss/articles/CBMirAJBVV95cUxNNm5rUEZJRjdMMVFLRUNNSjdoQ29rcmpQZGJnM0NncFhYbWdxS3ZHdkZfR2JYdjc5cVlrWjVEWEVvUkxzMUUwMm1qNGNGenFYQTAyY3gxSldEcVQ2R0d6YkRfa3NBRERhdTRicUx2S1pkY09WTHk0RDVhWUdDczNPRmcxQ3dpd09rWkpaWnkzMmlidk5NckMyVFpSLWp3Sy1TNW5qeXllMl96LTN2Y21pRVhEVDNfMlVTNXhjTzI4Y0kzX1p2S3Q1RjU4d1J3dWZTN1g4M243NUJJU19saUtKcTJITVYzS2Q0S1JIeHY0cWVnVldMVjEwQ3hjWGtGSERnSUNnSjVKeVNsZWtJTUhXOWlpUkRqaTlabDB2T3o5bF9rWXZuNWh1cnFFeUw?oc=5",
-      "publishedAt": 1785999600000,
-      "summary": "Respiratory syncytial virus (RSV) maternal vaccination coverage in England: March 2026 report GOV.UK",
-      "tags": [
-        "RSV",
-        "NITAG",
-        "Europe",
-        "English",
-        "PH Agency"
-      ],
-      "score": 4.5,
-      "sources": [
-        {
-          "name": "JCVI",
-          "category": "JCVI",
-          "type": "rss"
-        },
-        {
-          "name": "UKHSA",
-          "category": "UKHSA",
-          "type": "rss"
-        }
-      ],
-      "canonicalUrl": "https://news.google.com/rss/articles/CBMirAJBVV95cUxNNm5rUEZJRjdMMVFLRUNNSjdoQ29rcmpQZGJnM0NncFhYbWdxS3ZHdkZfR2JYdjc5cVlrWjVEWEVvUkxzMUUwMm1qNGNGenFYQTAyY3gxSldEcVQ2R0d6YkRfa3NBRERhdTRicUx2S1pkY09WTHk0RDVhWUdDczNPRmcxQ3dpd09rWkpaWnkzMmlidk5NckMyVFpSLWp3Sy1TNW5qeXllMl96LTN2Y21pRVhEVDNfMlVTNXhjTzI4Y0kzX1p2S3Q1RjU4d1J3dWZTN1g4M243NUJJU19saUtKcTJITVYzS2Q0S1JIeHY0cWVnVldMVjEwQ3hjWGtGSERnSUNnSjVKeVNsZWtJTUhXOWlpUkRqaTlabDB2T3o5bF9rWXZuNWh1cnFFeUw?oc=5",
-      "normalizedTitle": "Respiratory syncytial virus (RSV) maternal vaccination coverage in England: March 2026 report",
-      "meta": {
-        "ids": {},
-        "isCanadian": false,
-        "isImportant": false,
-        "isPHEIC": false
-      },
-      "id": "url:l4zcf1"
-    },
-    {
-      "sourceName": "UKHSA",
-      "publisherName": "GOV.UK",
-      "sourceType": "rss",
-      "category": "UKHSA",
-      "title": "Respiratory syncytial virus (RSV) older adults vaccination coverage in England: June 2026 report - GOV.UK",
-      "url": "https://news.google.com/rss/articles/CBMitgJBVV95cUxQS0d1OVBpSUtOVTNpM0lwMUtuMEREZ2d0NDRoQWl5WGI4YUNwMUtuNjMxRFZadzFhMk5EYUdXNEoxa1NXYzJraVh5SGFRSHhYb3A0bEd2Ri1DYV80TjBCb2tGRUE0S2FxczR6bENsRUFDc3dFdDMzUzVBMElsd1ZxLUxqNzNRY0EyaDRNTGhqQ1N3bG1YeE85SGExSVkwcE9kWGIzbGhkblNaODd6eG1ndEVBUEwxcU9WWldrNU1uaFAtbHg3YUZnUTFCSjBENXJxbElSS2tWOWVIZndGRmh3UlkybFJOYnp1Zk5GNl9qakVJcEhNeFBzMlg3T3VFSmYzVWJNVWk2M3FRQjcyRmg4dFVyU2V2UDhlOGFuRjJ5UUJWSThSZnpxVVVxYnJrNHl0dlZmQ0d3?oc=5",
-      "publishedAt": 1785999600000,
-      "summary": "Respiratory syncytial virus (RSV) older adults vaccination coverage in England: June 2026 report GOV.UK",
-      "tags": [
-        "RSV",
-        "NITAG",
-        "Europe",
-        "PH Agency",
-        "English"
-      ],
-      "score": 4.5,
-      "sources": [
-        {
-          "name": "UKHSA",
-          "category": "UKHSA",
-          "type": "rss"
-        }
-      ],
-      "canonicalUrl": "https://news.google.com/rss/articles/CBMitgJBVV95cUxQS0d1OVBpSUtOVTNpM0lwMUtuMEREZ2d0NDRoQWl5WGI4YUNwMUtuNjMxRFZadzFhMk5EYUdXNEoxa1NXYzJraVh5SGFRSHhYb3A0bEd2Ri1DYV80TjBCb2tGRUE0S2FxczR6bENsRUFDc3dFdDMzUzVBMElsd1ZxLUxqNzNRY0EyaDRNTGhqQ1N3bG1YeE85SGExSVkwcE9kWGIzbGhkblNaODd6eG1ndEVBUEwxcU9WWldrNU1uaFAtbHg3YUZnUTFCSjBENXJxbElSS2tWOWVIZndGRmh3UlkybFJOYnp1Zk5GNl9qakVJcEhNeFBzMlg3T3VFSmYzVWJNVWk2M3FRQjcyRmg4dFVyU2V2UDhlOGFuRjJ5UUJWSThSZnpxVVVxYnJrNHl0dlZmQ0d3?oc=5",
-      "normalizedTitle": "Respiratory syncytial virus (RSV) older adults vaccination coverage in England: June 2026 report",
-      "meta": {
-        "ids": {},
-        "isCanadian": false,
-        "isImportant": false,
-        "isPHEIC": false
-      },
-      "id": "url:96egqv"
     },
     {
       "sourceName": "CIDRAP",
@@ -2688,6 +2264,41 @@
         "isPHEIC": false
       },
       "id": "url:ynfstt"
+    },
+    {
+      "sourceName": "Amedeo",
+      "publisherName": "PubMed",
+      "sourceType": "api",
+      "category": "publication",
+      "title": "Protective and immunostimulatory effects of a vitellogenin functional domain-based vaccine in Atlantic salmon against Caligus rogercresseyi.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42600248/",
+      "publishedAt": 1786708800000,
+      "summary": "PMID: 42600248. DOI: 10.1016/j.vaccine.2026.129025. Sea lice cause economic losses in global salmon aquaculture, and the treatments used, mainly delousing drugs, have become less effective. Thus, moving forward, developing new, sustainable control strategies is required. In this context, our study evaluated the use of a recombinant vaccine for controlling sea lice. The von Willebrand factor domains (VWF) from two Caligus rogercresseyi vitellogenins (CrVtg), CrVtg-VWF1 and CrVtg-VWF2, were selected for immunization and challenge in Atlantic salmon. In silico analyses confirmed the immunogenic potential of these domains. The recombinant protein domains were incorporated into experimental vaccine formulations, separately. A total of 180 Atlantic salmon were immunized and subsequently challenged with 35 copepodids per fish after 400 degree-days post-vaccination. At 7- and 21 days post-infestation (dpi), vaccine efficacy was evaluated based on parasite load quantification. Moreover, the expression of immune-related genes was evaluated in fish skin and head kidney tissues. At 7 dpi, chalimus I attachment was reduced by approximately 12% in the vaccinated groups, in the case of adults, 21 dpi, the efficacy was 40.2% for CrVtg-VWF1 and 53.4% for CrVtg-VWF2, relative to the control group. Moreover, CrVtg-VWF antigens primarily stimulated significant upregulation of MHC II, IgM, and IgT transcripts in the head kidney tissue compared with the control group. These results demonstrate the potential of VWF domain-based vaccines as a novel approach for controlling sea lice infestations in Atlantic salmon.",
+      "tags": [
+        "Unclassified",
+        "Study"
+      ],
+      "score": 3.1,
+      "sources": [
+        {
+          "name": "Amedeo",
+          "category": "publication",
+          "type": "html"
+        }
+      ],
+      "meta": {
+        "isAmedeoSource": true,
+        "ids": {
+          "pmid": "42600248",
+          "doi": "10.1016/j.vaccine.2026.129025"
+        },
+        "isCanadian": false,
+        "isImportant": false,
+        "isPHEIC": false
+      },
+      "canonicalUrl": "https://pubmed.ncbi.nlm.nih.gov/42600248",
+      "normalizedTitle": "Protective and immunostimulatory effects of a vitellogenin functional domain-based vaccine in Atlantic salmon against Caligus rogercresseyi.",
+      "id": "doi:10.1016/j.vaccine.2026.129025"
     },
     {
       "sourceName": "Amedeo",
@@ -2731,10 +2342,10 @@
       "publisherName": "PubMed",
       "sourceType": "api",
       "category": "publication",
-      "title": "Protective and immunostimulatory effects of a vitellogenin functional domain-based vaccine in Atlantic salmon against Caligus rogercresseyi.",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/42600248/",
-      "publishedAt": 1786708800000,
-      "summary": "PMID: 42600248. DOI: 10.1016/j.vaccine.2026.129025. Sea lice cause economic losses in global salmon aquaculture, and the treatments used, mainly delousing drugs, have become less effective. Thus, moving forward, developing new, sustainable control strategies is required. In this context, our study evaluated the use of a recombinant vaccine for controlling sea lice. The von Willebrand factor domains (VWF) from two Caligus rogercresseyi vitellogenins (CrVtg), CrVtg-VWF1 and CrVtg-VWF2, were selected for immunization and challenge in Atlantic salmon. In silico analyses confirmed the immunogenic potential of these domains. The recombinant protein domains were incorporated into experimental vaccine formulations, separately. A total of 180 Atlantic salmon were immunized and subsequently challenged with 35 copepodids per fish after 400 degree-days post-vaccination. At 7- and 21 days post-infestation (dpi), vaccine efficacy was evaluated based on parasite load quantification. Moreover, the expression of immune-related genes was evaluated in fish skin and head kidney tissues. At 7 dpi, chalimus I attachment was reduced by approximately 12% in the vaccinated groups, in the case of adults, 21 dpi, the efficacy was 40.2% for CrVtg-VWF1 and 53.4% for CrVtg-VWF2, relative to the control group. Moreover, CrVtg-VWF antigens primarily stimulated significant upregulation of MHC II, IgM, and IgT transcripts in the head kidney tissue compared with the control group. These results demonstrate the potential of VWF domain-based vaccines as a novel approach for controlling sea lice infestations in Atlantic salmon.",
+      "title": "Identification of vaccine candidates by immunization with a complex pool of recombinant VLPs.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42594642/",
+      "publishedAt": 1786622400000,
+      "summary": "PMID: 42594642. DOI: 10.1016/j.vaccine.2026.129027. Identifying the regions of a protein that can be readily translated into an effective vaccine remains a major challenge in epitope-focused vaccine design, especially when a protein is poorly characterized. Here, we describe an immune-driven strategy for epitope identification which uses the immune system to reveal regions within a candidate protein capable of eliciting targeted antibody responses. Using IL-17A, a pro-inflammatory cytokine, as a model antigen, we engineered a comprehensive library of MS2 bacteriophage virus-like particles (VLPs) displaying peptides representing every possible linear 10-amino acid peptide spanning the 133-amino acid protein. We then used the library to immunize mice, with the hypothesis that a subset of the IL-17A VLP mixture would elicit anti-IL-17A antibody responses. The IL-17A-reactive antibodies elicited by this complex vaccine were then used to select individual recombinant VLPs from the starting library, which were then tested for their ability to elicit anti-IL-17A antibodies in mice. Selected recombinant VLPs were able to elicit anti-IL-17A antibody responses, and antibody levels could be improved by conjugating synthetic peptides representing the selected epitopes to another bacteriophage platform (Qβ VLPs). Overall, this work describes a new method for antigen-agnostic epitope discovery and vaccine development that does not require pre-existing antibodies or rely on computational approaches to identify potential epitopes.",
       "tags": [
         "Unclassified",
         "Study"
@@ -2750,16 +2361,16 @@
       "meta": {
         "isAmedeoSource": true,
         "ids": {
-          "pmid": "42600248",
-          "doi": "10.1016/j.vaccine.2026.129025"
+          "pmid": "42594642",
+          "doi": "10.1016/j.vaccine.2026.129027"
         },
         "isCanadian": false,
         "isImportant": false,
         "isPHEIC": false
       },
-      "canonicalUrl": "https://pubmed.ncbi.nlm.nih.gov/42600248",
-      "normalizedTitle": "Protective and immunostimulatory effects of a vitellogenin functional domain-based vaccine in Atlantic salmon against Caligus rogercresseyi.",
-      "id": "doi:10.1016/j.vaccine.2026.129025"
+      "canonicalUrl": "https://pubmed.ncbi.nlm.nih.gov/42594642",
+      "normalizedTitle": "Identification of vaccine candidates by immunization with a complex pool of recombinant VLPs.",
+      "id": "doi:10.1016/j.vaccine.2026.129027"
     },
     {
       "sourceName": "Amedeo",
@@ -2801,41 +2412,6 @@
       "publisherName": "PubMed",
       "sourceType": "api",
       "category": "publication",
-      "title": "Identification of vaccine candidates by immunization with a complex pool of recombinant VLPs.",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/42594642/",
-      "publishedAt": 1786622400000,
-      "summary": "PMID: 42594642. DOI: 10.1016/j.vaccine.2026.129027. Identifying the regions of a protein that can be readily translated into an effective vaccine remains a major challenge in epitope-focused vaccine design, especially when a protein is poorly characterized. Here, we describe an immune-driven strategy for epitope identification which uses the immune system to reveal regions within a candidate protein capable of eliciting targeted antibody responses. Using IL-17A, a pro-inflammatory cytokine, as a model antigen, we engineered a comprehensive library of MS2 bacteriophage virus-like particles (VLPs) displaying peptides representing every possible linear 10-amino acid peptide spanning the 133-amino acid protein. We then used the library to immunize mice, with the hypothesis that a subset of the IL-17A VLP mixture would elicit anti-IL-17A antibody responses. The IL-17A-reactive antibodies elicited by this complex vaccine were then used to select individual recombinant VLPs from the starting library, which were then tested for their ability to elicit anti-IL-17A antibodies in mice. Selected recombinant VLPs were able to elicit anti-IL-17A antibody responses, and antibody levels could be improved by conjugating synthetic peptides representing the selected epitopes to another bacteriophage platform (Qβ VLPs). Overall, this work describes a new method for antigen-agnostic epitope discovery and vaccine development that does not require pre-existing antibodies or rely on computational approaches to identify potential epitopes.",
-      "tags": [
-        "Unclassified",
-        "Study"
-      ],
-      "score": 3.1,
-      "sources": [
-        {
-          "name": "Amedeo",
-          "category": "publication",
-          "type": "html"
-        }
-      ],
-      "meta": {
-        "isAmedeoSource": true,
-        "ids": {
-          "pmid": "42594642",
-          "doi": "10.1016/j.vaccine.2026.129027"
-        },
-        "isCanadian": false,
-        "isImportant": false,
-        "isPHEIC": false
-      },
-      "canonicalUrl": "https://pubmed.ncbi.nlm.nih.gov/42594642",
-      "normalizedTitle": "Identification of vaccine candidates by immunization with a complex pool of recombinant VLPs.",
-      "id": "doi:10.1016/j.vaccine.2026.129027"
-    },
-    {
-      "sourceName": "Amedeo",
-      "publisherName": "PubMed",
-      "sourceType": "api",
-      "category": "publication",
       "title": "Rotavirus vaccine coverage and urban-rural equity in India: Evidence from the sixth National Family Health Survey (NFHS-6).",
       "url": "https://pubmed.ncbi.nlm.nih.gov/42585807/",
       "publishedAt": 1786536000000,
@@ -2866,6 +2442,38 @@
       "canonicalUrl": "https://pubmed.ncbi.nlm.nih.gov/42585807",
       "normalizedTitle": "Rotavirus vaccine coverage and urban-rural equity in India: Evidence from the sixth National Family Health Survey (NFHS-6).",
       "id": "doi:10.1016/j.vaccine.2026.129031"
+    },
+    {
+      "sourceName": "Medscape News",
+      "publisherName": "Medscape",
+      "sourceType": "rss",
+      "category": "Medscape News",
+      "title": "HPV Vaccination Underutilized in Solid Organ Transplant Recipients - Medscape",
+      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQd0FSUVJGRlBTa09zLUpfZ2x0eHV0b0t5Y2xWLWhUaDF1bjZ1ZTQ5Z0JSTlZQdllLVGRnVEQ1T3BXOFdkRERVWXBScUp4Q2NwejdOLWhZUUZqaHFWZ25FY0FGbWJwX2hVTC1LenFHQmtXRXpiUEY5S0tLX1BIUE5SbVVaNVh5RnRXRUZzbVVpS1lJTW9BWkFEemp1ZFF3VHRrcm9OZDBQTWJKSDFHekxR?oc=5",
+      "publishedAt": 1787255112000,
+      "summary": "HPV Vaccination Underutilized in Solid Organ Transplant Recipients Medscape",
+      "tags": [
+        "HPV",
+        "News",
+        "English"
+      ],
+      "score": 3,
+      "sources": [
+        {
+          "name": "Medscape News",
+          "category": "Medscape News",
+          "type": "rss"
+        }
+      ],
+      "canonicalUrl": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQd0FSUVJGRlBTa09zLUpfZ2x0eHV0b0t5Y2xWLWhUaDF1bjZ1ZTQ5Z0JSTlZQdllLVGRnVEQ1T3BXOFdkRERVWXBScUp4Q2NwejdOLWhZUUZqaHFWZ25FY0FGbWJwX2hVTC1LenFHQmtXRXpiUEY5S0tLX1BIUE5SbVVaNVh5RnRXRUZzbVVpS1lJTW9BWkFEemp1ZFF3VHRrcm9OZDBQTWJKSDFHekxR?oc=5",
+      "normalizedTitle": "HPV Vaccination Underutilized in Solid Organ Transplant Recipients",
+      "meta": {
+        "ids": {},
+        "isCanadian": false,
+        "isImportant": false,
+        "isPHEIC": false
+      },
+      "id": "url:voeug3"
     },
     {
       "sourceName": "MedicalXpress",
@@ -2965,13 +2573,141 @@
       "id": "url:ogd08"
     },
     {
+      "sourceName": "CIDRAP",
+      "publisherName": "CIDRAP",
+      "sourceType": "rss",
+      "category": "Epidemiology",
+      "title": "Survey data reveal demographic divides in Americans’ COVID vaccine hesitancy - CIDRAP",
+      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOOE5LWmdFdnl4SGRuVUhWVjVGbW56Q244WW1Qc1BlanhUbGIwSlB3Z2ZSY0lRY09acmwzX2FhSDQ5dTljYVloMFRfS3BLN1pCcHZGd01HXzhyNDhkRVpGb1ZuWmVYMnFKek9XMHJMVjBWWlltQkIwVmR2WXdIaXd3MUVBZ2NuVEdxa3JWcnhiNTVtek9YeHJQR21PMnlobm5jTlRCdG94clZhZ0lFYnRYMjV3?oc=5",
+      "publishedAt": 1787317685000,
+      "summary": "Survey data reveal demographic divides in Americans’ COVID vaccine hesitancy CIDRAP",
+      "tags": [
+        "Epidemiology",
+        "Unclassified",
+        "English"
+      ],
+      "score": 2.5,
+      "sources": [
+        {
+          "name": "CIDRAP",
+          "category": "Epidemiology",
+          "type": "rss"
+        }
+      ],
+      "canonicalUrl": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOOE5LWmdFdnl4SGRuVUhWVjVGbW56Q244WW1Qc1BlanhUbGIwSlB3Z2ZSY0lRY09acmwzX2FhSDQ5dTljYVloMFRfS3BLN1pCcHZGd01HXzhyNDhkRVpGb1ZuWmVYMnFKek9XMHJMVjBWWlltQkIwVmR2WXdIaXd3MUVBZ2NuVEdxa3JWcnhiNTVtek9YeHJQR21PMnlobm5jTlRCdG94clZhZ0lFYnRYMjV3?oc=5",
+      "normalizedTitle": "Survey data reveal demographic divides in Americans’ COVID vaccine hesitancy",
+      "meta": {
+        "ids": {},
+        "isCanadian": false,
+        "isImportant": false,
+        "isPHEIC": false
+      },
+      "id": "url:vaa6ed"
+    },
+    {
+      "sourceName": "BMJ",
+      "publisherName": "The BMJ",
+      "sourceType": "rss",
+      "category": "Epidemiology",
+      "title": "Why Trump’s order to split MMR vaccine is costly and dangerous - The BMJ",
+      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9MMmNEX3BvcEpfRFlkdnJON0hDb2h5S2NadXYtN3IyaDlzOXRJUGhsTi1fOTdhaGJXWjZ2aFdtZGpkLUpCQXN0b1QtUThSdjdEckdJT1k1aWl1dDA?oc=5",
+      "publishedAt": 1787316337000,
+      "summary": "Why Trump’s order to split MMR vaccine is costly and dangerous The BMJ",
+      "tags": [
+        "Epidemiology",
+        "Unclassified",
+        "English"
+      ],
+      "score": 2.5,
+      "sources": [
+        {
+          "name": "BMJ",
+          "category": "Epidemiology",
+          "type": "rss"
+        }
+      ],
+      "canonicalUrl": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9MMmNEX3BvcEpfRFlkdnJON0hDb2h5S2NadXYtN3IyaDlzOXRJUGhsTi1fOTdhaGJXWjZ2aFdtZGpkLUpCQXN0b1QtUThSdjdEckdJT1k1aWl1dDA?oc=5",
+      "normalizedTitle": "Why Trump’s order to split MMR vaccine is costly and dangerous",
+      "meta": {
+        "ids": {},
+        "isCanadian": false,
+        "isImportant": false,
+        "isPHEIC": false
+      },
+      "id": "url:gxtt0b"
+    },
+    {
+      "sourceName": "CIDRAP",
+      "publisherName": "CIDRAP",
+      "sourceType": "rss",
+      "category": "Epidemiology",
+      "title": "WHO delivers Ebola vaccine to DR Congo to see if it can protect against Bundibugyo strain - CIDRAP",
+      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOaTZ6YXl1ZmxrMWd0SjVWNmlIVjZMMW1hbTV2ZXFRWlNxNjY4bnBtVzdUYWR2UGc3WXFJQi1qdTVOOFBzVXhiLVJEZTVYa1l2dWs4Sl9XMkZ2U3l5dHpKZ0ZGbHBtVG9UM2pZckRBWFJzUzM2QWhIRDJ4QURIV2tGRGNrTGFvWkllTTlSUzZGQURVLW5xMnJELUVGbXhHVUxFamdnVTF3VnpsUWVmc0YtSHZURDVKRGc?oc=5",
+      "publishedAt": 1787257587000,
+      "summary": "WHO delivers Ebola vaccine to DR Congo to see if it can protect against Bundibugyo strain CIDRAP",
+      "tags": [
+        "Epidemiology",
+        "Unclassified",
+        "English"
+      ],
+      "score": 2.5,
+      "sources": [
+        {
+          "name": "CIDRAP",
+          "category": "Epidemiology",
+          "type": "rss"
+        }
+      ],
+      "canonicalUrl": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOaTZ6YXl1ZmxrMWd0SjVWNmlIVjZMMW1hbTV2ZXFRWlNxNjY4bnBtVzdUYWR2UGc3WXFJQi1qdTVOOFBzVXhiLVJEZTVYa1l2dWs4Sl9XMkZ2U3l5dHpKZ0ZGbHBtVG9UM2pZckRBWFJzUzM2QWhIRDJ4QURIV2tGRGNrTGFvWkllTTlSUzZGQURVLW5xMnJELUVGbXhHVUxFamdnVTF3VnpsUWVmc0YtSHZURDVKRGc?oc=5",
+      "normalizedTitle": "WHO delivers Ebola vaccine to DR Congo to see if it can protect against Bundibugyo strain",
+      "meta": {
+        "ids": {},
+        "isCanadian": false,
+        "isImportant": false,
+        "isPHEIC": false
+      },
+      "id": "url:o9opvu"
+    },
+    {
+      "sourceName": "Cell",
+      "publisherName": "Cell Press",
+      "sourceType": "rss",
+      "category": "Epidemiology",
+      "title": "Pre-vaccine sentinel antibodies predict blunted vaccine responses - Cell Press",
+      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTFA2RVhPTVFYZTRDU2ZIMWRPRmYzOE9tSXExS2RPX0JwOC0xVVRoc01rc1l4SnhYWUdCblFEZW5OSkxKcG1vbUlucHhGdVBUeDJmQ1IyNnZWbkVqdjlLd2FjSkw2QVlCcGtnSkpHejRmem5kbXptb0E?oc=5",
+      "publishedAt": 1787238357000,
+      "summary": "Pre-vaccine sentinel antibodies predict blunted vaccine responses Cell Press",
+      "tags": [
+        "Epidemiology",
+        "Unclassified",
+        "English"
+      ],
+      "score": 2.5,
+      "sources": [
+        {
+          "name": "Cell",
+          "category": "Epidemiology",
+          "type": "rss"
+        }
+      ],
+      "canonicalUrl": "https://news.google.com/rss/articles/CBMidkFVX3lxTFA2RVhPTVFYZTRDU2ZIMWRPRmYzOE9tSXExS2RPX0JwOC0xVVRoc01rc1l4SnhYWUdCblFEZW5OSkxKcG1vbUlucHhGdVBUeDJmQ1IyNnZWbkVqdjlLd2FjSkw2QVlCcGtnSkpHejRmem5kbXptb0E?oc=5",
+      "normalizedTitle": "Pre-vaccine sentinel antibodies predict blunted vaccine responses",
+      "meta": {
+        "ids": {},
+        "isCanadian": false,
+        "isImportant": false,
+        "isPHEIC": false
+      },
+      "id": "url:fbg9v9"
+    },
+    {
       "sourceName": "SAGE",
       "publisherName": "World Health Organization (WHO)",
       "sourceType": "rss",
       "category": "SAGE",
       "title": "Extraordinary Meeting of the Strategic Advisory Group of Experts (SAGE) on Immunization 19 August 2026 - World Health Organization (WHO)",
       "url": "https://news.google.com/rss/articles/CBMihAJBVV95cUxPdlpOckRCR0dWX2w1YVo5dmZ2ekV2eHY2TVpiRFVzYjlfNWFveGE4N0sxclEzQ3BfR0lDOVdMM2dhdVl3WndQZjE3UDlhTW5zWG9Vd0pwbnRpYmUwRzZ3aU1CSjVuUGNQMHBuZjhqWXJsc2hObWwwVXFVR0VUSF96Tm1YMElPQWktOFR5RVV6TDJTVk1wVzJuUHIyVG8yYkNBa2Q5NTFVeC0xejlHMkVpaE9XdGxpZkc2MHZub2h2Q3RXN0h4NlgtWG13RGdSUkdUUzllTGtjbC1jRHNISUJES3F1Wkk5YkhnaVcxeDI5NmZWVUVNNF9xNTBadFFWZFprSTRRZw?oc=5",
-      "publishedAt": 1787185420000,
+      "publishedAt": 1787190469000,
       "summary": "Extraordinary Meeting of the Strategic Advisory Group of Experts (SAGE) on Immunization 19 August 2026 World Health Organization (WHO)",
       "tags": [
         "NITAG",
@@ -3029,6 +2765,38 @@
         "isPHEIC": false
       },
       "id": "url:65jwog"
+    },
+    {
+      "sourceName": "Lancet",
+      "publisherName": "The Lancet",
+      "sourceType": "rss",
+      "category": "Epidemiology",
+      "title": "Lessons from another negative tuberculosis vaccine trial - The Lancet",
+      "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPeEFvd00wcngySVo0ekZ2eExvYjZlRzNhblVIbFR5N1hUTklvYkcxX2ctVG9oRHpDOHlfVUVGcUlfei1hRTBSSHM3ald0MEtmVnJ2ZmhWRXhSSEpOSUpyQVA0aUVaZnZZdXVKWjFQRk1Ic1lPUDN3azZXZFFjelR6UDBQOE9nZFdaQnpN?oc=5",
+      "publishedAt": 1787104426000,
+      "summary": "Lessons from another negative tuberculosis vaccine trial The Lancet",
+      "tags": [
+        "Epidemiology",
+        "Unclassified",
+        "English"
+      ],
+      "score": 2.5,
+      "sources": [
+        {
+          "name": "Lancet",
+          "category": "Epidemiology",
+          "type": "rss"
+        }
+      ],
+      "canonicalUrl": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPeEFvd00wcngySVo0ekZ2eExvYjZlRzNhblVIbFR5N1hUTklvYkcxX2ctVG9oRHpDOHlfVUVGcUlfei1hRTBSSHM3ald0MEtmVnJ2ZmhWRXhSSEpOSUpyQVA0aUVaZnZZdXVKWjFQRk1Ic1lPUDN3azZXZFFjelR6UDBQOE9nZFdaQnpN?oc=5",
+      "normalizedTitle": "Lessons from another negative tuberculosis vaccine trial",
+      "meta": {
+        "ids": {},
+        "isCanadian": false,
+        "isImportant": false,
+        "isPHEIC": false
+      },
+      "id": "url:xvmo36"
     },
     {
       "sourceName": "CIDRAP",
@@ -3094,6 +2862,38 @@
         "isPHEIC": false
       },
       "id": "url:4cf2a2"
+    },
+    {
+      "sourceName": "JAMA",
+      "publisherName": "JAMA",
+      "sourceType": "rss",
+      "category": "Epidemiology",
+      "title": "What to Know About the New mRNA Flu Vaccine - JAMA",
+      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBTZFhrNDdWTExMS3R2TUtxOW9uYnd0ODltOVlkcm5tOEtSeXBYWGc3Z2xxTm83MEZ2UzZtZUlvQzdfUVhuejQxMDVLbUlnZjlvZFc3cFlEM3JBTTJYUXZhNE9IYlAwMjc5?oc=5",
+      "publishedAt": 1786733132000,
+      "summary": "What to Know About the New mRNA Flu Vaccine JAMA",
+      "tags": [
+        "Epidemiology",
+        "Unclassified",
+        "English"
+      ],
+      "score": 2.5,
+      "sources": [
+        {
+          "name": "JAMA",
+          "category": "Epidemiology",
+          "type": "rss"
+        }
+      ],
+      "canonicalUrl": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBTZFhrNDdWTExMS3R2TUtxOW9uYnd0ODltOVlkcm5tOEtSeXBYWGc3Z2xxTm83MEZ2UzZtZUlvQzdfUVhuejQxMDVLbUlnZjlvZFc3cFlEM3JBTTJYUXZhNE9IYlAwMjc5?oc=5",
+      "normalizedTitle": "What to Know About the New mRNA Flu Vaccine",
+      "meta": {
+        "ids": {},
+        "isCanadian": false,
+        "isImportant": false,
+        "isPHEIC": false
+      },
+      "id": "url:vjkeub"
     },
     {
       "sourceName": "CIDRAP",
@@ -3330,38 +3130,6 @@
       "id": "url:avw5oh"
     },
     {
-      "sourceName": "Nature",
-      "publisherName": "Nature",
-      "sourceType": "rss",
-      "category": "Epidemiology",
-      "title": "Trump wants MMR vaccine split up: the science behind why it’s a bad idea - Nature",
-      "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE9QMTNyY2hja0ZjMjJGSVF0ZDNtRDIwMlpidWNWR3dxV0FPT0NPNkJ6amF1WmVoN1BKY0hTMGZ0czdFMlFMV3NGYlhfeGc3MnFtdG8yQmxWdVVlUGcxa3dr?oc=5",
-      "publishedAt": 1786565032000,
-      "summary": "Trump wants MMR vaccine split up: the science behind why it’s a bad idea Nature",
-      "tags": [
-        "Epidemiology",
-        "Unclassified",
-        "English"
-      ],
-      "score": 2.5,
-      "sources": [
-        {
-          "name": "Nature",
-          "category": "Epidemiology",
-          "type": "rss"
-        }
-      ],
-      "canonicalUrl": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE9QMTNyY2hja0ZjMjJGSVF0ZDNtRDIwMlpidWNWR3dxV0FPT0NPNkJ6amF1WmVoN1BKY0hTMGZ0czdFMlFMV3NGYlhfeGc3MnFtdG8yQmxWdVVlUGcxa3dr?oc=5",
-      "normalizedTitle": "Trump wants MMR vaccine split up: the science behind why it’s a bad idea",
-      "meta": {
-        "ids": {},
-        "isCanadian": false,
-        "isImportant": false,
-        "isPHEIC": false
-      },
-      "id": "url:11ftwp"
-    },
-    {
       "sourceName": "Science",
       "publisherName": "Science | AAAS",
       "sourceType": "rss",
@@ -3394,14 +3162,14 @@
       "id": "url:y7muwh"
     },
     {
-      "sourceName": "Science",
-      "publisherName": "Science | AAAS",
+      "sourceName": "Nature",
+      "publisherName": "Nature",
       "sourceType": "rss",
       "category": "Epidemiology",
-      "title": "The Proposed Changes in Childhood Vaccination: A Strongly Felt Opinion - Science | AAAS",
-      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQNEpPSk9IaUdpUXZOLWl5NVRzWjNlY0VXTUI3RU5yUUhKYmJwWjJJZ1R6bWhOSXZ4b3dfNV9ybkd0RWlDNE4zMEVDRFZSR2Z3cDRyV2RaLW1hUlBRVGs4VHVCZmE0VmJVWnE3Q0loTWtXVzlhTk1ncDRyZmgyd2tnT3dHU1drZGZSbl9TaHlXMHhZcVJGN0FPNV95ZDFhd1ZkUWxmdg?oc=5",
-      "publishedAt": 1786474680000,
-      "summary": "The Proposed Changes in Childhood Vaccination: A Strongly Felt Opinion Science | AAAS",
+      "title": "Trump wants MMR vaccine split up: the science behind why it’s a bad idea - Nature",
+      "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE9QMTNyY2hja0ZjMjJGSVF0ZDNtRDIwMlpidWNWR3dxV0FPT0NPNkJ6amF1WmVoN1BKY0hTMGZ0czdFMlFMV3NGYlhfeGc3MnFtdG8yQmxWdVVlUGcxa3dr?oc=5",
+      "publishedAt": 1786518000000,
+      "summary": "Trump wants MMR vaccine split up: the science behind why it’s a bad idea Nature",
       "tags": [
         "Epidemiology",
         "Unclassified",
@@ -3410,20 +3178,52 @@
       "score": 2.5,
       "sources": [
         {
-          "name": "Science",
+          "name": "Nature",
           "category": "Epidemiology",
           "type": "rss"
         }
       ],
-      "canonicalUrl": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQNEpPSk9IaUdpUXZOLWl5NVRzWjNlY0VXTUI3RU5yUUhKYmJwWjJJZ1R6bWhOSXZ4b3dfNV9ybkd0RWlDNE4zMEVDRFZSR2Z3cDRyV2RaLW1hUlBRVGs4VHVCZmE0VmJVWnE3Q0loTWtXVzlhTk1ncDRyZmgyd2tnT3dHU1drZGZSbl9TaHlXMHhZcVJGN0FPNV95ZDFhd1ZkUWxmdg?oc=5",
-      "normalizedTitle": "The Proposed Changes in Childhood Vaccination: A Strongly Felt Opinion",
+      "canonicalUrl": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE9QMTNyY2hja0ZjMjJGSVF0ZDNtRDIwMlpidWNWR3dxV0FPT0NPNkJ6amF1WmVoN1BKY0hTMGZ0czdFMlFMV3NGYlhfeGc3MnFtdG8yQmxWdVVlUGcxa3dr?oc=5",
+      "normalizedTitle": "Trump wants MMR vaccine split up: the science behind why it’s a bad idea",
       "meta": {
         "ids": {},
         "isCanadian": false,
         "isImportant": false,
         "isPHEIC": false
       },
-      "id": "url:y4plsz"
+      "id": "url:11ftwp"
+    },
+    {
+      "sourceName": "Nature",
+      "publisherName": "Nature",
+      "sourceType": "rss",
+      "category": "Epidemiology",
+      "title": "Vaccination-first immune priming shapes a sustained mRNA vaccine-induced IgG4 class switch that associates with SARS-CoV-2 breakthrough infection risk - Nature",
+      "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFB3ZDIyT2JIM2tKWS1zVWhQZ09mNXIzUWZ4R3F0OUoyWjBXMWhNeGZvQ3pLbi1HU1B4YzdnSkhSRGF4UEF6MGpsSUZpOUxqQ0RlUnZOOFBibUJZRlJSX3Fv?oc=5",
+      "publishedAt": 1786518000000,
+      "summary": "Vaccination-first immune priming shapes a sustained mRNA vaccine-induced IgG4 class switch that associates with SARS-CoV-2 breakthrough infection risk Nature",
+      "tags": [
+        "Epidemiology",
+        "Unclassified",
+        "English"
+      ],
+      "score": 2.5,
+      "sources": [
+        {
+          "name": "Nature",
+          "category": "Epidemiology",
+          "type": "rss"
+        }
+      ],
+      "canonicalUrl": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFB3ZDIyT2JIM2tKWS1zVWhQZ09mNXIzUWZ4R3F0OUoyWjBXMWhNeGZvQ3pLbi1HU1B4YzdnSkhSRGF4UEF6MGpsSUZpOUxqQ0RlUnZOOFBibUJZRlJSX3Fv?oc=5",
+      "normalizedTitle": "Vaccination-first immune priming shapes a sustained mRNA vaccine-induced IgG4 class switch that associates with SARS-CoV-2 breakthrough infection risk",
+      "meta": {
+        "ids": {},
+        "isCanadian": false,
+        "isImportant": false,
+        "isPHEIC": false
+      },
+      "id": "url:74b97e"
     },
     {
       "sourceName": "Nature",
@@ -3655,45 +3455,6 @@
       "id": "url:12g0d8"
     },
     {
-      "sourceName": "ACIP, CDC",
-      "publisherName": "Centers for Disease Control and Prevention | CDC (.gov)",
-      "sourceType": "rss",
-      "category": "ACIP",
-      "title": "Vaccine Data Code Sets | Immunization Information Systems (IIS) - Centers for Disease Control and Prevention | CDC (.gov)",
-      "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE4xU1Mza0RUNU05WkZfSVJDTk1VRndYeVlqekhJYUM4SlhoZENfMnV5U1dRRHFVSmNqaVAwekYwZXViNExyTzdHSndkN1E0MDRwNHVGSTgxdw?oc=5",
-      "publishedAt": 1786086000000,
-      "summary": "Vaccine Data Code Sets | Immunization Information Systems (IIS) Centers for Disease Control and Prevention | CDC (.gov)",
-      "tags": [
-        "NITAG",
-        "PH Agency",
-        "US",
-        "English",
-        "Unclassified"
-      ],
-      "score": 2.5,
-      "sources": [
-        {
-          "name": "ACIP",
-          "category": "ACIP",
-          "type": "rss"
-        },
-        {
-          "name": "CDC",
-          "category": "CDC",
-          "type": "rss"
-        }
-      ],
-      "canonicalUrl": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE4xU1Mza0RUNU05WkZfSVJDTk1VRndYeVlqekhJYUM4SlhoZENfMnV5U1dRRHFVSmNqaVAwekYwZXViNExyTzdHSndkN1E0MDRwNHVGSTgxdw?oc=5",
-      "normalizedTitle": "Vaccine Data Code Sets | Immunization Information Systems (IIS)",
-      "meta": {
-        "ids": {},
-        "isCanadian": false,
-        "isImportant": false,
-        "isPHEIC": false
-      },
-      "id": "url:5tvf58"
-    },
-    {
       "sourceName": "PubMed",
       "publisherName": "Hum Vaccin Immunother",
       "sourceType": "api",
@@ -3798,6 +3559,109 @@
     },
     {
       "sourceName": "PubMed",
+      "publisherName": "Int J Infect Dis",
+      "sourceType": "api",
+      "category": "publication",
+      "title": "Real-World Effectiveness and Impact of Human Papillomavirus Vaccination in Males: A Comprehensive Review.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42624282/",
+      "publishedAt": 1787184000000,
+      "summary": "Authors: Manrique AF. Source: Int J Infect Dis.",
+      "tags": [
+        "HPV",
+        "Study",
+        "PubMed"
+      ],
+      "score": 2,
+      "sources": [
+        {
+          "name": "PubMed",
+          "category": "publication",
+          "type": "api"
+        }
+      ],
+      "canonicalUrl": "https://pubmed.ncbi.nlm.nih.gov/42624282",
+      "normalizedTitle": "Real-World Effectiveness and Impact of Human Papillomavirus Vaccination in Males: A Comprehensive Review.",
+      "meta": {
+        "ids": {
+          "pmid": "42624282"
+        },
+        "isCanadian": false,
+        "isImportant": false,
+        "isPHEIC": false
+      },
+      "id": "pmid:42624282"
+    },
+    {
+      "sourceName": "PubMed",
+      "publisherName": "Vaccine",
+      "sourceType": "api",
+      "category": "publication",
+      "title": "Human papillomavirus (HPV) Vaccination programmes across European countries: time-harmonized coverage among adolescent females, socioeconomic predictors, and impact on public interest.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42623713/",
+      "publishedAt": 1787184000000,
+      "summary": "Authors: Pavia G. Source: Vaccine.",
+      "tags": [
+        "HPV",
+        "Study",
+        "PubMed"
+      ],
+      "score": 2,
+      "sources": [
+        {
+          "name": "PubMed",
+          "category": "publication",
+          "type": "api"
+        }
+      ],
+      "canonicalUrl": "https://pubmed.ncbi.nlm.nih.gov/42623713",
+      "normalizedTitle": "Human papillomavirus (HPV) Vaccination programmes across European countries: time-harmonized coverage among adolescent females, socioeconomic predictors, and impact on public interest.",
+      "meta": {
+        "ids": {
+          "pmid": "42623713"
+        },
+        "isCanadian": false,
+        "isImportant": false,
+        "isPHEIC": false
+      },
+      "id": "pmid:42623713"
+    },
+    {
+      "sourceName": "PubMed",
+      "publisherName": "Am J Public Health",
+      "sourceType": "api",
+      "category": "publication",
+      "title": "Effects of School-Entry Vaccination Mandates on Adolescent Human Papillomavirus Vaccination Uptake: United States, 2008-2023.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42623580/",
+      "publishedAt": 1787184000000,
+      "summary": "Authors: Chen AW. Source: Am J Public Health.",
+      "tags": [
+        "HPV",
+        "US",
+        "Study",
+        "PubMed"
+      ],
+      "score": 2,
+      "sources": [
+        {
+          "name": "PubMed",
+          "category": "publication",
+          "type": "api"
+        }
+      ],
+      "canonicalUrl": "https://pubmed.ncbi.nlm.nih.gov/42623580",
+      "normalizedTitle": "Effects of School-Entry Vaccination Mandates on Adolescent Human Papillomavirus Vaccination Uptake: United States, 2008-2023.",
+      "meta": {
+        "ids": {
+          "pmid": "42623580"
+        },
+        "isCanadian": false,
+        "isImportant": false,
+        "isPHEIC": false
+      },
+      "id": "pmid:42623580"
+    },
+    {
+      "sourceName": "PubMed",
       "publisherName": "Mol Ther",
       "sourceType": "api",
       "category": "publication",
@@ -3829,6 +3693,40 @@
         "isPHEIC": false
       },
       "id": "pmid:42619264"
+    },
+    {
+      "sourceName": "PubMed",
+      "publisherName": "Vet Immunol Immunopathol",
+      "sourceType": "api",
+      "category": "publication",
+      "title": "Immunogenicity in dogs vaccinated against rabies with a highly safe and efficacious 3rd generation oral rabies vaccine in longitudinal and cross-sectional studies.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42623832/",
+      "publishedAt": 1787011200000,
+      "summary": "Authors: Vos A. Source: Vet Immunol Immunopathol.",
+      "tags": [
+        "Rabies",
+        "Study",
+        "PubMed"
+      ],
+      "score": 2,
+      "sources": [
+        {
+          "name": "PubMed",
+          "category": "publication",
+          "type": "api"
+        }
+      ],
+      "canonicalUrl": "https://pubmed.ncbi.nlm.nih.gov/42623832",
+      "normalizedTitle": "Immunogenicity in dogs vaccinated against rabies with a highly safe and efficacious 3rd generation oral rabies vaccine in longitudinal and cross-sectional studies.",
+      "meta": {
+        "ids": {
+          "pmid": "42623832"
+        },
+        "isCanadian": false,
+        "isImportant": false,
+        "isPHEIC": false
+      },
+      "id": "pmid:42623832"
     },
     {
       "sourceName": "PubMed",
@@ -4274,212 +4172,295 @@
       "id": "pmid:42579851"
     },
     {
-      "sourceName": "PubMed",
-      "publisherName": "J Infect Dis",
-      "sourceType": "api",
-      "category": "publication",
-      "title": "Correction to: The Long-Term Effect of 2 and 3 Doses of Bivalent HPV Vaccination Against HPV Infections: A Comparison Between 2 Observational Cohort Studies.",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/42572111/",
-      "publishedAt": 1786320000000,
-      "summary": "Authors: Unknown. Source: J Infect Dis.",
+      "sourceName": "Gavi",
+      "publisherName": "Gavi, the Vaccine Alliance",
+      "sourceType": "rss",
+      "category": "Gavi",
+      "title": "“We are the system”: How Mozambique’s ‘do-it-all’ midwives keep rural healthcare ticking over - Gavi, the Vaccine Alliance",
+      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNcHI4cjhaREd0WXQ1QVVHNkk0c1U4bmt3RS16Z0VnZ0FnTEpVSkRteWRnYmlxeEY0b3FJQWluZUdfYUJFS3lhY08wVkhXSGI2RGZlZTdhOVpKTTVicmZkSkYyclQ1RGlkT056Wjk5VFpKeUZfLVJtMS1OTnQ4SVllamJKVXAwNHBEbkE0M3lpRGFYb2RnclRRZlU3VzF6SUtkSUFsODJ3WXlVcGdESGhRcmlVSXI5NE9I?oc=5",
+      "publishedAt": 1787318838000,
+      "summary": "“We are the system”: How Mozambique’s ‘do-it-all’ midwives keep rural healthcare ticking over Gavi, the Vaccine Alliance",
       "tags": [
-        "HPV",
-        "Study",
-        "PubMed"
-      ],
-      "score": 2,
-      "sources": [
-        {
-          "name": "PubMed",
-          "category": "publication",
-          "type": "api"
-        }
-      ],
-      "canonicalUrl": "https://pubmed.ncbi.nlm.nih.gov/42572111",
-      "normalizedTitle": "Correction to: The Long-Term Effect of 2 and 3 Doses of Bivalent HPV Vaccination Against HPV Infections: A Comparison Between 2 Observational Cohort Studies.",
-      "meta": {
-        "ids": {
-          "pmid": "42572111"
-        },
-        "isCanadian": false,
-        "isImportant": false,
-        "isPHEIC": false
-      },
-      "id": "pmid:42572111"
-    },
-    {
-      "sourceName": "PubMed",
-      "publisherName": "J Community Health",
-      "sourceType": "api",
-      "category": "publication",
-      "title": "HPV Vaccination Predictors Among College Students.",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/42566153/",
-      "publishedAt": 1786060800000,
-      "summary": "Authors: Lee A. Source: J Community Health.",
-      "tags": [
-        "HPV",
-        "Study",
-        "PubMed"
-      ],
-      "score": 2,
-      "sources": [
-        {
-          "name": "PubMed",
-          "category": "publication",
-          "type": "api"
-        }
-      ],
-      "canonicalUrl": "https://pubmed.ncbi.nlm.nih.gov/42566153",
-      "normalizedTitle": "HPV Vaccination Predictors Among College Students.",
-      "meta": {
-        "ids": {
-          "pmid": "42566153"
-        },
-        "isCanadian": false,
-        "isImportant": false,
-        "isPHEIC": false
-      },
-      "id": "pmid:42566153"
-    },
-    {
-      "sourceName": "PubMed",
-      "publisherName": "J Adolesc Health",
-      "sourceType": "api",
-      "category": "publication",
-      "title": "Simultaneous Administration of Human Papillomavirus (HPV) Vaccine With Other Recommended Vaccines Among Adolescents Aged 13-17 years, National Immunization Survey-Teen (NIS-Teen), United States, 2023.",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/42565767/",
-      "publishedAt": 1786060800000,
-      "summary": "Authors: Pingali C. Source: J Adolesc Health.",
-      "tags": [
-        "HPV",
-        "US",
-        "Study",
-        "PubMed"
-      ],
-      "score": 2,
-      "sources": [
-        {
-          "name": "PubMed",
-          "category": "publication",
-          "type": "api"
-        }
-      ],
-      "canonicalUrl": "https://pubmed.ncbi.nlm.nih.gov/42565767",
-      "normalizedTitle": "Simultaneous Administration of Human Papillomavirus (HPV) Vaccine With Other Recommended Vaccines Among Adolescents Aged 13-17 years, National Immunization Survey-Teen (NIS-Teen), United States, 2023.",
-      "meta": {
-        "ids": {
-          "pmid": "42565767"
-        },
-        "isCanadian": false,
-        "isImportant": false,
-        "isPHEIC": false
-      },
-      "id": "pmid:42565767"
-    },
-    {
-      "sourceName": "PubMed",
-      "publisherName": "Trans R Soc Trop Med Hyg",
-      "sourceType": "api",
-      "category": "publication",
-      "title": "Comment on: Antibody response following rabies vaccination: a retrospective cohort study from a tertiary centre in Kerala, India.",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/42565476/",
-      "publishedAt": 1786060800000,
-      "summary": "Authors: Gozdas HT. Source: Trans R Soc Trop Med Hyg.",
-      "tags": [
-        "Rabies",
-        "Asia-Pac",
-        "Study",
-        "PubMed"
-      ],
-      "score": 2,
-      "sources": [
-        {
-          "name": "PubMed",
-          "category": "publication",
-          "type": "api"
-        }
-      ],
-      "canonicalUrl": "https://pubmed.ncbi.nlm.nih.gov/42565476",
-      "normalizedTitle": "Comment on: Antibody response following rabies vaccination: a retrospective cohort study from a tertiary centre in Kerala, India.",
-      "meta": {
-        "ids": {
-          "pmid": "42565476"
-        },
-        "isCanadian": false,
-        "isImportant": false,
-        "isPHEIC": false
-      },
-      "id": "pmid:42565476"
-    },
-    {
-      "sourceName": "PubMed",
-      "publisherName": "Prev Chronic Dis",
-      "sourceType": "api",
-      "category": "publication",
-      "title": "Evaluation of a Minigrant Program for Multilevel Interventions to Promote Human Papillomavirus Vaccination in Rural Communities in Georgia.",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/42561963/",
-      "publishedAt": 1785974400000,
-      "summary": "Authors: Escoffery C. Source: Prev Chronic Dis.",
-      "tags": [
-        "HPV",
-        "Study",
-        "PubMed"
-      ],
-      "score": 2,
-      "sources": [
-        {
-          "name": "PubMed",
-          "category": "publication",
-          "type": "api"
-        }
-      ],
-      "canonicalUrl": "https://pubmed.ncbi.nlm.nih.gov/42561963",
-      "normalizedTitle": "Evaluation of a Minigrant Program for Multilevel Interventions to Promote Human Papillomavirus Vaccination in Rural Communities in Georgia.",
-      "meta": {
-        "ids": {
-          "pmid": "42561963"
-        },
-        "isCanadian": false,
-        "isImportant": false,
-        "isPHEIC": false
-      },
-      "id": "pmid:42561963"
-    },
-    {
-      "sourceName": "PubMed",
-      "publisherName": "Int J Infect Dis",
-      "sourceType": "api",
-      "category": "publication",
-      "title": "Effectiveness of nirsevimab and maternal RSVpreF vaccination against infant hospitalisation across the island of Ireland.",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/42562126/",
-      "publishedAt": 1785974400000,
-      "summary": "Authors: Treston B. Source: Int J Infect Dis.",
-      "tags": [
-        "Epidemiology",
-        "Europe",
+        "International Organization",
         "Unclassified",
-        "Study",
-        "PubMed"
+        "News",
+        "English"
       ],
-      "score": 1.5,
+      "score": 1.1,
       "sources": [
         {
-          "name": "PubMed",
-          "category": "publication",
-          "type": "api"
+          "name": "Gavi",
+          "category": "Gavi",
+          "type": "rss"
         }
       ],
-      "canonicalUrl": "https://pubmed.ncbi.nlm.nih.gov/42562126",
-      "normalizedTitle": "Effectiveness of nirsevimab and maternal RSVpreF vaccination against infant hospitalisation across the island of Ireland.",
+      "canonicalUrl": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNcHI4cjhaREd0WXQ1QVVHNkk0c1U4bmt3RS16Z0VnZ0FnTEpVSkRteWRnYmlxeEY0b3FJQWluZUdfYUJFS3lhY08wVkhXSGI2RGZlZTdhOVpKTTVicmZkSkYyclQ1RGlkT056Wjk5VFpKeUZfLVJtMS1OTnQ4SVllamJKVXAwNHBEbkE0M3lpRGFYb2RnclRRZlU3VzF6SUtkSUFsODJ3WXlVcGdESGhRcmlVSXI5NE9I?oc=5",
+      "normalizedTitle": "“We are the system”: How Mozambique’s ‘do-it-all’ midwives keep rural healthcare ticking over",
       "meta": {
-        "ids": {
-          "pmid": "42562126"
-        },
+        "ids": {},
         "isCanadian": false,
         "isImportant": false,
         "isPHEIC": false
       },
-      "id": "pmid:42562126"
+      "id": "url:fxd53n"
+    },
+    {
+      "sourceName": "STAT News",
+      "publisherName": "STAT",
+      "sourceType": "rss",
+      "category": "STAT News",
+      "title": "Scientists deploy Merck’s Ebola vaccine in DRC - STAT",
+      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOaDc4MGNlbmM4ampwVUJaTVBhQ003T1N6U3Rabm5iQnAzRnYzTHhmVS1YcnNWSktvSTFSTGhnNUZfbDBVdUJJUUFmOWRyWXFrNFBYT3MxOGNiU3pjQnIxSXZMUGhydHZtU213MzdscjFCSk1VcjM5TGRrUVlKcXlFSXg4VzV0ekp0Zmg2OHJMaGVsbHNlQWI5SA?oc=5",
+      "publishedAt": 1787317495000,
+      "summary": "Scientists deploy Merck’s Ebola vaccine in DRC STAT",
+      "tags": [
+        "Unclassified",
+        "News",
+        "English"
+      ],
+      "score": 1.1,
+      "sources": [
+        {
+          "name": "STAT News",
+          "category": "STAT News",
+          "type": "rss"
+        }
+      ],
+      "canonicalUrl": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOaDc4MGNlbmM4ampwVUJaTVBhQ003T1N6U3Rabm5iQnAzRnYzTHhmVS1YcnNWSktvSTFSTGhnNUZfbDBVdUJJUUFmOWRyWXFrNFBYT3MxOGNiU3pjQnIxSXZMUGhydHZtU213MzdscjFCSk1VcjM5TGRrUVlKcXlFSXg4VzV0ekp0Zmg2OHJMaGVsbHNlQWI5SA?oc=5",
+      "normalizedTitle": "Scientists deploy Merck’s Ebola vaccine in DRC",
+      "meta": {
+        "ids": {},
+        "isCanadian": false,
+        "isImportant": false,
+        "isPHEIC": false
+      },
+      "id": "url:qyvl57"
+    },
+    {
+      "sourceName": "ScienceDaily",
+      "publisherName": "Science Daily",
+      "sourceType": "rss",
+      "category": "ScienceDaily",
+      "title": "AI may know how you’ll respond to a vaccine before you get it - Science Daily",
+      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBXOFhhb2Jta1k5bnphUnFRaXBTSHJRdEVVdkdOUmdZMlVDbEJmY280ZEs0QkM2Rmt6WmNNbkdJaGp4SUJJdXA2ZUJ2Q3BvNFl1ZEZnRldFM2JTdXc4SzdWQy02S0pZekE5UGM4cGpB?oc=5",
+      "publishedAt": 1787310058000,
+      "summary": "AI may know how you’ll respond to a vaccine before you get it Science Daily",
+      "tags": [
+        "Unclassified",
+        "News",
+        "English"
+      ],
+      "score": 1.1,
+      "sources": [
+        {
+          "name": "ScienceDaily",
+          "category": "ScienceDaily",
+          "type": "rss"
+        }
+      ],
+      "canonicalUrl": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBXOFhhb2Jta1k5bnphUnFRaXBTSHJRdEVVdkdOUmdZMlVDbEJmY280ZEs0QkM2Rmt6WmNNbkdJaGp4SUJJdXA2ZUJ2Q3BvNFl1ZEZnRldFM2JTdXc4SzdWQy02S0pZekE5UGM4cGpB?oc=5",
+      "normalizedTitle": "AI may know how you’ll respond to a vaccine before you get it",
+      "meta": {
+        "ids": {},
+        "isCanadian": false,
+        "isImportant": false,
+        "isPHEIC": false
+      },
+      "id": "url:kt17j8"
+    },
+    {
+      "sourceName": "Gavi",
+      "publisherName": "Gavi, the Vaccine Alliance",
+      "sourceType": "rss",
+      "category": "Gavi",
+      "title": "- Gavi, the Vaccine Alliance",
+      "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQd29WMjRTN0FVVm9lZWoyRnJhVFo3SEJ5R2w2TTY3VVFFZ2d3TGdEZlh1WDhjTUZ2dENhQmduMk40SnBzWDJWS1ozTTFlMjVxOVVkM21WZGhqQTFLUXhfakl1bEp4cHNuSHlGOHpEUVRYOEhLRmNFcHdwbVh0QW9jRjZuUmVKY1Fta1ZHbjE4dVJSaWlidG9RNExqc2dRZWhMQXNsQnlOWW9Bdm5fRUhUbHVJT0dXVll4V1dmcW9tZTB0LWR3eDFTc1Q5YmhCYy1EQnNpY293?oc=5",
+      "publishedAt": 1787278905000,
+      "summary": "Gavi, the Vaccine Alliance",
+      "tags": [
+        "International Organization",
+        "Unclassified",
+        "News",
+        "English"
+      ],
+      "score": 1.1,
+      "sources": [
+        {
+          "name": "Gavi",
+          "category": "Gavi",
+          "type": "rss"
+        }
+      ],
+      "canonicalUrl": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQd29WMjRTN0FVVm9lZWoyRnJhVFo3SEJ5R2w2TTY3VVFFZ2d3TGdEZlh1WDhjTUZ2dENhQmduMk40SnBzWDJWS1ozTTFlMjVxOVVkM21WZGhqQTFLUXhfakl1bEp4cHNuSHlGOHpEUVRYOEhLRmNFcHdwbVh0QW9jRjZuUmVKY1Fta1ZHbjE4dVJSaWlidG9RNExqc2dRZWhMQXNsQnlOWW9Bdm5fRUhUbHVJT0dXVll4V1dmcW9tZTB0LWR3eDFTc1Q5YmhCYy1EQnNpY293?oc=5",
+      "normalizedTitle": "",
+      "meta": {
+        "ids": {},
+        "isCanadian": false,
+        "isImportant": false,
+        "isPHEIC": false
+      },
+      "id": "url:hej64t"
+    },
+    {
+      "sourceName": "Merck",
+      "publisherName": "Merck Careers",
+      "sourceType": "rss",
+      "category": "Merck",
+      "title": "Executive Director, Vaccine Drug Product Development - Merck Careers",
+      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPZ1BJS3M4bGN3M1lrZnFzN2JWTmE0ZWlNWVhpMEpINGFRZEliUnJIRWZSRkVRNG1vVmtMbnlSME0tSEJpWEk4RmdoaHNmQWo3ZS1sb3U4TFh6Vi1jT21NS0o5d0dabHFOYzV3NnZwTkpTemZieTRLWVVvSnpWV29RMnBiS1NOamJRTjVWb2NYZUtCa2luMzB3?oc=5",
+      "publishedAt": 1787267080000,
+      "summary": "Executive Director, Vaccine Drug Product Development Merck Careers",
+      "tags": [
+        "Unclassified",
+        "News",
+        "English"
+      ],
+      "score": 1.1,
+      "sources": [
+        {
+          "name": "Merck",
+          "category": "Merck",
+          "type": "rss"
+        }
+      ],
+      "canonicalUrl": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPZ1BJS3M4bGN3M1lrZnFzN2JWTmE0ZWlNWVhpMEpINGFRZEliUnJIRWZSRkVRNG1vVmtMbnlSME0tSEJpWEk4RmdoaHNmQWo3ZS1sb3U4TFh6Vi1jT21NS0o5d0dabHFOYzV3NnZwTkpTemZieTRLWVVvSnpWV29RMnBiS1NOamJRTjVWb2NYZUtCa2luMzB3?oc=5",
+      "normalizedTitle": "Executive Director, Vaccine Drug Product Development",
+      "meta": {
+        "ids": {},
+        "isCanadian": false,
+        "isImportant": false,
+        "isPHEIC": false
+      },
+      "id": "url:otvyol"
+    },
+    {
+      "sourceName": "EurekAlert",
+      "publisherName": "EurekAlert!",
+      "sourceType": "rss",
+      "category": "EurekAlert",
+      "title": "A window into vaccine response (IMAGE) - EurekAlert!",
+      "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE1Pb0pvU2xwWWtfRlZ4RTlTRlMxOHJfR2txOFhrZk9LQzdDa2l3RzAzOVRtS2c2RHA4MzBlclhCMUI2cmd1Q3l6SEZ0X2xPTGJYZUhfWUFLZzI?oc=5",
+      "publishedAt": 1787258030000,
+      "summary": "A window into vaccine response (IMAGE) EurekAlert!",
+      "tags": [
+        "Unclassified",
+        "News",
+        "English"
+      ],
+      "score": 1.1,
+      "sources": [
+        {
+          "name": "EurekAlert",
+          "category": " EurekAlert",
+          "type": "rss"
+        }
+      ],
+      "canonicalUrl": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE1Pb0pvU2xwWWtfRlZ4RTlTRlMxOHJfR2txOFhrZk9LQzdDa2l3RzAzOVRtS2c2RHA4MzBlclhCMUI2cmd1Q3l6SEZ0X2xPTGJYZUhfWUFLZzI?oc=5",
+      "normalizedTitle": "A window into vaccine response (IMAGE)",
+      "meta": {
+        "ids": {},
+        "isCanadian": false,
+        "isImportant": false,
+        "isPHEIC": false
+      },
+      "id": "url:8k3xz7"
+    },
+    {
+      "sourceName": "MedicalXpress",
+      "publisherName": "Medical Xpress",
+      "sourceType": "rss",
+      "category": "MedicalXpress",
+      "title": "Congo to receive 70,000 doses of Ervebo Ebola vaccine which has been effective in past outbreaks - Medical Xpress",
+      "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNTzg0RUw5R0l0OWc1VThjMUttRWdJMkhVMmV4MHpHUHVSeGV1Ylo1LW9BcjU3V2M2UG1GalFJNXhLS3FyUHVFdWRVcU5lejd6OUo1amdONXQ2cjlNMU1Mcm5Fa3BqVVQ2RjEyODRFYURzN0t4WTdKcFZZdnBxQ3Ayb05R?oc=5",
+      "publishedAt": 1787252405000,
+      "summary": "Congo to receive 70,000 doses of Ervebo Ebola vaccine which has been effective in past outbreaks Medical Xpress",
+      "tags": [
+        "Unclassified",
+        "News",
+        "English"
+      ],
+      "score": 1.1,
+      "sources": [
+        {
+          "name": "MedicalXpress",
+          "category": "MedicalXpress",
+          "type": "rss"
+        }
+      ],
+      "canonicalUrl": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNTzg0RUw5R0l0OWc1VThjMUttRWdJMkhVMmV4MHpHUHVSeGV1Ylo1LW9BcjU3V2M2UG1GalFJNXhLS3FyUHVFdWRVcU5lejd6OUo1amdONXQ2cjlNMU1Mcm5Fa3BqVVQ2RjEyODRFYURzN0t4WTdKcFZZdnBxQ3Ayb05R?oc=5",
+      "normalizedTitle": "Congo to receive 70,000 doses of Ervebo Ebola vaccine which has been effective in past outbreaks",
+      "meta": {
+        "ids": {},
+        "isCanadian": false,
+        "isImportant": false,
+        "isPHEIC": false
+      },
+      "id": "url:kb3pm7"
+    },
+    {
+      "sourceName": "Gavi",
+      "publisherName": "Gavi, the Vaccine Alliance",
+      "sourceType": "rss",
+      "category": "Gavi",
+      "title": "Gavi commits additional funding for Ebola response - Gavi, the Vaccine Alliance",
+      "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQTVBSTUJTU0p1X0Y1blhtZ0w3TFd5ZkgxMUtTMllXQ205S1ZXS0p3R3hwMUpBUDRwSVlLX252N1JvRHg1WVNZVFdtaEFzTV9QN0dFdnFjRTlhUGdZVlluSzNEQ01TWlVDZFlPWHRzRG42UmlpaEtYTGFTMFZfUlpnLWZBMUcyczIwVkN3?oc=5",
+      "publishedAt": 1787247437000,
+      "summary": "Gavi commits additional funding for Ebola response Gavi, the Vaccine Alliance",
+      "tags": [
+        "International Organization",
+        "Unclassified",
+        "News",
+        "English"
+      ],
+      "score": 1.1,
+      "sources": [
+        {
+          "name": "Gavi",
+          "category": "Gavi",
+          "type": "rss"
+        }
+      ],
+      "canonicalUrl": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQTVBSTUJTU0p1X0Y1blhtZ0w3TFd5ZkgxMUtTMllXQ205S1ZXS0p3R3hwMUpBUDRwSVlLX252N1JvRHg1WVNZVFdtaEFzTV9QN0dFdnFjRTlhUGdZVlluSzNEQ01TWlVDZFlPWHRzRG42UmlpaEtYTGFTMFZfUlpnLWZBMUcyczIwVkN3?oc=5",
+      "normalizedTitle": "Gavi commits additional funding for Ebola response",
+      "meta": {
+        "ids": {},
+        "isCanadian": false,
+        "isImportant": false,
+        "isPHEIC": false
+      },
+      "id": "url:2hp9ij"
+    },
+    {
+      "sourceName": "EurekAlert",
+      "publisherName": "EurekAlert!",
+      "sourceType": "rss",
+      "category": "EurekAlert",
+      "title": "Why is vaccine-preventable tetanus still a global health problem? - EurekAlert!",
+      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5ZbDlocWIxczhEcUlVdW9RV1BqX1ByUzUxVEhJS1dhWWtGblJFWUxGdGRmZkUwQ2l5NXEySXN0eVZoQ3ZyQ2NFMGJlTnBHZkk0dEtuRVE3aTNQVzZN?oc=5",
+      "publishedAt": 1787242536000,
+      "summary": "Why is vaccine-preventable tetanus still a global health problem? EurekAlert!",
+      "tags": [
+        "Unclassified",
+        "News",
+        "English"
+      ],
+      "score": 1.1,
+      "sources": [
+        {
+          "name": "EurekAlert",
+          "category": " EurekAlert",
+          "type": "rss"
+        }
+      ],
+      "canonicalUrl": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5ZbDlocWIxczhEcUlVdW9RV1BqX1ByUzUxVEhJS1dhWWtGblJFWUxGdGRmZkUwQ2l5NXEySXN0eVZoQ3ZyQ2NFMGJlTnBHZkk0dEtuRVE3aTNQVzZN?oc=5",
+      "normalizedTitle": "Why is vaccine-preventable tetanus still a global health problem?",
+      "meta": {
+        "ids": {},
+        "isCanadian": false,
+        "isImportant": false,
+        "isPHEIC": false
+      },
+      "id": "url:qu9v2d"
     },
     {
       "sourceName": "Gavi",
@@ -4488,7 +4469,7 @@
       "category": "Gavi",
       "title": "Cancer breakthrough as personalised mRNA vaccine stops melanoma returning - Gavi, the Vaccine Alliance",
       "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOR3Y1dUpOeEhkcW1scUVRSHRtRkVIQVZIQllUZ0Q4RmpvbWREbW5FVXhVRG5jU2gxdEdXSjR5NUN3SllnRmNHR0pBaDN1d3dxSnVPTUhURWZaVHBadTk0Ul9aWG1aNks3d05Vc21Wb0hERWszenFPNUMyVUFlT3ZWWGRRWGstTTRSbXBkTFpONkN6UTQtSnhNOGVPVkhnVF8xREk1SHJxOA?oc=5",
-      "publishedAt": 1787234786000,
+      "publishedAt": 1787235295000,
       "summary": "Cancer breakthrough as personalised mRNA vaccine stops melanoma returning Gavi, the Vaccine Alliance",
       "tags": [
         "International Organization",
@@ -4677,6 +4658,38 @@
       "id": "url:3c43dn"
     },
     {
+      "sourceName": "GSK",
+      "publisherName": "GSK",
+      "sourceType": "rss",
+      "category": "GSK",
+      "title": "Vaccine Sales - 北區 成人疫苗 in Taipei, Taipei (ville), Taiwan | Sales at GSK - GSK",
+      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxORmdvZnFfYjh6UGNyY2E1OHZmMTh4VURsck5zTTVEa3Nvd2ZPb1h2eU9pSF9jb1hfZmNNeXhUM3ZMalhtMXd4dFZ5QW5zRi1OSFlxaXJDMGxlZ0VLNnBnNTZKWW9FNkpBRW52QjRLVVNCMmphWmhzSjdtTHp1bkRxWldqRGFtWU4wdWZfOXJxLVRuZ0xWTWV1ZGRNRkJQdEVlSTE5MHRxd0NrNlU?oc=5",
+      "publishedAt": 1787168648000,
+      "summary": "Vaccine Sales - 北區 成人疫苗 in Taipei, Taipei (ville), Taiwan | Sales at GSK GSK",
+      "tags": [
+        "Unclassified",
+        "News",
+        "English"
+      ],
+      "score": 1.1,
+      "sources": [
+        {
+          "name": "GSK",
+          "category": "GSK",
+          "type": "rss"
+        }
+      ],
+      "canonicalUrl": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxORmdvZnFfYjh6UGNyY2E1OHZmMTh4VURsck5zTTVEa3Nvd2ZPb1h2eU9pSF9jb1hfZmNNeXhUM3ZMalhtMXd4dFZ5QW5zRi1OSFlxaXJDMGxlZ0VLNnBnNTZKWW9FNkpBRW52QjRLVVNCMmphWmhzSjdtTHp1bkRxWldqRGFtWU4wdWZfOXJxLVRuZ0xWTWV1ZGRNRkJQdEVlSTE5MHRxd0NrNlU?oc=5",
+      "normalizedTitle": "Vaccine Sales - 北區 成人疫苗 in Taipei, Taipei (ville), Taiwan | Sales at GSK",
+      "meta": {
+        "ids": {},
+        "isCanadian": false,
+        "isImportant": false,
+        "isPHEIC": false
+      },
+      "id": "url:pn8gjb"
+    },
+    {
       "sourceName": "MedicalXpress, AlphaGalileo",
       "publisherName": "Medical Xpress",
       "sourceType": "rss",
@@ -4848,10 +4861,10 @@
       "publisherName": "UNICEF",
       "sourceType": "rss",
       "category": "UNICEF",
-      "title": "Global childhood immunization coverage inches forward despite conflict and hesitancy – UNICEF, WHO - UNICEF",
+      "title": "Global childhood immunization coverage inches forward despite conflict and hesitancy - UNICEF, WHO - UNICEF",
       "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQY2hQemVvdVZwNFBkeVRIWXNtd2NEYzRXT01oTVcxZm9RaXhFNkRlWHo2UGNhd1M1TGJOUnhBQjFPTnJnVVptVFZqSzdXRGlSRVpuUWtNWFU1TldaTWlrZmlIaDh3S0pCMWQyaUs5aFFlelU1WVo5SGc2dEp0RWxxYjRCNlJScEFsaUctaUUtSFUzZXExbThqTms1THRYS2tWa2ZpZ01JSnp5QnpaX1JQbkhNdXROZnJtUm9XWnhZSzlwQ3VGRkNR?oc=5",
       "publishedAt": 1787143184000,
-      "summary": "Global childhood immunization coverage inches forward despite conflict and hesitancy – UNICEF, WHO UNICEF",
+      "summary": "Global childhood immunization coverage inches forward despite conflict and hesitancy - UNICEF, WHO UNICEF",
       "tags": [
         "International Organization",
         "Unclassified",
@@ -4867,7 +4880,7 @@
         }
       ],
       "canonicalUrl": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQY2hQemVvdVZwNFBkeVRIWXNtd2NEYzRXT01oTVcxZm9RaXhFNkRlWHo2UGNhd1M1TGJOUnhBQjFPTnJnVVptVFZqSzdXRGlSRVpuUWtNWFU1TldaTWlrZmlIaDh3S0pCMWQyaUs5aFFlelU1WVo5SGc2dEp0RWxxYjRCNlJScEFsaUctaUUtSFUzZXExbThqTms1THRYS2tWa2ZpZ01JSnp5QnpaX1JQbkhNdXROZnJtUm9XWnhZSzlwQ3VGRkNR?oc=5",
-      "normalizedTitle": "Global childhood immunization coverage inches forward despite conflict and hesitancy – UNICEF, WHO",
+      "normalizedTitle": "Global childhood immunization coverage inches forward despite conflict and hesitancy - UNICEF, WHO",
       "meta": {
         "ids": {},
         "isCanadian": false,
@@ -5039,39 +5052,6 @@
       "id": "url:rmfzcq"
     },
     {
-      "sourceName": "Gavi",
-      "publisherName": "Gavi, the Vaccine Alliance",
-      "sourceType": "rss",
-      "category": "Gavi",
-      "title": "“Don't ask for anything else. Just ask for safe passage”: negotiating access for vaccines amid conflict - Gavi, the Vaccine Alliance",
-      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQT1VtaS1LNmpiSWpqT0NDbmFHTUpoeXctYS1sa3BiV2xjSkthUnhPVndlNUtVRnlaQkI4LXI2bk9acWI1NEFNM1lEa2M1RzhqY09ZcEdlX0w3aExQRkktdXlDeDZLSmR1WUVWYlBuS0NzdUtMRWpCRHc0UFg5UGxuYWtKSmltaDdiQXlkcl9NekNGZlZ2UkJIYnRIMFdmNmZiV0JDd3IyU0E?oc=5",
-      "publishedAt": 1787063655000,
-      "summary": "“Don't ask for anything else. Just ask for safe passage”: negotiating access for vaccines amid conflict Gavi, the Vaccine Alliance",
-      "tags": [
-        "International Organization",
-        "Unclassified",
-        "News",
-        "English"
-      ],
-      "score": 1.1,
-      "sources": [
-        {
-          "name": "Gavi",
-          "category": "Gavi",
-          "type": "rss"
-        }
-      ],
-      "canonicalUrl": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQT1VtaS1LNmpiSWpqT0NDbmFHTUpoeXctYS1sa3BiV2xjSkthUnhPVndlNUtVRnlaQkI4LXI2bk9acWI1NEFNM1lEa2M1RzhqY09ZcEdlX0w3aExQRkktdXlDeDZLSmR1WUVWYlBuS0NzdUtMRWpCRHc0UFg5UGxuYWtKSmltaDdiQXlkcl9NekNGZlZ2UkJIYnRIMFdmNmZiV0JDd3IyU0E?oc=5",
-      "normalizedTitle": "“Don't ask for anything else. Just ask for safe passage”: negotiating access for vaccines amid conflict",
-      "meta": {
-        "ids": {},
-        "isCanadian": false,
-        "isImportant": false,
-        "isPHEIC": false
-      },
-      "id": "url:nn7y0s"
-    },
-    {
       "sourceName": "STAT News",
       "publisherName": "STAT",
       "sourceType": "rss",
@@ -5102,6 +5082,39 @@
         "isPHEIC": false
       },
       "id": "url:xr5s1d"
+    },
+    {
+      "sourceName": "Gavi",
+      "publisherName": "Gavi, the Vaccine Alliance",
+      "sourceType": "rss",
+      "category": "Gavi",
+      "title": "Dr Sania Nishtar - Gavi, the Vaccine Alliance",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE04b1dLZ2FMWU5YQmpvRkZFM2FHVnBFOFNPQW5nSm04MG93TjZaNWliaUJ4eXRPX2NRR1hmZWtxaHJFaUs2N3E2Y0ZSQkkyRTJhVHZqVjZnLWl2U0VXVHVKNTNkSzBRMUVTYVVBSXJUVlI?oc=5",
+      "publishedAt": 1787055687000,
+      "summary": "Dr Sania Nishtar Gavi, the Vaccine Alliance",
+      "tags": [
+        "International Organization",
+        "Unclassified",
+        "News",
+        "English"
+      ],
+      "score": 1.1,
+      "sources": [
+        {
+          "name": "Gavi",
+          "category": "Gavi",
+          "type": "rss"
+        }
+      ],
+      "canonicalUrl": "https://news.google.com/rss/articles/CBMicEFVX3lxTE04b1dLZ2FMWU5YQmpvRkZFM2FHVnBFOFNPQW5nSm04MG93TjZaNWliaUJ4eXRPX2NRR1hmZWtxaHJFaUs2N3E2Y0ZSQkkyRTJhVHZqVjZnLWl2U0VXVHVKNTNkSzBRMUVTYVVBSXJUVlI?oc=5",
+      "normalizedTitle": "Dr Sania Nishtar",
+      "meta": {
+        "ids": {},
+        "isCanadian": false,
+        "isImportant": false,
+        "isPHEIC": false
+      },
+      "id": "url:s45p33"
     },
     {
       "sourceName": "International Vaccine Institute",
@@ -5167,6 +5180,39 @@
         "isPHEIC": false
       },
       "id": "url:4xxh0x"
+    },
+    {
+      "sourceName": "Gavi",
+      "publisherName": "Gavi, the Vaccine Alliance",
+      "sourceType": "rss",
+      "category": "Gavi",
+      "title": "“Don't ask for anything else. Just ask for safe passage”: negotiating access for vaccines amid conflict - Gavi, the Vaccine Alliance",
+      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPdDR3UEV2N0Z3ZENuakM2NjFWZzBkczh1eENvbTE3UlVsZ1E4bjhBczFmVDlGMmVhNEE3MkcyYVh3S3J4V3VBV2JoMHlqc1lLNjV2RGs5Ull2S0plTjUzbWhfTFJPQXhlZkFpdzh5STNjS1liTUo3QUdDN0tNaS03VQ?oc=5",
+      "publishedAt": 1787036400000,
+      "summary": "“Don't ask for anything else. Just ask for safe passage”: negotiating access for vaccines amid conflict Gavi, the Vaccine Alliance",
+      "tags": [
+        "International Organization",
+        "Unclassified",
+        "News",
+        "English"
+      ],
+      "score": 1.1,
+      "sources": [
+        {
+          "name": "Gavi",
+          "category": "Gavi",
+          "type": "rss"
+        }
+      ],
+      "canonicalUrl": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPdDR3UEV2N0Z3ZENuakM2NjFWZzBkczh1eENvbTE3UlVsZ1E4bjhBczFmVDlGMmVhNEE3MkcyYVh3S3J4V3VBV2JoMHlqc1lLNjV2RGs5Ull2S0plTjUzbWhfTFJPQXhlZkFpdzh5STNjS1liTUo3QUdDN0tNaS03VQ?oc=5",
+      "normalizedTitle": "“Don't ask for anything else. Just ask for safe passage”: negotiating access for vaccines amid conflict",
+      "meta": {
+        "ids": {},
+        "isCanadian": false,
+        "isImportant": false,
+        "isPHEIC": false
+      },
+      "id": "url:7vj7w6"
     },
     {
       "sourceName": "Reuters",
@@ -5336,7 +5382,7 @@
       "sourceType": "rss",
       "category": "WHO",
       "title": "Stronger health security through better disease prevention and control: Vaccine-preventable Diseases and Immunization Programme – 2025 in review - World Health Organization (WHO)",
-      "url": "https://news.google.com/rss/articles/CBMioAJBVV95cUxNOEZFOU5JQ3N1NmMtN0s3SnNhZXVLTHVnSWNlLTAycHhxVUlVTUVNdGdLMmpnLXhwWDBPSnoyT1ZCZlVaV2tnYWJLZWRmejZpUmxNNUZxM053ak5tdUY3NFVTRzJweWlvUEgyR09KX1htaTlLRGlBVWtXNVk0ajN2RHBfS19DenREWE1mYjkzZW50UkhMcGFweXdXZkdNSkFZMk1OdDYzNWlnbnpJVzJQR0h1TXNxRkQzUFAwWXppQVg0aXp6Rmc4Y0s2Zk9kWnh2X2dtVElPNHMzMUVKa2ZUdzVSN2p1aUdHUmJ0eWhVa0dYV25lQ0kxUDlmWGY3N1hDTVdPbEFpbXQxR0xHQWwwXzRqb2tZZVVVTkFRSWRRWDI?oc=5",
+      "url": "https://news.google.com/rss/articles/CBMimwJBVV95cUxOWEFPaElDb2FJMF9BNUoxZTRUa19ZZmc1LUgzanhfWUVFemdva2hsY3RyWEo4am5VOWU2NndpX3dKX1lDbUx1b256dHpQUmEyd3lZZUljb2hEODBMQl9Qal81VE16ZnZDblZpTFl2XzZZOUU4ZFAtX2NGUTdSUEZGbjZZWE56S1h1V1RHYjFybjZWYVM3VHlkU3pFUFBLVU1OaC16cUpUV1R6dmc0RkIxN0pEaEpqTHMxMTFtXzhLWjN5bVZPMDdGemMtUUFBdmQ2M0xSVVl6QkZESUUyMTRObkhrUmNYZVhPTFl3QThWYy0yY1piRHQtVkRFajMyN29QanJ2cGp1VXZGZmNtT0s2RV8wM1VNcHZSLUFn?oc=5",
       "publishedAt": 1786950000000,
       "summary": "Stronger health security through better disease prevention and control: Vaccine-preventable Diseases and Immunization Programme – 2025 in review World Health Organization (WHO)",
       "tags": [
@@ -5352,7 +5398,7 @@
           "type": "rss"
         }
       ],
-      "canonicalUrl": "https://news.google.com/rss/articles/CBMioAJBVV95cUxNOEZFOU5JQ3N1NmMtN0s3SnNhZXVLTHVnSWNlLTAycHhxVUlVTUVNdGdLMmpnLXhwWDBPSnoyT1ZCZlVaV2tnYWJLZWRmejZpUmxNNUZxM053ak5tdUY3NFVTRzJweWlvUEgyR09KX1htaTlLRGlBVWtXNVk0ajN2RHBfS19DenREWE1mYjkzZW50UkhMcGFweXdXZkdNSkFZMk1OdDYzNWlnbnpJVzJQR0h1TXNxRkQzUFAwWXppQVg0aXp6Rmc4Y0s2Zk9kWnh2X2dtVElPNHMzMUVKa2ZUdzVSN2p1aUdHUmJ0eWhVa0dYV25lQ0kxUDlmWGY3N1hDTVdPbEFpbXQxR0xHQWwwXzRqb2tZZVVVTkFRSWRRWDI?oc=5",
+      "canonicalUrl": "https://news.google.com/rss/articles/CBMimwJBVV95cUxOWEFPaElDb2FJMF9BNUoxZTRUa19ZZmc1LUgzanhfWUVFemdva2hsY3RyWEo4am5VOWU2NndpX3dKX1lDbUx1b256dHpQUmEyd3lZZUljb2hEODBMQl9Qal81VE16ZnZDblZpTFl2XzZZOUU4ZFAtX2NGUTdSUEZGbjZZWE56S1h1V1RHYjFybjZWYVM3VHlkU3pFUFBLVU1OaC16cUpUV1R6dmc0RkIxN0pEaEpqTHMxMTFtXzhLWjN5bVZPMDdGemMtUUFBdmQ2M0xSVVl6QkZESUUyMTRObkhrUmNYZVhPTFl3QThWYy0yY1piRHQtVkRFajMyN29QanJ2cGp1VXZGZmNtT0s2RV8wM1VNcHZSLUFn?oc=5",
       "normalizedTitle": "Stronger health security through better disease prevention and control: Vaccine-preventable Diseases and Immunization Programme – 2025 in review",
       "meta": {
         "ids": {},
@@ -5360,7 +5406,7 @@
         "isImportant": false,
         "isPHEIC": false
       },
-      "id": "url:7njn22"
+      "id": "url:8kbt2s"
     },
     {
       "sourceName": "MedicalXpress",
@@ -5393,39 +5439,6 @@
         "isPHEIC": false
       },
       "id": "url:kt2g3i"
-    },
-    {
-      "sourceName": "Gavi",
-      "publisherName": "Gavi, the Vaccine Alliance",
-      "sourceType": "rss",
-      "category": "Gavi",
-      "title": "- Gavi, the Vaccine Alliance",
-      "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQd29WMjRTN0FVVm9lZWoyRnJhVFo3SEJ5R2w2TTY3VVFFZ2d3TGdEZlh1WDhjTUZ2dENhQmduMk40SnBzWDJWS1ozTTFlMjVxOVVkM21WZGhqQTFLUXhfakl1bEp4cHNuSHlGOHpEUVRYOEhLRmNFcHdwbVh0QW9jRjZuUmVKY1Fta1ZHbjE4dVJSaWlidG9RNExqc2dRZWhMQXNsQnlOWW9Bdm5fRUhUbHVJT0dXVll4V1dmcW9tZTB0LWR3eDFTc1Q5YmhCYy1EQnNpY293?oc=5",
-      "publishedAt": 1786786977000,
-      "summary": "Gavi, the Vaccine Alliance",
-      "tags": [
-        "International Organization",
-        "Unclassified",
-        "News",
-        "English"
-      ],
-      "score": 1.1,
-      "sources": [
-        {
-          "name": "Gavi",
-          "category": "Gavi",
-          "type": "rss"
-        }
-      ],
-      "canonicalUrl": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQd29WMjRTN0FVVm9lZWoyRnJhVFo3SEJ5R2w2TTY3VVFFZ2d3TGdEZlh1WDhjTUZ2dENhQmduMk40SnBzWDJWS1ozTTFlMjVxOVVkM21WZGhqQTFLUXhfakl1bEp4cHNuSHlGOHpEUVRYOEhLRmNFcHdwbVh0QW9jRjZuUmVKY1Fta1ZHbjE4dVJSaWlidG9RNExqc2dRZWhMQXNsQnlOWW9Bdm5fRUhUbHVJT0dXVll4V1dmcW9tZTB0LWR3eDFTc1Q5YmhCYy1EQnNpY293?oc=5",
-      "normalizedTitle": "",
-      "meta": {
-        "ids": {},
-        "isCanadian": false,
-        "isImportant": false,
-        "isPHEIC": false
-      },
-      "id": "url:hej64t"
     },
     {
       "sourceName": "Sanofi",
@@ -5491,39 +5504,6 @@
         "isPHEIC": false
       },
       "id": "url:9dz6j1"
-    },
-    {
-      "sourceName": "Gavi",
-      "publisherName": "Gavi, the Vaccine Alliance",
-      "sourceType": "rss",
-      "category": "Gavi",
-      "title": "How Aka hunters and Fulani chiefs helped health workers locate CAR’s missed-out children - Gavi, the Vaccine Alliance",
-      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOQUM4V3NrZlYtQ0RSNTZla0llMUpHWDRxaVQycGNselRNcld0a21jSUZkX1NleDA0RlZNU0JSbW04dDVBY2hjNWh0ckxNVHhibmZDbXRxV1pMd2VTcWZiRFpveEdLcVpSNFpxYmR3eEVPREVQWkxrX3I3QjBvMkUzRUFXWU96Z2RTdW1GR1dNWWs2ZE82RFBGSktmU0k0UDgyRlN5d0V3Z0RJSWlfWW5kclpn?oc=5",
-      "publishedAt": 1786715117000,
-      "summary": "How Aka hunters and Fulani chiefs helped health workers locate CAR’s missed-out children Gavi, the Vaccine Alliance",
-      "tags": [
-        "International Organization",
-        "Unclassified",
-        "News",
-        "English"
-      ],
-      "score": 1.1,
-      "sources": [
-        {
-          "name": "Gavi",
-          "category": "Gavi",
-          "type": "rss"
-        }
-      ],
-      "canonicalUrl": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOQUM4V3NrZlYtQ0RSNTZla0llMUpHWDRxaVQycGNselRNcld0a21jSUZkX1NleDA0RlZNU0JSbW04dDVBY2hjNWh0ckxNVHhibmZDbXRxV1pMd2VTcWZiRFpveEdLcVpSNFpxYmR3eEVPREVQWkxrX3I3QjBvMkUzRUFXWU96Z2RTdW1GR1dNWWs2ZE82RFBGSktmU0k0UDgyRlN5d0V3Z0RJSWlfWW5kclpn?oc=5",
-      "normalizedTitle": "How Aka hunters and Fulani chiefs helped health workers locate CAR’s missed-out children",
-      "meta": {
-        "ids": {},
-        "isCanadian": false,
-        "isImportant": false,
-        "isPHEIC": false
-      },
-      "id": "url:j831u0"
     },
     {
       "sourceName": "Gavi",
@@ -5756,37 +5736,6 @@
       "publisherName": "Immunize.org",
       "sourceType": "rss",
       "category": "Immunize.org",
-      "title": "Standing Orders for Administering Influenza Vaccine to Children and Teens - Immunize.org",
-      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQRnotNFVmOVBUbDlmUVlKSHYzV0N4QzJvWFlETjEyZHRJTndtSDJySGxnZ3ZMUGNLcDJmcmZ3TEVRc201MUVmWU5aSlI5QnVKX1RTLXhKWGM2ckliaDFKaXBaakhKLVAwdnIzLW4yQnd2dGhQRUM3YUVzZmY5c0lrNWU1RFliZkh2eEZOLVNpX2Qzel85aVV2YmxNaFozQmJKZ295SWdETVFhTmJV?oc=5",
-      "publishedAt": 1786690800000,
-      "summary": "Standing Orders for Administering Influenza Vaccine to Children and Teens Immunize.org",
-      "tags": [
-        "Unclassified",
-        "English"
-      ],
-      "score": 1.1,
-      "sources": [
-        {
-          "name": "Immunize.org",
-          "category": "Immunize.org",
-          "type": "rss"
-        }
-      ],
-      "canonicalUrl": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQRnotNFVmOVBUbDlmUVlKSHYzV0N4QzJvWFlETjEyZHRJTndtSDJySGxnZ3ZMUGNLcDJmcmZ3TEVRc201MUVmWU5aSlI5QnVKX1RTLXhKWGM2ckliaDFKaXBaakhKLVAwdnIzLW4yQnd2dGhQRUM3YUVzZmY5c0lrNWU1RFliZkh2eEZOLVNpX2Qzel85aVV2YmxNaFozQmJKZ295SWdETVFhTmJV?oc=5",
-      "normalizedTitle": "Standing Orders for Administering Influenza Vaccine to Children and Teens",
-      "meta": {
-        "ids": {},
-        "isCanadian": false,
-        "isImportant": false,
-        "isPHEIC": false
-      },
-      "id": "url:xr6b4z"
-    },
-    {
-      "sourceName": "Immunize.org",
-      "publisherName": "Immunize.org",
-      "sourceType": "rss",
-      "category": "Immunize.org",
       "title": "Clinical Resources: Adult Vaccination - Immunize.org",
       "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE10RlJkbTV4MGoxVm43MER4dmNSd0ZRcGtjZk9zWGlkYTVEQXRlS29zd2tJNW9lenFyXzNQR05jb0EySEdOWnFXOC1ETHMzQ2dSU3E4UFZNWElVaEI3aUItai1SQXBLVjQt?oc=5",
       "publishedAt": 1786690800000,
@@ -5915,39 +5864,6 @@
       "publisherName": "Gavi, the Vaccine Alliance",
       "sourceType": "rss",
       "category": "Gavi",
-      "title": "Why tropical cities are often hotter if they're poorer - Gavi, the Vaccine Alliance",
-      "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE15R3UtWEkwN3RtaVJIX1I4Q3BEcEplN2xDb3pkZHRYcXVqVEEyaS1zVTNjcHQzTTZzeGtvUjM4ZzRwU0VSb2VlSjVyREd5TDlLak1GNWYxMlRoM0hKcjJobXo5Y1Q2Y1VTOHNEeTI2aWpmTzdXQ0ExMlNR?oc=5",
-      "publishedAt": 1786633485000,
-      "summary": "Why tropical cities are often hotter if they're poorer Gavi, the Vaccine Alliance",
-      "tags": [
-        "International Organization",
-        "Unclassified",
-        "News",
-        "English"
-      ],
-      "score": 1.1,
-      "sources": [
-        {
-          "name": "Gavi",
-          "category": "Gavi",
-          "type": "rss"
-        }
-      ],
-      "canonicalUrl": "https://news.google.com/rss/articles/CBMiekFVX3lxTE15R3UtWEkwN3RtaVJIX1I4Q3BEcEplN2xDb3pkZHRYcXVqVEEyaS1zVTNjcHQzTTZzeGtvUjM4ZzRwU0VSb2VlSjVyREd5TDlLak1GNWYxMlRoM0hKcjJobXo5Y1Q2Y1VTOHNEeTI2aWpmTzdXQ0ExMlNR?oc=5",
-      "normalizedTitle": "Why tropical cities are often hotter if they're poorer",
-      "meta": {
-        "ids": {},
-        "isCanadian": false,
-        "isImportant": false,
-        "isPHEIC": false
-      },
-      "id": "url:unofi7"
-    },
-    {
-      "sourceName": "Gavi",
-      "publisherName": "Gavi, the Vaccine Alliance",
-      "sourceType": "rss",
-      "category": "Gavi",
       "title": "For Delhi’s outdoor workers, every heatwave has a price - Gavi, the Vaccine Alliance",
       "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOaTYwWk1HTi1RdkhKdkpoVVI1c3JjY1BjaFdLRk1MZGxKWkJUWlk4T3VhMXhqREhRRS1PcjhtWGZ0RTIyRkcxZjB0U0I2RTd3bFlBbDg2SjlyYmczWXh5bHZURVNlN0UxMkUyekZtQWhkRmZRdHpyMjFtMktESzNacE15WnhtcGs?oc=5",
       "publishedAt": 1786631385000,
@@ -6042,38 +5958,6 @@
       "id": "url:zb3phe"
     },
     {
-      "sourceName": "STAT News",
-      "publisherName": "STAT",
-      "sourceType": "rss",
-      "category": "STAT News",
-      "title": "Talks on launch of clinical trial of Ebola vaccine in DRC advance, WHO says - STAT",
-      "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTFBaZ195QldjVTI2aUU1aHBQazB1ZzBTVmxMcFRnM2tCdUc3NU9RNWhrbHdxN3ZtZlh3R25VRC0wYnZXVXpSQmp6OVdkck1jbTNudjdnUl9mdTc2bk1IREppXzFrcUNSaFp6ZnVaa2VjQzlSREkzUjJTTTNB?oc=5",
-      "publishedAt": 1786568468000,
-      "summary": "Talks on launch of clinical trial of Ebola vaccine in DRC advance, WHO says STAT",
-      "tags": [
-        "Unclassified",
-        "News",
-        "English"
-      ],
-      "score": 1.1,
-      "sources": [
-        {
-          "name": "STAT News",
-          "category": "STAT News",
-          "type": "rss"
-        }
-      ],
-      "canonicalUrl": "https://news.google.com/rss/articles/CBMiekFVX3lxTFBaZ195QldjVTI2aUU1aHBQazB1ZzBTVmxMcFRnM2tCdUc3NU9RNWhrbHdxN3ZtZlh3R25VRC0wYnZXVXpSQmp6OVdkck1jbTNudjdnUl9mdTc2bk1IREppXzFrcUNSaFp6ZnVaa2VjQzlSREkzUjJTTTNB?oc=5",
-      "normalizedTitle": "Talks on launch of clinical trial of Ebola vaccine in DRC advance, WHO says",
-      "meta": {
-        "ids": {},
-        "isCanadian": false,
-        "isImportant": false,
-        "isPHEIC": false
-      },
-      "id": "url:qsc7b6"
-    },
-    {
       "sourceName": "MedicalXpress",
       "publisherName": "Medical Xpress",
       "sourceType": "rss",
@@ -6106,13 +5990,13 @@
       "id": "url:7srack"
     },
     {
-      "sourceName": "MedicalXpress",
+      "sourceName": "MedicalXpress, EurekAlert",
       "publisherName": "Medical Xpress",
       "sourceType": "rss",
       "category": "MedicalXpress",
       "title": "Reddit reveals what pregnant women really want to know about the Tdap vaccine - Medical Xpress",
-      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPdlpSeWdJZnI0b1B5SDU0OXVsN2pfWW5IUi1UTzdHZmZoa2hoY0Z6ekd2Q1N5bUhjekZSR01yNjV2eTQ4WHVqMDhEYkU0UW9BWWU4ZXk4YTRDYk9hR2oxS1lUT0I2VGw4bzlrTGZsVjQzWWhYbFo3MllidVB3eVNOTTUzUVE?oc=5",
-      "publishedAt": 1786557611000,
+      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE9DZExpWDRmQXVFQzBtUGRzQ3VLRUl6VUN5NWN1VjUtQXRibTUxU3pfU1JTS3YyRjVqZVpnaUphVy1aVXI2NTJBVXd1LWc3YlJkdFNaYU9PeGJORS1J?oc=5",
+      "publishedAt": 1786559089000,
       "summary": "Reddit reveals what pregnant women really want to know about the Tdap vaccine Medical Xpress",
       "tags": [
         "Unclassified",
@@ -6125,9 +6009,14 @@
           "name": "MedicalXpress",
           "category": "MedicalXpress",
           "type": "rss"
+        },
+        {
+          "name": "EurekAlert",
+          "category": " EurekAlert",
+          "type": "rss"
         }
       ],
-      "canonicalUrl": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPdlpSeWdJZnI0b1B5SDU0OXVsN2pfWW5IUi1UTzdHZmZoa2hoY0Z6ekd2Q1N5bUhjekZSR01yNjV2eTQ4WHVqMDhEYkU0UW9BWWU4ZXk4YTRDYk9hR2oxS1lUT0I2VGw4bzlrTGZsVjQzWWhYbFo3MllidVB3eVNOTTUzUVE?oc=5",
+      "canonicalUrl": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE9DZExpWDRmQXVFQzBtUGRzQ3VLRUl6VUN5NWN1VjUtQXRibTUxU3pfU1JTS3YyRjVqZVpnaUphVy1aVXI2NTJBVXd1LWc3YlJkdFNaYU9PeGJORS1J?oc=5",
       "normalizedTitle": "Reddit reveals what pregnant women really want to know about the Tdap vaccine",
       "meta": {
         "ids": {},
@@ -6135,7 +6024,7 @@
         "isImportant": false,
         "isPHEIC": false
       },
-      "id": "url:br386k"
+      "id": "url:kftywo"
     },
     {
       "sourceName": "MedicalXpress",
@@ -6237,38 +6126,6 @@
       "id": "url:agdika"
     },
     {
-      "sourceName": "Reuters",
-      "publisherName": "Reuters",
-      "sourceType": "rss",
-      "category": "News",
-      "title": "Explainer: Trump's childhood vaccine order: what it does and what doctors say - Reuters",
-      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxObXB4bmY4LWpmMm1oeXBZYkFYQkdFejNiWl96d0tEeFhxZEZKQzlVNHdaZklkbVFpMFJkYkx5NXpBcHUzbmk1S055b1R2TE9ieVlRam9CMm1MYnRmWS1VYnVCaGZQWWlmcGFNd3htVlo5Ny1BcmNEczZqZTUxS3dxZWdTTGFJbnRqZmFLeDVCV3BQck1YX3ZZaXhjSnc2UnBRNGxLemFidlZOUy0tQU84bGQ2TQ?oc=5",
-      "publishedAt": 1786481903000,
-      "summary": "Explainer: Trump's childhood vaccine order: what it does and what doctors say Reuters",
-      "tags": [
-        "Unclassified",
-        "Epidemiology",
-        "English"
-      ],
-      "score": 1.1,
-      "sources": [
-        {
-          "name": "Reuters",
-          "category": "News",
-          "type": "rss"
-        }
-      ],
-      "canonicalUrl": "https://news.google.com/rss/articles/CBMiswFBVV95cUxObXB4bmY4LWpmMm1oeXBZYkFYQkdFejNiWl96d0tEeFhxZEZKQzlVNHdaZklkbVFpMFJkYkx5NXpBcHUzbmk1S055b1R2TE9ieVlRam9CMm1MYnRmWS1VYnVCaGZQWWlmcGFNd3htVlo5Ny1BcmNEczZqZTUxS3dxZWdTTGFJbnRqZmFLeDVCV3BQck1YX3ZZaXhjSnc2UnBRNGxLemFidlZOUy0tQU84bGQ2TQ?oc=5",
-      "normalizedTitle": "Explainer: Trump's childhood vaccine order: what it does and what doctors say",
-      "meta": {
-        "ids": {},
-        "isCanadian": false,
-        "isImportant": false,
-        "isPHEIC": false
-      },
-      "id": "url:newdus"
-    },
-    {
       "sourceName": "EurekAlert",
       "publisherName": "EurekAlert!",
       "sourceType": "rss",
@@ -6337,9 +6194,41 @@
       "publisherName": "Reuters",
       "sourceType": "rss",
       "category": "News",
+      "title": "Explainer: Trump's childhood vaccine order: what it does and what doctors say - Reuters",
+      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxObXB4bmY4LWpmMm1oeXBZYkFYQkdFejNiWl96d0tEeFhxZEZKQzlVNHdaZklkbVFpMFJkYkx5NXpBcHUzbmk1S055b1R2TE9ieVlRam9CMm1MYnRmWS1VYnVCaGZQWWlmcGFNd3htVlo5Ny1BcmNEczZqZTUxS3dxZWdTTGFJbnRqZmFLeDVCV3BQck1YX3ZZaXhjSnc2UnBRNGxLemFidlZOUy0tQU84bGQ2TQ?oc=5",
+      "publishedAt": 1786431600000,
+      "summary": "Explainer: Trump's childhood vaccine order: what it does and what doctors say Reuters",
+      "tags": [
+        "Unclassified",
+        "Epidemiology",
+        "English"
+      ],
+      "score": 1.1,
+      "sources": [
+        {
+          "name": "Reuters",
+          "category": "News",
+          "type": "rss"
+        }
+      ],
+      "canonicalUrl": "https://news.google.com/rss/articles/CBMiswFBVV95cUxObXB4bmY4LWpmMm1oeXBZYkFYQkdFejNiWl96d0tEeFhxZEZKQzlVNHdaZklkbVFpMFJkYkx5NXpBcHUzbmk1S055b1R2TE9ieVlRam9CMm1MYnRmWS1VYnVCaGZQWWlmcGFNd3htVlo5Ny1BcmNEczZqZTUxS3dxZWdTTGFJbnRqZmFLeDVCV3BQck1YX3ZZaXhjSnc2UnBRNGxLemFidlZOUy0tQU84bGQ2TQ?oc=5",
+      "normalizedTitle": "Explainer: Trump's childhood vaccine order: what it does and what doctors say",
+      "meta": {
+        "ids": {},
+        "isCanadian": false,
+        "isImportant": false,
+        "isPHEIC": false
+      },
+      "id": "url:newdus"
+    },
+    {
+      "sourceName": "Reuters",
+      "publisherName": "Reuters",
+      "sourceType": "rss",
+      "category": "News",
       "title": "WHO defends immunisation schedules after Trump orders fewer childhood shots - Reuters",
       "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPREU1TjhnNFlNeDduMlBVNElNWU5PQTh3OUJzc2NNbnA1dEhQRk1oQVZKUnpwUGNvd3pCbXZRZHZUZ3BmZmdXTEV0M1BqRUZoQTZyczhJUUZJQjJpcDZLM1Jhc1VhZ2I4U1gwMXRPZVg5bEMtdkktLUZ6NVpqWVFHMUM1UHh3WXJobWZJbkR5ekZSMGxCMDM5T0VmRHJVZGg1Qjg2X3N0RFl1MXRNUzRYbWR4LXFVX2Z0eEZCVjFkZWhBdjh4R2ww?oc=5",
-      "publishedAt": 1786457941000,
+      "publishedAt": 1786431600000,
       "summary": "WHO defends immunisation schedules after Trump orders fewer childhood shots Reuters",
       "tags": [
         "Unclassified",
@@ -6465,6 +6354,38 @@
       "publisherName": "EurekAlert!",
       "sourceType": "rss",
       "category": "EurekAlert",
+      "title": "First- and second-year outcomes after Nirsevimab immunization - EurekAlert!",
+      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFAwVmprck9icFAxVDRNa3VnR1A1ZlhuLXN4LUZtOFQ5NnRlbkxxZnNEM1hQa2otRHdGbjFndElPOHNEbi1UQUxlYk5ER3NPY1NfY2dFb0dFSHVlNUR1?oc=5",
+      "publishedAt": 1786385782000,
+      "summary": "First- and second-year outcomes after Nirsevimab immunization EurekAlert!",
+      "tags": [
+        "Unclassified",
+        "News",
+        "English"
+      ],
+      "score": 1.1,
+      "sources": [
+        {
+          "name": "EurekAlert",
+          "category": " EurekAlert",
+          "type": "rss"
+        }
+      ],
+      "canonicalUrl": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFAwVmprck9icFAxVDRNa3VnR1A1ZlhuLXN4LUZtOFQ5NnRlbkxxZnNEM1hQa2otRHdGbjFndElPOHNEbi1UQUxlYk5ER3NPY1NfY2dFb0dFSHVlNUR1?oc=5",
+      "normalizedTitle": "First- and second-year outcomes after Nirsevimab immunization",
+      "meta": {
+        "ids": {},
+        "isCanadian": false,
+        "isImportant": false,
+        "isPHEIC": false
+      },
+      "id": "url:anv2yi"
+    },
+    {
+      "sourceName": "EurekAlert",
+      "publisherName": "EurekAlert!",
+      "sourceType": "rss",
+      "category": "EurekAlert",
       "title": "Study: Triple-dose regimen may permanently clear HIV in infected newborns - EurekAlert!",
       "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE1hTU5PdVl0TnFjd1VuSjRzcXB1TVVlZHZpZE5IMEpnOUlYU2lJaW03YzNTN1BsSU1wVE5hb29JNXhkakRxY1pkTTFHblNzMGdDU3ZUeHo4bUZWMDA5?oc=5",
       "publishedAt": 1786383023000,
@@ -6491,6 +6412,38 @@
         "isPHEIC": false
       },
       "id": "url:czxdit"
+    },
+    {
+      "sourceName": "Medscape News",
+      "publisherName": "Medscape",
+      "sourceType": "rss",
+      "category": "Medscape News",
+      "title": "Meningococcal B Vaccine May Cut Gonorrhea Risk in Teens - Medscape",
+      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQRHhoUXp0SUt2UzUzNWtHdXZhbHlhbzZyN0xhNWl3VWhVOHhoX3QyMFZicFYzazlSVFB2eGJtZ2NseDh0cGlUQzdZeml0ekVrOTdkNTBhUWxIUWxmcE5sNFRnMWhTV2dabkZsSk9TMVpuYS1ySXMxZFdLclp1TGdPamhpTUl6MUE1cjRXUDVCYUh3cUlhT1N5VlYwbS1IN3ZBXzFVZ0d3?oc=5",
+      "publishedAt": 1786370003000,
+      "summary": "Meningococcal B Vaccine May Cut Gonorrhea Risk in Teens Medscape",
+      "tags": [
+        "Unclassified",
+        "News",
+        "English"
+      ],
+      "score": 1.1,
+      "sources": [
+        {
+          "name": "Medscape News",
+          "category": "Medscape News",
+          "type": "rss"
+        }
+      ],
+      "canonicalUrl": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQRHhoUXp0SUt2UzUzNWtHdXZhbHlhbzZyN0xhNWl3VWhVOHhoX3QyMFZicFYzazlSVFB2eGJtZ2NseDh0cGlUQzdZeml0ekVrOTdkNTBhUWxIUWxmcE5sNFRnMWhTV2dabkZsSk9TMVpuYS1ySXMxZFdLclp1TGdPamhpTUl6MUE1cjRXUDVCYUh3cUlhT1N5VlYwbS1IN3ZBXzFVZ0d3?oc=5",
+      "normalizedTitle": "Meningococcal B Vaccine May Cut Gonorrhea Risk in Teens",
+      "meta": {
+        "ids": {},
+        "isCanadian": false,
+        "isImportant": false,
+        "isPHEIC": false
+      },
+      "id": "url:sa2cpr"
     },
     {
       "sourceName": "GSK",
@@ -6523,6 +6476,37 @@
         "isPHEIC": false
       },
       "id": "url:j0wgr2"
+    },
+    {
+      "sourceName": "Immunize.org",
+      "publisherName": "Immunize.org",
+      "sourceType": "rss",
+      "category": "Immunize.org",
+      "title": "Ask The Experts About Vaccines: Storage & Handling | Vaccine Viability and Expiration - Immunize.org",
+      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQU3BTRXExT1dkUjJmM3NYWkVXb29LTUxabndEc0dVM2JxVlZCNlFzWTByQVRtN1dXcEpyWWo2YmE1UmxodnFla0hhbk9yS01MRWxmeXdlVDBwbXVoMlBHc1ZlRTIwbFpxOXNFZERORUY2MERERjl1b1lYQ2VERHdoVVd0QTR4Z250VUV3YVQ0STFxZw?oc=5",
+      "publishedAt": 1786345200000,
+      "summary": "Ask The Experts About Vaccines: Storage & Handling | Vaccine Viability and Expiration Immunize.org",
+      "tags": [
+        "Unclassified",
+        "English"
+      ],
+      "score": 1.1,
+      "sources": [
+        {
+          "name": "Immunize.org",
+          "category": "Immunize.org",
+          "type": "rss"
+        }
+      ],
+      "canonicalUrl": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQU3BTRXExT1dkUjJmM3NYWkVXb29LTUxabndEc0dVM2JxVlZCNlFzWTByQVRtN1dXcEpyWWo2YmE1UmxodnFla0hhbk9yS01MRWxmeXdlVDBwbXVoMlBHc1ZlRTIwbFpxOXNFZERORUY2MERERjl1b1lYQ2VERHdoVVd0QTR4Z250VUV3YVQ0STFxZw?oc=5",
+      "normalizedTitle": "Ask The Experts About Vaccines: Storage & Handling | Vaccine Viability and Expiration",
+      "meta": {
+        "ids": {},
+        "isCanadian": false,
+        "isImportant": false,
+        "isPHEIC": false
+      },
+      "id": "url:49hn2k"
     },
     {
       "sourceName": "Immunize.org",
@@ -6718,39 +6702,6 @@
       "id": "url:kmz67c"
     },
     {
-      "sourceName": "WHO",
-      "publisherName": "WHO | Regional Office for Africa",
-      "sourceType": "rss",
-      "category": "WHO",
-      "title": "Lancement de la campagne de vaccination contre la Rougeole et la Rubéole - WHO | Regional Office for Africa",
-      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1fSWxfVS1LUjJJUm5pdUEzdjdEN2hJaVdKdTZCS0NpMGxSTWkwUWNScWhsTjBjYVJScE1ZQjdEdWstTWoybENfOWFBNkY0a0lsSy1WSlBtU2lyUzJqQll5N1dxRV8?oc=5",
-      "publishedAt": 1786120912000,
-      "summary": "Lancement de la campagne de vaccination contre la Rougeole et la Rubéole WHO | Regional Office for Africa",
-      "tags": [
-        "Global South",
-        "Unclassified",
-        "PH Agency",
-        "English"
-      ],
-      "score": 1.1,
-      "sources": [
-        {
-          "name": "WHO",
-          "category": "WHO",
-          "type": "rss"
-        }
-      ],
-      "canonicalUrl": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1fSWxfVS1LUjJJUm5pdUEzdjdEN2hJaVdKdTZCS0NpMGxSTWkwUWNScWhsTjBjYVJScE1ZQjdEdWstTWoybENfOWFBNkY0a0lsSy1WSlBtU2lyUzJqQll5N1dxRV8?oc=5",
-      "normalizedTitle": "Lancement de la campagne de vaccination contre la Rougeole et la Rubéole",
-      "meta": {
-        "ids": {},
-        "isCanadian": false,
-        "isImportant": false,
-        "isPHEIC": false
-      },
-      "id": "url:99qjo6"
-    },
-    {
       "sourceName": "Gavi",
       "publisherName": "Gavi, the Vaccine Alliance",
       "sourceType": "rss",
@@ -6784,261 +6735,38 @@
       "id": "url:e670fs"
     },
     {
-      "sourceName": "MedicalXpress",
-      "publisherName": "Medical Xpress",
-      "sourceType": "rss",
-      "category": "MedicalXpress",
-      "title": "Fridge-free tetanus-diphtheria vaccine shows promise of reaching millions worldwide - Medical Xpress",
-      "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNbS1zTTJlTG9fRFpwdXNRbS1NMGRWN0x3ZG9EMkhrZDVMeHA0WjAzbUxPZGRxcXMzbk1uMkZ6QVgtYWxRQkpkZ3VRZWVyMnI4M3VSRGVXWFFfdloyek1tQjZMeXcwZGhEdmlyU20ybmtTa3REcGJPVTUxci1EUHBLd3BYNm9CU3AtT3c?oc=5",
-      "publishedAt": 1786030802000,
-      "summary": "Fridge-free tetanus-diphtheria vaccine shows promise of reaching millions worldwide Medical Xpress",
+      "sourceName": "PubMed",
+      "publisherName": "Hum Vaccin Immunother",
+      "sourceType": "api",
+      "category": "publication",
+      "title": "The origin of non-specific effects of vaccines and the role of randomised clinical trials.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42623189/",
+      "publishedAt": 1796083200000,
+      "summary": "Authors: Benn CS. Source: Hum Vaccin Immunother.",
       "tags": [
         "Unclassified",
-        "News",
-        "English"
+        "Study",
+        "PubMed"
       ],
-      "score": 1.1,
+      "score": 0.1,
       "sources": [
         {
-          "name": "MedicalXpress",
-          "category": "MedicalXpress",
-          "type": "rss"
+          "name": "PubMed",
+          "category": "publication",
+          "type": "api"
         }
       ],
-      "canonicalUrl": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNbS1zTTJlTG9fRFpwdXNRbS1NMGRWN0x3ZG9EMkhrZDVMeHA0WjAzbUxPZGRxcXMzbk1uMkZ6QVgtYWxRQkpkZ3VRZWVyMnI4M3VSRGVXWFFfdloyek1tQjZMeXcwZGhEdmlyU20ybmtTa3REcGJPVTUxci1EUHBLd3BYNm9CU3AtT3c?oc=5",
-      "normalizedTitle": "Fridge-free tetanus-diphtheria vaccine shows promise of reaching millions worldwide",
+      "canonicalUrl": "https://pubmed.ncbi.nlm.nih.gov/42623189",
+      "normalizedTitle": "The origin of non-specific effects of vaccines and the role of randomised clinical trials.",
       "meta": {
-        "ids": {},
+        "ids": {
+          "pmid": "42623189"
+        },
         "isCanadian": false,
         "isImportant": false,
         "isPHEIC": false
       },
-      "id": "url:u7diul"
-    },
-    {
-      "sourceName": "MedicalXpress",
-      "publisherName": "Medical Xpress",
-      "sourceType": "rss",
-      "category": "MedicalXpress",
-      "title": "Expert explainer: Strategies to improve childhood vaccination uptake - Medical Xpress",
-      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPQWY4eF9RZXNhR1VPUmJEcFYtdGk5ZC1CWjZHZ0pJaXpkODh1bWViWWdpbFZ1bGE0T2ViZDEzR3o1b3ZOR3pjVTJ1Um5XN2stZnczeUtXSVJqS1E2RHJuWEF1UmxHWjF5VTFKSjloeWpZZWhVWUlRVXlSS3c2ZGVqM2lDSWQxU29NbUFEeHBCZnVHaTd2?oc=5",
-      "publishedAt": 1786024806000,
-      "summary": "Expert explainer: Strategies to improve childhood vaccination uptake Medical Xpress",
-      "tags": [
-        "Unclassified",
-        "News",
-        "English"
-      ],
-      "score": 1.1,
-      "sources": [
-        {
-          "name": "MedicalXpress",
-          "category": "MedicalXpress",
-          "type": "rss"
-        }
-      ],
-      "canonicalUrl": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPQWY4eF9RZXNhR1VPUmJEcFYtdGk5ZC1CWjZHZ0pJaXpkODh1bWViWWdpbFZ1bGE0T2ViZDEzR3o1b3ZOR3pjVTJ1Um5XN2stZnczeUtXSVJqS1E2RHJuWEF1UmxHWjF5VTFKSjloeWpZZWhVWUlRVXlSS3c2ZGVqM2lDSWQxU29NbUFEeHBCZnVHaTd2?oc=5",
-      "normalizedTitle": "Expert explainer: Strategies to improve childhood vaccination uptake",
-      "meta": {
-        "ids": {},
-        "isCanadian": false,
-        "isImportant": false,
-        "isPHEIC": false
-      },
-      "id": "url:m6vkzq"
-    },
-    {
-      "sourceName": "UNICEF",
-      "publisherName": "UNICEF",
-      "sourceType": "rss",
-      "category": "UNICEF",
-      "title": "“I have never missed a vaccination appointment” - UNICEF",
-      "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNTDEwR1BBczZlS0gtOG9TWjZmeGg3a3Z1YXNjb3VxcXlCb2t3LWRVV1Z6dEtRaTBoWFBNNXdNVVB2ekd2aTY0QjRLVjZhWWMwZGNBU3A3RVJlMGFVd3h0Zm93dnpXZ1l5X3BpWWI3WEw5Uk1remNsVXZ2UVhhU3RJZ0I4djlTM2V2c3c?oc=5",
-      "publishedAt": 1785999600000,
-      "summary": "“I have never missed a vaccination appointment” UNICEF",
-      "tags": [
-        "International Organization",
-        "Unclassified",
-        "News",
-        "English"
-      ],
-      "score": 1.1,
-      "sources": [
-        {
-          "name": "UNICEF",
-          "category": "UNICEF",
-          "type": "rss"
-        }
-      ],
-      "canonicalUrl": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNTDEwR1BBczZlS0gtOG9TWjZmeGg3a3Z1YXNjb3VxcXlCb2t3LWRVV1Z6dEtRaTBoWFBNNXdNVVB2ekd2aTY0QjRLVjZhWWMwZGNBU3A3RVJlMGFVd3h0Zm93dnpXZ1l5X3BpWWI3WEw5Uk1remNsVXZ2UVhhU3RJZ0I4djlTM2V2c3c?oc=5",
-      "normalizedTitle": "“I have never missed a vaccination appointment”",
-      "meta": {
-        "ids": {},
-        "isCanadian": false,
-        "isImportant": false,
-        "isPHEIC": false
-      },
-      "id": "url:81glmg"
-    },
-    {
-      "sourceName": "MedicalXpress",
-      "publisherName": "Medical Xpress",
-      "sourceType": "rss",
-      "category": "MedicalXpress",
-      "title": "New vaccine strategy protects against chikungunya in mice and could become a platform for combating other diseases - Medical Xpress",
-      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOODl0MXR6SGstbHI1X2g0OHZ4QUVnaFlYdWItcS1BR0JCNmhIVlF2c1htXy1nUm42NUdtU0JwSlZwMkRXMURHSFhrQUFTRkkzcExReUtoV0xNOHVwcTRKazA3V2JHZUotbDlobXhrclZndFdMTHZsMDlIVkpDaFNDTUtMMFJreGY0TmRKbzZUMA?oc=5",
-      "publishedAt": 1785999600000,
-      "summary": "New vaccine strategy protects against chikungunya in mice and could become a platform for combating other diseases Medical Xpress",
-      "tags": [
-        "Unclassified",
-        "News",
-        "English"
-      ],
-      "score": 1.1,
-      "sources": [
-        {
-          "name": "MedicalXpress",
-          "category": "MedicalXpress",
-          "type": "rss"
-        }
-      ],
-      "canonicalUrl": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOODl0MXR6SGstbHI1X2g0OHZ4QUVnaFlYdWItcS1BR0JCNmhIVlF2c1htXy1nUm42NUdtU0JwSlZwMkRXMURHSFhrQUFTRkkzcExReUtoV0xNOHVwcTRKazA3V2JHZUotbDlobXhrclZndFdMTHZsMDlIVkpDaFNDTUtMMFJreGY0TmRKbzZUMA?oc=5",
-      "normalizedTitle": "New vaccine strategy protects against chikungunya in mice and could become a platform for combating other diseases",
-      "meta": {
-        "ids": {},
-        "isCanadian": false,
-        "isImportant": false,
-        "isPHEIC": false
-      },
-      "id": "url:3q61qa"
-    },
-    {
-      "sourceName": "STAT News",
-      "publisherName": "STAT",
-      "sourceType": "rss",
-      "category": "STAT News",
-      "title": "One year since Kennedy canceled mRNA vaccine projects, science shows how wrong he was - STAT",
-      "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE5IT3FFVjZtMTdZckEtUjFWaE9rY3pTWjl6R1d1SEh5X05EVDE0b1ByRzRRV2YzU29uWXJhVWFQUWF5M0tDRUFuRVhXcU5pTGhwYjZqOTVnamlqTzdBQkxVenJqQ2x1S2lhQjdRVDFLTWtCQ0p6dUY1Q3lMeHhfdw?oc=5",
-      "publishedAt": 1785999600000,
-      "summary": "One year since Kennedy canceled mRNA vaccine projects, science shows how wrong he was STAT",
-      "tags": [
-        "Unclassified",
-        "News",
-        "English"
-      ],
-      "score": 1.1,
-      "sources": [
-        {
-          "name": "STAT News",
-          "category": "STAT News",
-          "type": "rss"
-        }
-      ],
-      "canonicalUrl": "https://news.google.com/rss/articles/CBMifkFVX3lxTE5IT3FFVjZtMTdZckEtUjFWaE9rY3pTWjl6R1d1SEh5X05EVDE0b1ByRzRRV2YzU29uWXJhVWFQUWF5M0tDRUFuRVhXcU5pTGhwYjZqOTVnamlqTzdBQkxVenJqQ2x1S2lhQjdRVDFLTWtCQ0p6dUY1Q3lMeHhfdw?oc=5",
-      "normalizedTitle": "One year since Kennedy canceled mRNA vaccine projects, science shows how wrong he was",
-      "meta": {
-        "ids": {},
-        "isCanadian": false,
-        "isImportant": false,
-        "isPHEIC": false
-      },
-      "id": "url:zgt6hh"
-    },
-    {
-      "sourceName": "EurekAlert",
-      "publisherName": "EurekAlert!",
-      "sourceType": "rss",
-      "category": "EurekAlert",
-      "title": "Meningococcal B vaccine linked to lower gonorrhoea risk (IMAGE) - EurekAlert!",
-      "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE14cldiR3ljdzFycDF2OGdCV1ktU0tSMFZDS2trZnhkaUU0Qks4dm90Zk9FNi1kWXc2emM4eGZZQWkzdFc0b0hwX1BBcXVCVll0YnN6dmhzSE8?oc=5",
-      "publishedAt": 1785955636000,
-      "summary": "Meningococcal B vaccine linked to lower gonorrhoea risk (IMAGE) EurekAlert!",
-      "tags": [
-        "Unclassified",
-        "News",
-        "English"
-      ],
-      "score": 1.1,
-      "sources": [
-        {
-          "name": "EurekAlert",
-          "category": " EurekAlert",
-          "type": "rss"
-        }
-      ],
-      "canonicalUrl": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE14cldiR3ljdzFycDF2OGdCV1ktU0tSMFZDS2trZnhkaUU0Qks4dm90Zk9FNi1kWXc2emM4eGZZQWkzdFc0b0hwX1BBcXVCVll0YnN6dmhzSE8?oc=5",
-      "normalizedTitle": "Meningococcal B vaccine linked to lower gonorrhoea risk (IMAGE)",
-      "meta": {
-        "ids": {},
-        "isCanadian": false,
-        "isImportant": false,
-        "isPHEIC": false
-      },
-      "id": "url:2pmmb6"
-    },
-    {
-      "sourceName": "EurekAlert",
-      "publisherName": "EurekAlert!",
-      "sourceType": "rss",
-      "category": "EurekAlert",
-      "title": "U.S. disease tracker launches to strengthen monitoring of vaccine-preventable diseases - EurekAlert!",
-      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBLcFlLYkZZUnBSQnp4UmlJWjA5aHYwbURLV3JhRldQUXlzTUpqVE1LM0I2RDRpQVp3Zk1UTnJqb2NWVG5EZ1VYS0FDaHQzdGl1LUVCeTY0QWhZRWk4?oc=5",
-      "publishedAt": 1785944657000,
-      "summary": "U.S. disease tracker launches to strengthen monitoring of vaccine-preventable diseases EurekAlert!",
-      "tags": [
-        "Unclassified",
-        "News",
-        "English"
-      ],
-      "score": 1.1,
-      "sources": [
-        {
-          "name": "EurekAlert",
-          "category": " EurekAlert",
-          "type": "rss"
-        }
-      ],
-      "canonicalUrl": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBLcFlLYkZZUnBSQnp4UmlJWjA5aHYwbURLV3JhRldQUXlzTUpqVE1LM0I2RDRpQVp3Zk1UTnJqb2NWVG5EZ1VYS0FDaHQzdGl1LUVCeTY0QWhZRWk4?oc=5",
-      "normalizedTitle": "U.S. disease tracker launches to strengthen monitoring of vaccine-preventable diseases",
-      "meta": {
-        "ids": {},
-        "isCanadian": false,
-        "isImportant": false,
-        "isPHEIC": false
-      },
-      "id": "url:16oaan"
-    },
-    {
-      "sourceName": "EurekAlert",
-      "publisherName": "EurekAlert!",
-      "sourceType": "rss",
-      "category": "EurekAlert",
-      "title": "How do vaccine conspiracy beliefs develop? - EurekAlert!",
-      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBVNnJVUEw5dC1STXQ0OE1kR3otdkNIczZkSXNDUmc1ODB5eEZqVVRHUGIxeGpDVmxwUHMwak5uOHp5MVVPUjBwbml3Q2hWcXVNX3ZoZlFpS0QzMDRP?oc=5",
-      "publishedAt": 1785943736000,
-      "summary": "How do vaccine conspiracy beliefs develop? EurekAlert!",
-      "tags": [
-        "Unclassified",
-        "News",
-        "English"
-      ],
-      "score": 1.1,
-      "sources": [
-        {
-          "name": "EurekAlert",
-          "category": " EurekAlert",
-          "type": "rss"
-        }
-      ],
-      "canonicalUrl": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBVNnJVUEw5dC1STXQ0OE1kR3otdkNIczZkSXNDUmc1ODB5eEZqVVRHUGIxeGpDVmxwUHMwak5uOHp5MVVPUjBwbml3Q2hWcXVNX3ZoZlFpS0QzMDRP?oc=5",
-      "normalizedTitle": "How do vaccine conspiracy beliefs develop?",
-      "meta": {
-        "ids": {},
-        "isCanadian": false,
-        "isImportant": false,
-        "isPHEIC": false
-      },
-      "id": "url:72mvgf"
+      "id": "pmid:42623189"
     },
     {
       "sourceName": "PubMed",
@@ -7283,1577 +7011,1577 @@
   ],
   "scanLog": [
     {
-      "id": 1787236873383.6055,
-      "time": "2:41:13 PM",
+      "id": 1787323219770.7966,
+      "time": "2:40:19 PM",
       "msg": "Querying: Immunize.org",
       "type": "info",
       "name": "Immunize.org"
     },
     {
-      "id": 1787236873428.5017,
-      "time": "2:41:13 PM",
+      "id": 1787323219827.2075,
+      "time": "2:40:19 PM",
       "msg": "Querying: SAGE",
       "type": "info",
       "name": "SAGE"
     },
     {
-      "id": 1787236873430.9197,
-      "time": "2:41:13 PM",
+      "id": 1787323219829.0552,
+      "time": "2:40:19 PM",
       "msg": "Querying: ClinicalTrials.gov",
       "type": "info",
       "name": "ClinicalTrials.gov"
     },
     {
-      "id": 1787236873431.2441,
-      "time": "2:41:13 PM",
+      "id": 1787323219831.125,
+      "time": "2:40:19 PM",
       "msg": "Querying: PubMed",
       "type": "info",
       "name": "PubMed"
     },
     {
-      "id": 1787236873434.2097,
-      "time": "2:41:13 PM",
+      "id": 1787323219833.9526,
+      "time": "2:40:19 PM",
       "msg": "Querying: medrxiv",
       "type": "info",
       "name": "medrxiv"
     },
     {
-      "id": 1787236873435.3796,
-      "time": "2:41:13 PM",
+      "id": 1787323219834.927,
+      "time": "2:40:19 PM",
       "msg": "Querying: biorxiv",
       "type": "info",
       "name": "biorxiv"
     },
     {
-      "id": 1787236873436.896,
-      "time": "2:41:13 PM",
+      "id": 1787323219835.7534,
+      "time": "2:40:19 PM",
       "msg": "Querying: CTIS",
       "type": "info",
       "name": "CTIS"
     },
     {
-      "id": 1787236873437.8179,
-      "time": "2:41:13 PM",
+      "id": 1787323219836.0752,
+      "time": "2:40:19 PM",
       "msg": "Querying: Amedeo",
       "type": "info",
       "name": "Amedeo"
     },
     {
-      "id": 1787236873439.7046,
-      "time": "2:41:13 PM",
+      "id": 1787323219838.5488,
+      "time": "2:40:19 PM",
       "msg": "Querying: HC DPD (Vaccines)",
       "type": "info",
       "name": "HC DPD (Vaccines)"
     },
     {
-      "id": 1787236873761.1519,
-      "time": "2:41:13 PM",
-      "msg": "Success (Raw: 10, Accepted: 1)",
+      "id": 1787323220147.411,
+      "time": "2:40:20 PM",
+      "msg": "Success (Raw: 11, Accepted: 1)",
       "type": "success",
       "name": "SAGE"
     },
     {
-      "id": 1787236873761.8782,
-      "time": "2:41:13 PM",
+      "id": 1787323220147.1562,
+      "time": "2:40:20 PM",
       "msg": "Querying: ACIP",
       "type": "info",
       "name": "ACIP"
     },
     {
-      "id": 1787236873902.8972,
-      "time": "2:41:13 PM",
-      "msg": "Success (Raw: 36, Accepted: 7)",
+      "id": 1787323220254.2056,
+      "time": "2:40:20 PM",
+      "msg": "Success (Raw: 40, Accepted: 8)",
       "type": "success",
       "name": "Immunize.org"
     },
     {
-      "id": 1787236873903.276,
-      "time": "2:41:13 PM",
+      "id": 1787323220254.6228,
+      "time": "2:40:20 PM",
       "msg": "Querying: VAERS",
       "type": "info",
       "name": "VAERS"
     },
     {
-      "id": 1787236874000.7114,
-      "time": "2:41:14 PM",
-      "msg": "Success (Raw: 10, Accepted: 2)",
-      "type": "success",
-      "name": "ACIP"
-    },
-    {
-      "id": 1787236874000.9976,
-      "time": "2:41:14 PM",
-      "msg": "Querying: NACI",
-      "type": "info",
-      "name": "NACI"
-    },
-    {
-      "id": 1787236874075.2092,
-      "time": "2:41:14 PM",
-      "msg": "Success (Raw: 30, Accepted: 0)",
-      "type": "success",
-      "name": "medrxiv"
-    },
-    {
-      "id": 1787236874183.7996,
-      "time": "2:41:14 PM",
+      "id": 1787323220444.6802,
+      "time": "2:40:20 PM",
       "msg": "Success (Raw: 3, Accepted: 2)",
       "type": "success",
       "name": "CT.gov"
     },
     {
-      "id": 1787236874186.461,
-      "time": "2:41:14 PM",
-      "msg": "Success (Raw: 0, Accepted: 0)",
+      "id": 1787323220477.4604,
+      "time": "2:40:20 PM",
+      "msg": "Success (Raw: 10, Accepted: 1)",
+      "type": "success",
+      "name": "ACIP"
+    },
+    {
+      "id": 1787323220477.5906,
+      "time": "2:40:20 PM",
+      "msg": "Querying: NACI",
+      "type": "info",
+      "name": "NACI"
+    },
+    {
+      "id": 1787323220520.687,
+      "time": "2:40:20 PM",
+      "msg": "Success (Raw: 1, Accepted: 0)",
       "type": "success",
       "name": "VAERS"
     },
     {
-      "id": 1787236874187.7222,
-      "time": "2:41:14 PM",
+      "id": 1787323220520.4773,
+      "time": "2:40:20 PM",
       "msg": "Querying: JCVI",
       "type": "info",
       "name": "JCVI"
     },
     {
-      "id": 1787236874211.873,
-      "time": "2:41:14 PM",
+      "id": 1787323220748.0132,
+      "time": "2:40:20 PM",
       "msg": "Success (Raw: 1, Accepted: 0)",
       "type": "success",
       "name": "NACI"
     },
     {
-      "id": 1787236874211.6155,
-      "time": "2:41:14 PM",
+      "id": 1787323220748.4138,
+      "time": "2:40:20 PM",
       "msg": "Querying: ATAGI",
       "type": "info",
       "name": "ATAGI"
     },
     {
-      "id": 1787236874417.149,
-      "time": "2:41:14 PM",
-      "msg": "Success (Raw: 0, Accepted: 0)",
-      "type": "success",
-      "name": "CTIS"
-    },
-    {
-      "id": 1787236874438.9307,
-      "time": "2:41:14 PM",
-      "msg": "Success (Raw: 7, Accepted: 4)",
+      "id": 1787323220761.7036,
+      "time": "2:40:20 PM",
+      "msg": "Success (Raw: 6, Accepted: 2)",
       "type": "success",
       "name": "JCVI"
     },
     {
-      "id": 1787236874438.1797,
-      "time": "2:41:14 PM",
+      "id": 1787323220761.8289,
+      "time": "2:40:20 PM",
       "msg": "Querying: OIAC",
       "type": "info",
       "name": "OIAC"
     },
     {
-      "id": 1787236874450.5488,
-      "time": "2:41:14 PM",
-      "msg": "Success (Raw: 8, Accepted: 4)",
+      "id": 1787323221000.6333,
+      "time": "2:40:21 PM",
+      "msg": "Success (Raw: 5, Accepted: 0)",
       "type": "success",
-      "name": "ATAGI"
+      "name": "OIAC"
     },
     {
-      "id": 1787236874450.9214,
-      "time": "2:41:14 PM",
+      "id": 1787323221000.9573,
+      "time": "2:40:21 PM",
       "msg": "Querying: VRBPAC",
       "type": "info",
       "name": "VRBPAC"
     },
     {
-      "id": 1787236874669.4673,
-      "time": "2:41:14 PM",
-      "msg": "Success (Raw: 1, Accepted: 0)",
+      "id": 1787323221074.77,
+      "time": "2:40:21 PM",
+      "msg": "Success (Raw: 11, Accepted: 4)",
       "type": "success",
-      "name": "VRBPAC"
+      "name": "ATAGI"
     },
     {
-      "id": 1787236874669.5225,
-      "time": "2:41:14 PM",
+      "id": 1787323221074.283,
+      "time": "2:40:21 PM",
       "msg": "Querying: ICMRA",
       "type": "info",
       "name": "ICMRA"
     },
     {
-      "id": 1787236874863.5293,
-      "time": "2:41:14 PM",
-      "msg": "Success (Raw: 7, Accepted: 0)",
+      "id": 1787323221239.6555,
+      "time": "2:40:21 PM",
+      "msg": "Success (Raw: 1, Accepted: 0)",
       "type": "success",
-      "name": "OIAC"
+      "name": "VRBPAC"
     },
     {
-      "id": 1787236874863.7625,
-      "time": "2:41:14 PM",
+      "id": 1787323221240.946,
+      "time": "2:40:21 PM",
       "msg": "Querying: WHO-GACVS",
       "type": "info",
       "name": "WHO-GACVS"
     },
     {
-      "id": 1787236874898.1943,
-      "time": "2:41:14 PM",
+      "id": 1787323221260.0356,
+      "time": "2:40:21 PM",
       "msg": "Success (Raw: 0, Accepted: 0)",
       "type": "success",
       "name": "ICMRA"
     },
     {
-      "id": 1787236874898.3025,
-      "time": "2:41:14 PM",
+      "id": 1787323221260.919,
+      "time": "2:40:21 PM",
       "msg": "Querying: Brighton",
       "type": "info",
       "name": "Brighton"
     },
     {
-      "id": 1787236874920.3132,
-      "time": "2:41:14 PM",
-      "msg": "Success (Raw: 100, Accepted: 43)",
-      "type": "success",
-      "name": "PubMed"
-    },
-    {
-      "id": 1787236875073.8342,
-      "time": "2:41:15 PM",
-      "msg": "Success (Raw: 49, Accepted: 1)",
-      "type": "success",
-      "name": "HC DPD (Vaccines)"
-    },
-    {
-      "id": 1787236875079.9175,
-      "time": "2:41:15 PM",
-      "msg": "Success (Raw: 3, Accepted: 0)",
+      "id": 1787323221525.6658,
+      "time": "2:40:21 PM",
+      "msg": "Success (Raw: 2, Accepted: 0)",
       "type": "success",
       "name": "WHO-GACVS"
     },
     {
-      "id": 1787236875079.9678,
-      "time": "2:41:15 PM",
+      "id": 1787323221525.9937,
+      "time": "2:40:21 PM",
       "msg": "Querying: WHO",
       "type": "info",
       "name": "WHO"
     },
     {
-      "id": 1787236875162.3381,
-      "time": "2:41:15 PM",
+      "id": 1787323221550.97,
+      "time": "2:40:21 PM",
       "msg": "Success (Raw: 3, Accepted: 0)",
       "type": "success",
       "name": "Brighton"
     },
     {
-      "id": 1787236875162.0068,
-      "time": "2:41:15 PM",
+      "id": 1787323221550.0378,
+      "time": "2:40:21 PM",
       "msg": "Querying: WHO",
       "type": "info",
       "name": "WHO"
     },
     {
-      "id": 1787236875436.6326,
-      "time": "2:41:15 PM",
-      "msg": "Success (Raw: 34, Accepted: 1)",
+      "id": 1787323221813.7437,
+      "time": "2:40:21 PM",
+      "msg": "Success (Raw: 30, Accepted: 1)",
       "type": "success",
       "name": "WHO"
     },
     {
-      "id": 1787236875436.9846,
-      "time": "2:41:15 PM",
+      "id": 1787323221813.6968,
+      "time": "2:40:21 PM",
       "msg": "Querying: WHO",
       "type": "info",
       "name": "WHO"
     },
     {
-      "id": 1787236875503.5596,
-      "time": "2:41:15 PM",
-      "msg": "Success (Raw: 90, Accepted: 3)",
+      "id": 1787323221952.7866,
+      "time": "2:40:21 PM",
+      "msg": "Success (Raw: 89, Accepted: 2)",
       "type": "success",
       "name": "WHO"
     },
     {
-      "id": 1787236875504.034,
-      "time": "2:41:15 PM",
+      "id": 1787323221953.3157,
+      "time": "2:40:21 PM",
       "msg": "Querying: CDC",
       "type": "info",
       "name": "CDC"
     },
     {
-      "id": 1787236875632.8115,
-      "time": "2:41:15 PM",
+      "id": 1787323222001.5142,
+      "time": "2:40:22 PM",
       "msg": "Success (Raw: 0, Accepted: 0)",
       "type": "success",
       "name": "WHO"
     },
     {
-      "id": 1787236875632.8752,
-      "time": "2:41:15 PM",
+      "id": 1787323222001.1643,
+      "time": "2:40:22 PM",
       "msg": "Querying: CDC",
       "type": "info",
       "name": "CDC"
     },
     {
-      "id": 1787236875841.9155,
-      "time": "2:41:15 PM",
-      "msg": "Success (Raw: 37, Accepted: 3)",
+      "id": 1787323222232.6145,
+      "time": "2:40:22 PM",
+      "msg": "Success (Raw: 14, Accepted: 1)",
       "type": "success",
       "name": "CDC"
     },
     {
-      "id": 1787236875841.3794,
-      "time": "2:41:15 PM",
+      "id": 1787323222232.4753,
+      "time": "2:40:22 PM",
       "msg": "Querying: CDC",
       "type": "info",
       "name": "CDC"
     },
     {
-      "id": 1787236875871.7495,
-      "time": "2:41:15 PM",
-      "msg": "Success (Raw: 16, Accepted: 1)",
+      "id": 1787323222297.0598,
+      "time": "2:40:22 PM",
+      "msg": "Success (Raw: 36, Accepted: 2)",
       "type": "success",
       "name": "CDC"
     },
     {
-      "id": 1787236875871.3474,
-      "time": "2:41:15 PM",
+      "id": 1787323222297.4106,
+      "time": "2:40:22 PM",
       "msg": "Querying: ECDC",
       "type": "info",
       "name": "ECDC"
     },
     {
-      "id": 1787236876065.7095,
-      "time": "2:41:16 PM",
-      "msg": "Success (Raw: 13, Accepted: 0)",
+      "id": 1787323222444.3,
+      "time": "2:40:22 PM",
+      "msg": "Success (Raw: 11, Accepted: 0)",
       "type": "success",
       "name": "CDC"
     },
     {
-      "id": 1787236876065.572,
-      "time": "2:41:16 PM",
+      "id": 1787323222444.2495,
+      "time": "2:40:22 PM",
       "msg": "Querying: ECDC",
       "type": "info",
       "name": "ECDC"
     },
     {
-      "id": 1787236876077.5144,
-      "time": "2:41:16 PM",
+      "id": 1787323222534.4539,
+      "time": "2:40:22 PM",
       "msg": "Success (Raw: 5, Accepted: 1)",
       "type": "success",
       "name": "ECDC"
     },
     {
-      "id": 1787236876077.6938,
-      "time": "2:41:16 PM",
+      "id": 1787323222534.1038,
+      "time": "2:40:22 PM",
       "msg": "Querying: ECDC",
       "type": "info",
       "name": "ECDC"
     },
     {
-      "id": 1787236876255.967,
-      "time": "2:41:16 PM",
+      "id": 1787323222675.6643,
+      "time": "2:40:22 PM",
       "msg": "Success (Raw: 1, Accepted: 1)",
       "type": "success",
       "name": "ECDC"
     },
     {
-      "id": 1787236876255.499,
-      "time": "2:41:16 PM",
+      "id": 1787323222675.5183,
+      "time": "2:40:22 PM",
       "msg": "Querying: UKHSA",
       "type": "info",
       "name": "UKHSA"
     },
     {
-      "id": 1787236876256.3586,
-      "time": "2:41:16 PM",
+      "id": 1787323222912.5784,
+      "time": "2:40:22 PM",
+      "msg": "Success (Raw: 49, Accepted: 1)",
+      "type": "success",
+      "name": "HC DPD (Vaccines)"
+    },
+    {
+      "id": 1787323222915.89,
+      "time": "2:40:22 PM",
+      "msg": "Success (Raw: 0, Accepted: 0)",
+      "type": "success",
+      "name": "CTIS"
+    },
+    {
+      "id": 1787323222919.7412,
+      "time": "2:40:22 PM",
       "msg": "Success (Raw: 0, Accepted: 0)",
       "type": "success",
       "name": "ECDC"
     },
     {
-      "id": 1787236876256.7617,
-      "time": "2:41:16 PM",
+      "id": 1787323222919.0571,
+      "time": "2:40:22 PM",
       "msg": "Querying: UKHSA",
       "type": "info",
       "name": "UKHSA"
     },
     {
-      "id": 1787236876532.0051,
-      "time": "2:41:16 PM",
+      "id": 1787323222940.3398,
+      "time": "2:40:22 PM",
+      "msg": "Success (Raw: 100, Accepted: 41)",
+      "type": "success",
+      "name": "PubMed"
+    },
+    {
+      "id": 1787323222989.7483,
+      "time": "2:40:22 PM",
+      "msg": "Success (Raw: 20, Accepted: 5)",
+      "type": "success",
+      "name": "UKHSA"
+    },
+    {
+      "id": 1787323222989.3228,
+      "time": "2:40:22 PM",
+      "msg": "Querying: UKHSA",
+      "type": "info",
+      "name": "UKHSA"
+    },
+    {
+      "id": 1787323223158.1853,
+      "time": "2:40:23 PM",
       "msg": "Success (Raw: 11, Accepted: 3)",
       "type": "success",
       "name": "UKHSA"
     },
     {
-      "id": 1787236876532.5405,
-      "time": "2:41:16 PM",
-      "msg": "Querying: UKHSA",
-      "type": "info",
-      "name": "UKHSA"
-    },
-    {
-      "id": 1787236876616.0244,
-      "time": "2:41:16 PM",
-      "msg": "Success (Raw: 26, Accepted: 8)",
-      "type": "success",
-      "name": "UKHSA"
-    },
-    {
-      "id": 1787236876616.7925,
-      "time": "2:41:16 PM",
+      "id": 1787323223159.6868,
+      "time": "2:40:23 PM",
       "msg": "Querying: Africa CDC",
       "type": "info",
       "name": "Africa CDC"
     },
     {
-      "id": 1787236876833.6213,
-      "time": "2:41:16 PM",
+      "id": 1787323223246.445,
+      "time": "2:40:23 PM",
       "msg": "Success (Raw: 5, Accepted: 0)",
       "type": "success",
-      "name": "Africa CDC"
-    },
-    {
-      "id": 1787236876833.7625,
-      "time": "2:41:16 PM",
-      "msg": "Querying: Africa CDC",
-      "type": "info",
-      "name": "Africa CDC"
-    },
-    {
-      "id": 1787236876839.414,
-      "time": "2:41:16 PM",
-      "msg": "Success (Raw: 8, Accepted: 0)",
-      "type": "success",
       "name": "UKHSA"
     },
     {
-      "id": 1787236876839.2666,
-      "time": "2:41:16 PM",
+      "id": 1787323223246.34,
+      "time": "2:40:23 PM",
       "msg": "Querying: Africa CDC",
       "type": "info",
       "name": "Africa CDC"
     },
     {
-      "id": 1787236877010.7195,
-      "time": "2:41:17 PM",
-      "msg": "Success (Raw: 0, Accepted: 0)",
+      "id": 1787323223323.659,
+      "time": "2:40:23 PM",
+      "msg": "Success (Raw: 30, Accepted: 0)",
       "type": "success",
-      "name": "Africa CDC"
+      "name": "medrxiv"
     },
     {
-      "id": 1787236877010.829,
-      "time": "2:41:17 PM",
-      "msg": "Querying: FDA",
-      "type": "info",
-      "name": "FDA"
-    },
-    {
-      "id": 1787236877015.9417,
-      "time": "2:41:17 PM",
-      "msg": "Success (Raw: 0, Accepted: 0)",
-      "type": "success",
-      "name": "Africa CDC"
-    },
-    {
-      "id": 1787236877015.518,
-      "time": "2:41:17 PM",
-      "msg": "Querying: FDA",
-      "type": "info",
-      "name": "FDA"
-    },
-    {
-      "id": 1787236877248.0037,
-      "time": "2:41:17 PM",
-      "msg": "Success (Raw: 13, Accepted: 0)",
-      "type": "success",
-      "name": "FDA"
-    },
-    {
-      "id": 1787236877248.259,
-      "time": "2:41:17 PM",
-      "msg": "Querying: FDA",
-      "type": "info",
-      "name": "FDA"
-    },
-    {
-      "id": 1787236877254.5505,
-      "time": "2:41:17 PM",
+      "id": 1787323223430.1394,
+      "time": "2:40:23 PM",
       "msg": "Success (Raw: 7, Accepted: 0)",
       "type": "success",
+      "name": "Africa CDC"
+    },
+    {
+      "id": 1787323223430.3933,
+      "time": "2:40:23 PM",
+      "msg": "Querying: Africa CDC",
+      "type": "info",
+      "name": "Africa CDC"
+    },
+    {
+      "id": 1787323223439.0142,
+      "time": "2:40:23 PM",
+      "msg": "Success (Raw: 0, Accepted: 0)",
+      "type": "success",
+      "name": "Africa CDC"
+    },
+    {
+      "id": 1787323223439.1267,
+      "time": "2:40:23 PM",
+      "msg": "Querying: FDA",
+      "type": "info",
       "name": "FDA"
     },
     {
-      "id": 1787236877254.268,
-      "time": "2:41:17 PM",
-      "msg": "Querying: EMA",
-      "type": "info",
-      "name": "EMA"
+      "id": 1787323223616.259,
+      "time": "2:40:23 PM",
+      "msg": "Success (Raw: 0, Accepted: 0)",
+      "type": "success",
+      "name": "Africa CDC"
     },
     {
-      "id": 1787236877424.8296,
-      "time": "2:41:17 PM",
-      "msg": "Success (Raw: 0, Accepted: 0)",
+      "id": 1787323223616.282,
+      "time": "2:40:23 PM",
+      "msg": "Querying: FDA",
+      "type": "info",
+      "name": "FDA"
+    },
+    {
+      "id": 1787323223674.6082,
+      "time": "2:40:23 PM",
+      "msg": "Success (Raw: 12, Accepted: 0)",
       "type": "success",
       "name": "FDA"
     },
     {
-      "id": 1787236877424.207,
-      "time": "2:41:17 PM",
+      "id": 1787323223674.198,
+      "time": "2:40:23 PM",
+      "msg": "Querying: FDA",
+      "type": "info",
+      "name": "FDA"
+    },
+    {
+      "id": 1787323223844.982,
+      "time": "2:40:23 PM",
+      "msg": "Success (Raw: 5, Accepted: 0)",
+      "type": "success",
+      "name": "FDA"
+    },
+    {
+      "id": 1787323223844.0571,
+      "time": "2:40:23 PM",
       "msg": "Querying: EMA",
       "type": "info",
       "name": "EMA"
     },
     {
-      "id": 1787236877441.9727,
-      "time": "2:41:17 PM",
-      "msg": "Success (Raw: 2, Accepted: 1)",
+      "id": 1787323223969.1943,
+      "time": "2:40:23 PM",
+      "msg": "Success (Raw: 1, Accepted: 0)",
       "type": "success",
-      "name": "EMA"
+      "name": "FDA"
     },
     {
-      "id": 1787236877441.129,
-      "time": "2:41:17 PM",
+      "id": 1787323223969.6077,
+      "time": "2:40:23 PM",
       "msg": "Querying: EMA",
       "type": "info",
       "name": "EMA"
     },
     {
-      "id": 1787236877626.0947,
-      "time": "2:41:17 PM",
-      "msg": "Success (Raw: 1, Accepted: 1)",
+      "id": 1787323224037.0781,
+      "time": "2:40:24 PM",
+      "msg": "Success (Raw: 1, Accepted: 0)",
       "type": "success",
       "name": "EMA"
     },
     {
-      "id": 1787236877626.8157,
-      "time": "2:41:17 PM",
-      "msg": "Querying: MHRA",
+      "id": 1787323224037.2488,
+      "time": "2:40:24 PM",
+      "msg": "Querying: EMA",
       "type": "info",
-      "name": "MHRA"
+      "name": "EMA"
     },
     {
-      "id": 1787236877637.1462,
-      "time": "2:41:17 PM",
-      "msg": "Success (Raw: 1, Accepted: 1)",
+      "id": 1787323224178.0403,
+      "time": "2:40:24 PM",
+      "msg": "Success (Raw: 0, Accepted: 0)",
       "type": "success",
       "name": "EMA"
     },
     {
-      "id": 1787236877637.7104,
-      "time": "2:41:17 PM",
+      "id": 1787323224178.1582,
+      "time": "2:40:24 PM",
       "msg": "Querying: MHRA",
       "type": "info",
       "name": "MHRA"
     },
     {
-      "id": 1787236877815.4805,
-      "time": "2:41:17 PM",
+      "id": 1787323224262.756,
+      "time": "2:40:24 PM",
       "msg": "Success (Raw: 0, Accepted: 0)",
       "type": "success",
-      "name": "MHRA"
+      "name": "EMA"
     },
     {
-      "id": 1787236877815.0366,
-      "time": "2:41:17 PM",
+      "id": 1787323224262.2795,
+      "time": "2:40:24 PM",
       "msg": "Querying: MHRA",
       "type": "info",
       "name": "MHRA"
     },
     {
-      "id": 1787236877831.3674,
-      "time": "2:41:17 PM",
+      "id": 1787323224442.2957,
+      "time": "2:40:24 PM",
+      "msg": "Success (Raw: 1, Accepted: 0)",
+      "type": "success",
+      "name": "MHRA"
+    },
+    {
+      "id": 1787323224442.7366,
+      "time": "2:40:24 PM",
+      "msg": "Querying: MHRA",
+      "type": "info",
+      "name": "MHRA"
+    },
+    {
+      "id": 1787323224455.5957,
+      "time": "2:40:24 PM",
+      "msg": "Success (Raw: 1, Accepted: 0)",
+      "type": "success",
+      "name": "MHRA"
+    },
+    {
+      "id": 1787323224455.4255,
+      "time": "2:40:24 PM",
+      "msg": "Querying: Health Canada",
+      "type": "info",
+      "name": "Health Canada"
+    },
+    {
+      "id": 1787323224651.033,
+      "time": "2:40:24 PM",
+      "msg": "Success (Raw: 4, Accepted: 0)",
+      "type": "success",
+      "name": "Health Canada"
+    },
+    {
+      "id": 1787323224651.6174,
+      "time": "2:40:24 PM",
+      "msg": "Querying: Health Canada",
+      "type": "info",
+      "name": "Health Canada"
+    },
+    {
+      "id": 1787323224682.4856,
+      "time": "2:40:24 PM",
       "msg": "Success (Raw: 0, Accepted: 0)",
       "type": "success",
       "name": "MHRA"
     },
     {
-      "id": 1787236877831.6538,
-      "time": "2:41:17 PM",
+      "id": 1787323224682.7974,
+      "time": "2:40:24 PM",
       "msg": "Querying: Health Canada",
       "type": "info",
       "name": "Health Canada"
     },
     {
-      "id": 1787236877991.2173,
-      "time": "2:41:17 PM",
-      "msg": "Success (Raw: 0, Accepted: 0)",
-      "type": "success",
-      "name": "MHRA"
-    },
-    {
-      "id": 1787236877991.6162,
-      "time": "2:41:17 PM",
-      "msg": "Querying: Health Canada",
-      "type": "info",
-      "name": "Health Canada"
-    },
-    {
-      "id": 1787236878035.6506,
-      "time": "2:41:18 PM",
+      "id": 1787323224880.758,
+      "time": "2:40:24 PM",
       "msg": "Success (Raw: 4, Accepted: 0)",
       "type": "success",
       "name": "Health Canada"
     },
     {
-      "id": 1787236878035.4412,
-      "time": "2:41:18 PM",
-      "msg": "Querying: Health Canada",
-      "type": "info",
-      "name": "Health Canada"
-    },
-    {
-      "id": 1787236878199.4465,
-      "time": "2:41:18 PM",
-      "msg": "Success (Raw: 4, Accepted: 0)",
-      "type": "success",
-      "name": "Health Canada"
-    },
-    {
-      "id": 1787236878199.0164,
-      "time": "2:41:18 PM",
+      "id": 1787323224880.4731,
+      "time": "2:40:24 PM",
       "msg": "Querying: TGA",
       "type": "info",
       "name": "TGA"
     },
     {
-      "id": 1787236878258.8184,
-      "time": "2:41:18 PM",
-      "msg": "Success (Raw: 4, Accepted: 0)",
+      "id": 1787323224897.661,
+      "time": "2:40:24 PM",
+      "msg": "Success (Raw: 3, Accepted: 0)",
       "type": "success",
       "name": "Health Canada"
     },
     {
-      "id": 1787236878258.2354,
-      "time": "2:41:18 PM",
+      "id": 1787323224897.2432,
+      "time": "2:40:24 PM",
       "msg": "Querying: TGA",
       "type": "info",
       "name": "TGA"
     },
     {
-      "id": 1787236878420.8342,
-      "time": "2:41:18 PM",
+      "id": 1787323225064.6719,
+      "time": "2:40:25 PM",
       "msg": "Success (Raw: 0, Accepted: 0)",
       "type": "success",
       "name": "TGA"
     },
     {
-      "id": 1787236878420.7717,
-      "time": "2:41:18 PM",
+      "id": 1787323225065.2651,
+      "time": "2:40:25 PM",
       "msg": "Querying: TGA",
       "type": "info",
       "name": "TGA"
     },
     {
-      "id": 1787236878483.5598,
-      "time": "2:41:18 PM",
+      "id": 1787323225125.206,
+      "time": "2:40:25 PM",
       "msg": "Success (Raw: 0, Accepted: 0)",
       "type": "success",
       "name": "TGA"
     },
     {
-      "id": 1787236878483.9392,
-      "time": "2:41:18 PM",
+      "id": 1787323225125.094,
+      "time": "2:40:25 PM",
       "msg": "Querying: CIDRAP",
       "type": "info",
       "name": "CIDRAP"
     },
     {
-      "id": 1787236878616.6724,
-      "time": "2:41:18 PM",
+      "id": 1787323225251.6648,
+      "time": "2:40:25 PM",
       "msg": "Success (Raw: 0, Accepted: 0)",
       "type": "success",
       "name": "TGA"
     },
     {
-      "id": 1787236878617.3123,
-      "time": "2:41:18 PM",
+      "id": 1787323225251.2888,
+      "time": "2:40:25 PM",
       "msg": "Querying: CIDRAP",
       "type": "info",
       "name": "CIDRAP"
     },
     {
-      "id": 1787236878829.4104,
-      "time": "2:41:18 PM",
+      "id": 1787323225479.61,
+      "time": "2:40:25 PM",
+      "msg": "Success (Raw: 67, Accepted: 12)",
+      "type": "success",
+      "name": "CIDRAP"
+    },
+    {
+      "id": 1787323225479.1228,
+      "time": "2:40:25 PM",
+      "msg": "Querying: CIDRAP",
+      "type": "info",
+      "name": "CIDRAP"
+    },
+    {
+      "id": 1787323225497.9993,
+      "time": "2:40:25 PM",
       "msg": "Success (Raw: 2, Accepted: 0)",
       "type": "success",
       "name": "CIDRAP"
     },
     {
-      "id": 1787236878829.0603,
-      "time": "2:41:18 PM",
-      "msg": "Querying: CIDRAP",
-      "type": "info",
-      "name": "CIDRAP"
-    },
-    {
-      "id": 1787236878902.2761,
-      "time": "2:41:18 PM",
-      "msg": "Success (Raw: 69, Accepted: 11)",
-      "type": "success",
-      "name": "CIDRAP"
-    },
-    {
-      "id": 1787236878902.3064,
-      "time": "2:41:18 PM",
+      "id": 1787323225497.9802,
+      "time": "2:40:25 PM",
       "msg": "Querying: Reuters",
       "type": "info",
       "name": "Reuters"
     },
     {
-      "id": 1787236879079.2068,
-      "time": "2:41:19 PM",
-      "msg": "Success (Raw: 15, Accepted: 2)",
+      "id": 1787323225763.112,
+      "time": "2:40:25 PM",
+      "msg": "Success (Raw: 37, Accepted: 8)",
       "type": "success",
       "name": "CIDRAP"
     },
     {
-      "id": 1787236879079.0981,
-      "time": "2:41:19 PM",
+      "id": 1787323225764.3667,
+      "time": "2:40:25 PM",
       "msg": "Querying: Reuters",
       "type": "info",
       "name": "Reuters"
     },
     {
-      "id": 1787236879178.8787,
-      "time": "2:41:19 PM",
-      "msg": "Success (Raw: 20, Accepted: 6)",
+      "id": 1787323225781.7524,
+      "time": "2:40:25 PM",
+      "msg": "Success (Raw: 15, Accepted: 5)",
       "type": "success",
       "name": "Reuters"
     },
     {
-      "id": 1787236879178.264,
-      "time": "2:41:19 PM",
+      "id": 1787323225781.1882,
+      "time": "2:40:25 PM",
       "msg": "Querying: Reuters",
       "type": "info",
       "name": "Reuters"
     },
     {
-      "id": 1787236879262.4705,
-      "time": "2:41:19 PM",
+      "id": 1787323225967.7424,
+      "time": "2:40:25 PM",
       "msg": "Success (Raw: 0, Accepted: 0)",
       "type": "success",
       "name": "Reuters"
     },
     {
-      "id": 1787236879262.6438,
-      "time": "2:41:19 PM",
+      "id": 1787323225967.471,
+      "time": "2:40:25 PM",
       "msg": "Querying: BMJ",
       "type": "info",
       "name": "BMJ"
     },
     {
-      "id": 1787236879389.2869,
-      "time": "2:41:19 PM",
+      "id": 1787323225973.7366,
+      "time": "2:40:25 PM",
       "msg": "Success (Raw: 2, Accepted: 1)",
       "type": "success",
       "name": "Reuters"
     },
     {
-      "id": 1787236879389.4075,
-      "time": "2:41:19 PM",
+      "id": 1787323225973.8838,
+      "time": "2:40:25 PM",
       "msg": "Querying: BMJ",
       "type": "info",
       "name": "BMJ"
     },
     {
-      "id": 1787236879554.937,
-      "time": "2:41:19 PM",
-      "msg": "Success (Raw: 12, Accepted: 4)",
+      "id": 1787323226231.6882,
+      "time": "2:40:26 PM",
+      "msg": "Success (Raw: 16, Accepted: 5)",
       "type": "success",
       "name": "BMJ"
     },
     {
-      "id": 1787236879554.965,
-      "time": "2:41:19 PM",
+      "id": 1787323226231.587,
+      "time": "2:40:26 PM",
       "msg": "Querying: BMJ",
       "type": "info",
       "name": "BMJ"
     },
     {
-      "id": 1787236879653.394,
-      "time": "2:41:19 PM",
-      "msg": "Success (Raw: 7, Accepted: 2)",
+      "id": 1787323226246.5312,
+      "time": "2:40:26 PM",
+      "msg": "Success (Raw: 9, Accepted: 2)",
       "type": "success",
       "name": "BMJ"
     },
     {
-      "id": 1787236879654.9546,
-      "time": "2:41:19 PM",
+      "id": 1787323226246.927,
+      "time": "2:40:26 PM",
       "msg": "Querying: Lancet",
       "type": "info",
       "name": "Lancet"
     },
     {
-      "id": 1787236879748.2664,
-      "time": "2:41:19 PM",
-      "msg": "Success (Raw: 1, Accepted: 0)",
+      "id": 1787323226421.2588,
+      "time": "2:40:26 PM",
+      "msg": "Success (Raw: 2, Accepted: 0)",
       "type": "success",
       "name": "BMJ"
     },
     {
-      "id": 1787236879748.5798,
-      "time": "2:41:19 PM",
+      "id": 1787323226421.4172,
+      "time": "2:40:26 PM",
       "msg": "Querying: Lancet",
       "type": "info",
       "name": "Lancet"
     },
     {
-      "id": 1787236879909.9424,
-      "time": "2:41:19 PM",
-      "msg": "Success (Raw: 15, Accepted: 1)",
+      "id": 1787323226488.598,
+      "time": "2:40:26 PM",
+      "msg": "Success (Raw: 20, Accepted: 2)",
       "type": "success",
       "name": "Lancet"
     },
     {
-      "id": 1787236879909.7595,
-      "time": "2:41:19 PM",
+      "id": 1787323226488.3916,
+      "time": "2:40:26 PM",
       "msg": "Querying: Lancet",
       "type": "info",
       "name": "Lancet"
     },
     {
-      "id": 1787236879924.887,
-      "time": "2:41:19 PM",
+      "id": 1787323226517.2844,
+      "time": "2:40:26 PM",
       "msg": "Success (Raw: 30, Accepted: 0)",
       "type": "success",
       "name": "biorxiv"
     },
     {
-      "id": 1787236880002.5173,
-      "time": "2:41:20 PM",
-      "msg": "Success (Raw: 1, Accepted: 0)",
+      "id": 1787323226629.6226,
+      "time": "2:40:26 PM",
+      "msg": "Success (Raw: 2, Accepted: 0)",
       "type": "success",
       "name": "Lancet"
     },
     {
-      "id": 1787236880002.6055,
-      "time": "2:41:20 PM",
+      "id": 1787323226629.829,
+      "time": "2:40:26 PM",
       "msg": "Querying: NEJM",
       "type": "info",
       "name": "NEJM"
     },
     {
-      "id": 1787236880107.2317,
-      "time": "2:41:20 PM",
+      "id": 1787323226668.4456,
+      "time": "2:40:26 PM",
       "msg": "Success (Raw: 1, Accepted: 0)",
       "type": "success",
       "name": "Lancet"
     },
     {
-      "id": 1787236880107.5374,
-      "time": "2:41:20 PM",
+      "id": 1787323226668.249,
+      "time": "2:40:26 PM",
       "msg": "Querying: NEJM",
       "type": "info",
       "name": "NEJM"
     },
     {
-      "id": 1787236880208.8975,
-      "time": "2:41:20 PM",
+      "id": 1787323226825.8643,
+      "time": "2:40:26 PM",
       "msg": "Success (Raw: 3, Accepted: 0)",
       "type": "success",
       "name": "NEJM"
     },
     {
-      "id": 1787236880208.9817,
-      "time": "2:41:20 PM",
+      "id": 1787323226825.4133,
+      "time": "2:40:26 PM",
       "msg": "Querying: NEJM",
       "type": "info",
       "name": "NEJM"
     },
     {
-      "id": 1787236880349.0176,
-      "time": "2:41:20 PM",
-      "msg": "Success (Raw: 3, Accepted: 1)",
-      "type": "success",
-      "name": "NEJM"
-    },
-    {
-      "id": 1787236880349.3374,
-      "time": "2:41:20 PM",
-      "msg": "Querying: JAMA",
-      "type": "info",
-      "name": "JAMA"
-    },
-    {
-      "id": 1787236880387.837,
-      "time": "2:41:20 PM",
-      "msg": "Success (Raw: 0, Accepted: 0)",
-      "type": "success",
-      "name": "NEJM"
-    },
-    {
-      "id": 1787236880387.196,
-      "time": "2:41:20 PM",
-      "msg": "Querying: JAMA",
-      "type": "info",
-      "name": "JAMA"
-    },
-    {
-      "id": 1787236880604.1807,
-      "time": "2:41:20 PM",
-      "msg": "Success (Raw: 6, Accepted: 0)",
-      "type": "success",
-      "name": "JAMA"
-    },
-    {
-      "id": 1787236880604.7458,
-      "time": "2:41:20 PM",
-      "msg": "Querying: JAMA",
-      "type": "info",
-      "name": "JAMA"
-    },
-    {
-      "id": 1787236880638.8982,
-      "time": "2:41:20 PM",
-      "msg": "Success (Raw: 20, Accepted: 2)",
-      "type": "success",
-      "name": "JAMA"
-    },
-    {
-      "id": 1787236880638.639,
-      "time": "2:41:20 PM",
-      "msg": "Querying: Nature",
-      "type": "info",
-      "name": "Nature"
-    },
-    {
-      "id": 1787236880807.6902,
-      "time": "2:41:20 PM",
-      "msg": "Success (Raw: 2, Accepted: 0)",
-      "type": "success",
-      "name": "JAMA"
-    },
-    {
-      "id": 1787236880807.3567,
-      "time": "2:41:20 PM",
-      "msg": "Querying: Nature",
-      "type": "info",
-      "name": "Nature"
-    },
-    {
-      "id": 1787236880947.4302,
-      "time": "2:41:20 PM",
-      "msg": "Success (Raw: 26, Accepted: 3)",
-      "type": "success",
-      "name": "Nature"
-    },
-    {
-      "id": 1787236880947.5508,
-      "time": "2:41:20 PM",
-      "msg": "Querying: Nature",
-      "type": "info",
-      "name": "Nature"
-    },
-    {
-      "id": 1787236881073.2188,
-      "time": "2:41:21 PM",
-      "msg": "Success (Raw: 14, Accepted: 0)",
-      "type": "success",
-      "name": "Nature"
-    },
-    {
-      "id": 1787236881073.437,
-      "time": "2:41:21 PM",
-      "msg": "Querying: Science",
-      "type": "info",
-      "name": "Science"
-    },
-    {
-      "id": 1787236881135.714,
-      "time": "2:41:21 PM",
-      "msg": "Success (Raw: 1, Accepted: 0)",
-      "type": "success",
-      "name": "Nature"
-    },
-    {
-      "id": 1787236881135.623,
-      "time": "2:41:21 PM",
-      "msg": "Querying: Science",
-      "type": "info",
-      "name": "Science"
-    },
-    {
-      "id": 1787236881289.1592,
-      "time": "2:41:21 PM",
-      "msg": "Success (Raw: 6, Accepted: 1)",
-      "type": "success",
-      "name": "Science"
-    },
-    {
-      "id": 1787236881289.388,
-      "time": "2:41:21 PM",
-      "msg": "Querying: Science",
-      "type": "info",
-      "name": "Science"
-    },
-    {
-      "id": 1787236881351.367,
-      "time": "2:41:21 PM",
+      "id": 1787323226901.8281,
+      "time": "2:40:26 PM",
       "msg": "Success (Raw: 2, Accepted: 1)",
       "type": "success",
-      "name": "Science"
+      "name": "NEJM"
     },
     {
-      "id": 1787236881351.8599,
-      "time": "2:41:21 PM",
-      "msg": "Querying: Cell",
+      "id": 1787323226901.3418,
+      "time": "2:40:26 PM",
+      "msg": "Querying: JAMA",
       "type": "info",
-      "name": "Cell"
+      "name": "JAMA"
     },
     {
-      "id": 1787236881505.224,
-      "time": "2:41:21 PM",
-      "msg": "Success (Raw: 2, Accepted: 0)",
+      "id": 1787323227006.901,
+      "time": "2:40:27 PM",
+      "msg": "Success (Raw: 0, Accepted: 0)",
       "type": "success",
-      "name": "Science"
+      "name": "NEJM"
     },
     {
-      "id": 1787236881505.353,
-      "time": "2:41:21 PM",
-      "msg": "Querying: Cell",
+      "id": 1787323227006.084,
+      "time": "2:40:27 PM",
+      "msg": "Querying: JAMA",
       "type": "info",
-      "name": "Cell"
+      "name": "JAMA"
     },
     {
-      "id": 1787236881598.2805,
-      "time": "2:41:21 PM",
+      "id": 1787323227247.8567,
+      "time": "2:40:27 PM",
+      "msg": "Success (Raw: 9, Accepted: 0)",
+      "type": "success",
+      "name": "JAMA"
+    },
+    {
+      "id": 1787323227247.651,
+      "time": "2:40:27 PM",
+      "msg": "Querying: JAMA",
+      "type": "info",
+      "name": "JAMA"
+    },
+    {
+      "id": 1787323227263.123,
+      "time": "2:40:27 PM",
+      "msg": "Success (Raw: 21, Accepted: 2)",
+      "type": "success",
+      "name": "JAMA"
+    },
+    {
+      "id": 1787323227263.8064,
+      "time": "2:40:27 PM",
+      "msg": "Querying: Nature",
+      "type": "info",
+      "name": "Nature"
+    },
+    {
+      "id": 1787323227470.6702,
+      "time": "2:40:27 PM",
       "msg": "Success (Raw: 3, Accepted: 0)",
       "type": "success",
-      "name": "Cell"
+      "name": "JAMA"
     },
     {
-      "id": 1787236881598.699,
-      "time": "2:41:21 PM",
+      "id": 1787323227470.2412,
+      "time": "2:40:27 PM",
+      "msg": "Querying: Nature",
+      "type": "info",
+      "name": "Nature"
+    },
+    {
+      "id": 1787323227534.6323,
+      "time": "2:40:27 PM",
+      "msg": "Success (Raw: 27, Accepted: 4)",
+      "type": "success",
+      "name": "Nature"
+    },
+    {
+      "id": 1787323227534.0425,
+      "time": "2:40:27 PM",
+      "msg": "Querying: Nature",
+      "type": "info",
+      "name": "Nature"
+    },
+    {
+      "id": 1787323227723.3064,
+      "time": "2:40:27 PM",
+      "msg": "Success (Raw: 1, Accepted: 0)",
+      "type": "success",
+      "name": "Nature"
+    },
+    {
+      "id": 1787323227723.751,
+      "time": "2:40:27 PM",
+      "msg": "Querying: Science",
+      "type": "info",
+      "name": "Science"
+    },
+    {
+      "id": 1787323227731.1838,
+      "time": "2:40:27 PM",
+      "msg": "Success (Raw: 15, Accepted: 0)",
+      "type": "success",
+      "name": "Nature"
+    },
+    {
+      "id": 1787323227731.1282,
+      "time": "2:40:27 PM",
+      "msg": "Querying: Science",
+      "type": "info",
+      "name": "Science"
+    },
+    {
+      "id": 1787323227954.5986,
+      "time": "2:40:27 PM",
+      "msg": "Success (Raw: 1, Accepted: 0)",
+      "type": "success",
+      "name": "Science"
+    },
+    {
+      "id": 1787323227954.2651,
+      "time": "2:40:27 PM",
+      "msg": "Querying: Science",
+      "type": "info",
+      "name": "Science"
+    },
+    {
+      "id": 1787323227962.234,
+      "time": "2:40:27 PM",
+      "msg": "Success (Raw: 4, Accepted: 1)",
+      "type": "success",
+      "name": "Science"
+    },
+    {
+      "id": 1787323227962.8867,
+      "time": "2:40:27 PM",
       "msg": "Querying: Cell",
       "type": "info",
       "name": "Cell"
     },
     {
-      "id": 1787236881703.5696,
-      "time": "2:41:21 PM",
-      "msg": "Success (Raw: 2, Accepted: 0)",
+      "id": 1787323228176.9949,
+      "time": "2:40:28 PM",
+      "msg": "Success (Raw: 4, Accepted: 1)",
       "type": "success",
       "name": "Cell"
     },
     {
-      "id": 1787236881703.489,
-      "time": "2:41:21 PM",
+      "id": 1787323228176.4927,
+      "time": "2:40:28 PM",
+      "msg": "Querying: Cell",
+      "type": "info",
+      "name": "Cell"
+    },
+    {
+      "id": 1787323228198.0493,
+      "time": "2:40:28 PM",
+      "msg": "Success (Raw: 1, Accepted: 0)",
+      "type": "success",
+      "name": "Science"
+    },
+    {
+      "id": 1787323228198.4841,
+      "time": "2:40:28 PM",
+      "msg": "Querying: Cell",
+      "type": "info",
+      "name": "Cell"
+    },
+    {
+      "id": 1787323228373.079,
+      "time": "2:40:28 PM",
+      "msg": "Success (Raw: 3, Accepted: 1)",
+      "type": "success",
+      "name": "Cell"
+    },
+    {
+      "id": 1787323228373.2253,
+      "time": "2:40:28 PM",
       "msg": "Querying: IDSA",
       "type": "info",
       "name": "IDSA"
     },
     {
-      "id": 1787236881771.673,
-      "time": "2:41:21 PM",
+      "id": 1787323228405.5464,
+      "time": "2:40:28 PM",
       "msg": "Success (Raw: 0, Accepted: 0)",
       "type": "success",
       "name": "Cell"
     },
     {
-      "id": 1787236881771.5278,
-      "time": "2:41:21 PM",
+      "id": 1787323228405.0962,
+      "time": "2:40:28 PM",
       "msg": "Querying: IDSA",
       "type": "info",
       "name": "IDSA"
     },
     {
-      "id": 1787236881944.9492,
-      "time": "2:41:21 PM",
-      "msg": "Success (Raw: 11, Accepted: 3)",
-      "type": "success",
-      "name": "IDSA"
-    },
-    {
-      "id": 1787236881944.6543,
-      "time": "2:41:21 PM",
-      "msg": "Querying: IDSA",
-      "type": "info",
-      "name": "IDSA"
-    },
-    {
-      "id": 1787236881954.6643,
-      "time": "2:41:21 PM",
+      "id": 1787323228592.7979,
+      "time": "2:40:28 PM",
       "msg": "Success (Raw: 0, Accepted: 0)",
       "type": "success",
       "name": "IDSA"
     },
     {
-      "id": 1787236881955.3875,
-      "time": "2:41:21 PM",
+      "id": 1787323228592.0947,
+      "time": "2:40:28 PM",
+      "msg": "Querying: IDSA",
+      "type": "info",
+      "name": "IDSA"
+    },
+    {
+      "id": 1787323228619.244,
+      "time": "2:40:28 PM",
+      "msg": "Success (Raw: 9, Accepted: 2)",
+      "type": "success",
+      "name": "IDSA"
+    },
+    {
+      "id": 1787323228619.438,
+      "time": "2:40:28 PM",
       "msg": "Querying: STIKO",
       "type": "info",
       "name": "STIKO"
     },
     {
-      "id": 1787236882173.691,
-      "time": "2:41:22 PM",
-      "msg": "Success (Raw: 11, Accepted: 3)",
+      "id": 1787323228814.8496,
+      "time": "2:40:28 PM",
+      "msg": "Success (Raw: 9, Accepted: 2)",
       "type": "success",
       "name": "IDSA"
     },
     {
-      "id": 1787236882173.227,
-      "time": "2:41:22 PM",
+      "id": 1787323228814.7534,
+      "time": "2:40:28 PM",
       "msg": "Querying: HAS",
       "type": "info",
       "name": "HAS"
     },
     {
-      "id": 1787236882305.5496,
-      "time": "2:41:22 PM",
-      "msg": "Success (Raw: 6, Accepted: 0)",
+      "id": 1787323228884.5369,
+      "time": "2:40:28 PM",
+      "msg": "Success (Raw: 7, Accepted: 0)",
       "type": "success",
       "name": "STIKO"
     },
     {
-      "id": 1787236882305.2004,
-      "time": "2:41:22 PM",
+      "id": 1787323228884.7659,
+      "time": "2:40:28 PM",
       "msg": "Querying: France PH",
       "type": "info",
       "name": "France PH"
     },
     {
-      "id": 1787236882384.9656,
-      "time": "2:41:22 PM",
-      "msg": "Success (Raw: 5, Accepted: 1)",
-      "type": "success",
-      "name": "HAS"
-    },
-    {
-      "id": 1787236882384.339,
-      "time": "2:41:22 PM",
-      "msg": "Querying: Gavi",
-      "type": "info",
-      "name": "Gavi"
-    },
-    {
-      "id": 1787236882490.716,
-      "time": "2:41:22 PM",
+      "id": 1787323229077.3347,
+      "time": "2:40:29 PM",
       "msg": "Success (Raw: 0, Accepted: 0)",
       "type": "success",
       "name": "France PH"
     },
     {
-      "id": 1787236882490.0742,
-      "time": "2:41:22 PM",
+      "id": 1787323229077.034,
+      "time": "2:40:29 PM",
+      "msg": "Querying: Gavi",
+      "type": "info",
+      "name": "Gavi"
+    },
+    {
+      "id": 1787323229083.7927,
+      "time": "2:40:29 PM",
+      "msg": "Success (Raw: 9, Accepted: 1)",
+      "type": "success",
+      "name": "HAS"
+    },
+    {
+      "id": 1787323229083.056,
+      "time": "2:40:29 PM",
       "msg": "Querying: CEPI",
       "type": "info",
       "name": "CEPI"
     },
     {
-      "id": 1787236882639.458,
-      "time": "2:41:22 PM",
-      "msg": "Success (Raw: 19, Accepted: 16)",
-      "type": "success",
-      "name": "Gavi"
-    },
-    {
-      "id": 1787236882639.2822,
-      "time": "2:41:22 PM",
-      "msg": "Querying: International Vaccine Institute",
-      "type": "info",
-      "name": "International Vaccine Institute"
-    },
-    {
-      "id": 1787236882697.4023,
-      "time": "2:41:22 PM",
+      "id": 1787323229296.3013,
+      "time": "2:40:29 PM",
       "msg": "Success (Raw: 4, Accepted: 0)",
       "type": "success",
       "name": "CEPI"
     },
     {
-      "id": 1787236882697.7595,
-      "time": "2:41:22 PM",
+      "id": 1787323229296.152,
+      "time": "2:40:29 PM",
+      "msg": "Querying: International Vaccine Institute",
+      "type": "info",
+      "name": "International Vaccine Institute"
+    },
+    {
+      "id": 1787323229316.4683,
+      "time": "2:40:29 PM",
+      "msg": "Success (Raw: 21, Accepted: 18)",
+      "type": "success",
+      "name": "Gavi"
+    },
+    {
+      "id": 1787323229316.1895,
+      "time": "2:40:29 PM",
       "msg": "Querying: Sabin Vaccine Institute",
       "type": "info",
       "name": "Sabin Vaccine Institute"
     },
     {
-      "id": 1787236882891.4978,
-      "time": "2:41:22 PM",
-      "msg": "Success (Raw: 4, Accepted: 3)",
-      "type": "success",
-      "name": "International Vaccine Institute"
-    },
-    {
-      "id": 1787236882891.5413,
-      "time": "2:41:22 PM",
-      "msg": "Querying: PATH",
-      "type": "info",
-      "name": "PATH"
-    },
-    {
-      "id": 1787236883070.3079,
-      "time": "2:41:23 PM",
+      "id": 1787323229542.1367,
+      "time": "2:40:29 PM",
       "msg": "Success (Raw: 0, Accepted: 0)",
       "type": "success",
       "name": "Sabin Vaccine Institute"
     },
     {
-      "id": 1787236883070.7397,
-      "time": "2:41:23 PM",
+      "id": 1787323229542.794,
+      "time": "2:40:29 PM",
+      "msg": "Querying: PATH",
+      "type": "info",
+      "name": "PATH"
+    },
+    {
+      "id": 1787323229590.507,
+      "time": "2:40:29 PM",
+      "msg": "Success (Raw: 4, Accepted: 3)",
+      "type": "success",
+      "name": "International Vaccine Institute"
+    },
+    {
+      "id": 1787323229590.9575,
+      "time": "2:40:29 PM",
       "msg": "Querying: UNICEF",
       "type": "info",
       "name": "UNICEF"
     },
     {
-      "id": 1787236883092.5183,
-      "time": "2:41:23 PM",
-      "msg": "Success (Raw: 2, Accepted: 0)",
+      "id": 1787323229763.0173,
+      "time": "2:40:29 PM",
+      "msg": "Success (Raw: 0, Accepted: 0)",
       "type": "success",
       "name": "PATH"
     },
     {
-      "id": 1787236883092.7156,
-      "time": "2:41:23 PM",
+      "id": 1787323229763.0583,
+      "time": "2:40:29 PM",
       "msg": "Querying: Gates Foundation",
       "type": "info",
       "name": "Gates Foundation"
     },
     {
-      "id": 1787236883305.2524,
-      "time": "2:41:23 PM",
-      "msg": "Success (Raw: 14, Accepted: 0)",
+      "id": 1787323230107.6218,
+      "time": "2:40:30 PM",
+      "msg": "Success (Raw: 100, Accepted: 5)",
       "type": "success",
-      "name": "Gates Foundation"
+      "name": "UNICEF"
     },
     {
-      "id": 1787236883305.3015,
-      "time": "2:41:23 PM",
+      "id": 1787323230107.5579,
+      "time": "2:40:30 PM",
       "msg": "Querying: UNMC",
       "type": "info",
       "name": "UNMC"
     },
     {
-      "id": 1787236883536.9578,
-      "time": "2:41:23 PM",
-      "msg": "Success (Raw: 100, Accepted: 6)",
+      "id": 1787323230114.3628,
+      "time": "2:40:30 PM",
+      "msg": "Success (Raw: 12, Accepted: 0)",
       "type": "success",
-      "name": "UNICEF"
+      "name": "Gates Foundation"
     },
     {
-      "id": 1787236883536.4282,
-      "time": "2:41:23 PM",
+      "id": 1787323230114.904,
+      "time": "2:40:30 PM",
       "msg": "Querying: Your Local Epidemiologist",
       "type": "info",
       "name": "Your Local Epidemiologist"
     },
     {
-      "id": 1787236883621.8381,
-      "time": "2:41:23 PM",
-      "msg": "Success (Raw: 5, Accepted: 0)",
+      "id": 1787323230326.3193,
+      "time": "2:40:30 PM",
+      "msg": "Success (Raw: 3, Accepted: 0)",
       "type": "success",
       "name": "UNMC"
     },
     {
-      "id": 1787236883621.9026,
-      "time": "2:41:23 PM",
+      "id": 1787323230326.476,
+      "time": "2:40:30 PM",
       "msg": "Querying: ScienceDaily",
       "type": "info",
       "name": "ScienceDaily"
     },
     {
-      "id": 1787236883734.7366,
-      "time": "2:41:23 PM",
-      "msg": "Success (Raw: 2, Accepted: 1)",
+      "id": 1787323230356.1326,
+      "time": "2:40:30 PM",
+      "msg": "Success (Raw: 1, Accepted: 1)",
       "type": "success",
       "name": "Your Local Epidemiologist"
     },
     {
-      "id": 1787236883734.8071,
-      "time": "2:41:23 PM",
+      "id": 1787323230356.1802,
+      "time": "2:40:30 PM",
       "msg": "Querying: MedicalXpress",
       "type": "info",
       "name": "MedicalXpress"
     },
     {
-      "id": 1787236883845.6982,
-      "time": "2:41:23 PM",
-      "msg": "Success (Raw: 17, Accepted: 0)",
+      "id": 1787323230600.9104,
+      "time": "2:40:30 PM",
+      "msg": "Success (Raw: 15, Accepted: 1)",
       "type": "success",
       "name": "ScienceDaily"
     },
     {
-      "id": 1787236883845.9463,
-      "time": "2:41:23 PM",
+      "id": 1787323230600.4114,
+      "time": "2:40:30 PM",
       "msg": "Querying: EurekAlert",
       "type": "info",
       "name": "EurekAlert"
     },
     {
-      "id": 1787236884153.9983,
-      "time": "2:41:24 PM",
-      "msg": "Success (Raw: 100, Accepted: 21)",
+      "id": 1787323230745.3252,
+      "time": "2:40:30 PM",
+      "msg": "Success (Raw: 100, Accepted: 19)",
       "type": "success",
       "name": "MedicalXpress"
     },
     {
-      "id": 1787236884153.7532,
-      "time": "2:41:24 PM",
+      "id": 1787323230745.226,
+      "time": "2:40:30 PM",
       "msg": "Querying: AlphaGalileo",
       "type": "info",
       "name": "AlphaGalileo"
     },
     {
-      "id": 1787236884174.0005,
-      "time": "2:41:24 PM",
-      "msg": "Success (Raw: 47, Accepted: 11)",
+      "id": 1787323230925.9434,
+      "time": "2:40:30 PM",
+      "msg": "Success (Raw: 51, Accepted: 12)",
       "type": "success",
       "name": "EurekAlert"
     },
     {
-      "id": 1787236884174.0088,
-      "time": "2:41:24 PM",
+      "id": 1787323230925.8284,
+      "time": "2:40:30 PM",
       "msg": "Querying: STAT News",
       "type": "info",
       "name": "STAT News"
     },
     {
-      "id": 1787236884429.4958,
-      "time": "2:41:24 PM",
+      "id": 1787323230930.2747,
+      "time": "2:40:30 PM",
       "msg": "Success (Raw: 1, Accepted: 1)",
       "type": "success",
       "name": "AlphaGalileo"
     },
     {
-      "id": 1787236884429.8262,
-      "time": "2:41:24 PM",
+      "id": 1787323230930.1477,
+      "time": "2:40:30 PM",
       "msg": "Querying: ONT",
       "type": "info",
       "name": "ONT"
     },
     {
-      "id": 1787236884529.7922,
-      "time": "2:41:24 PM",
-      "msg": "Success (Raw: 56, Accepted: 9)",
-      "type": "success",
-      "name": "STAT News"
-    },
-    {
-      "id": 1787236884529.3665,
-      "time": "2:41:24 PM",
-      "msg": "Querying: Health Policy Watch",
-      "type": "info",
-      "name": "Health Policy Watch"
-    },
-    {
-      "id": 1787236884611.368,
-      "time": "2:41:24 PM",
+      "id": 1787323231111.0742,
+      "time": "2:40:31 PM",
       "msg": "Success (Raw: 0, Accepted: 0)",
       "type": "success",
       "name": "ONT"
     },
     {
-      "id": 1787236884611.5928,
-      "time": "2:41:24 PM",
+      "id": 1787323231111.128,
+      "time": "2:40:31 PM",
+      "msg": "Querying: Health Policy Watch",
+      "type": "info",
+      "name": "Health Policy Watch"
+    },
+    {
+      "id": 1787323231232.3757,
+      "time": "2:40:31 PM",
+      "msg": "Success (Raw: 55, Accepted: 6)",
+      "type": "success",
+      "name": "STAT News"
+    },
+    {
+      "id": 1787323231233.1191,
+      "time": "2:40:31 PM",
       "msg": "Querying: BioPharma Dive",
       "type": "info",
       "name": "BioPharma Dive"
     },
     {
-      "id": 1787236884753.8328,
-      "time": "2:41:24 PM",
+      "id": 1787323231330.8127,
+      "time": "2:40:31 PM",
       "msg": "Success (Raw: 0, Accepted: 0)",
       "type": "success",
       "name": "Health Policy Watch"
     },
     {
-      "id": 1787236884753.2532,
-      "time": "2:41:24 PM",
+      "id": 1787323231330.2202,
+      "time": "2:40:31 PM",
       "msg": "Querying: Endpoints News",
       "type": "info",
       "name": "Endpoints News"
     },
     {
-      "id": 1787236884897.5425,
-      "time": "2:41:24 PM",
-      "msg": "Success (Raw: 36, Accepted: 4)",
+      "id": 1787323231501.433,
+      "time": "2:40:31 PM",
+      "msg": "Success (Raw: 38, Accepted: 3)",
       "type": "success",
       "name": "BioPharma Dive"
     },
     {
-      "id": 1787236884897.8533,
-      "time": "2:41:24 PM",
+      "id": 1787323231501.4102,
+      "time": "2:40:31 PM",
       "msg": "Querying: Fierce Pharma",
       "type": "info",
       "name": "Fierce Pharma"
     },
     {
-      "id": 1787236884934.5764,
-      "time": "2:41:24 PM",
+      "id": 1787323231505.1533,
+      "time": "2:40:31 PM",
       "msg": "Success (Raw: 0, Accepted: 0)",
       "type": "success",
       "name": "Endpoints News"
     },
     {
-      "id": 1787236884934.7556,
-      "time": "2:41:24 PM",
+      "id": 1787323231506.4678,
+      "time": "2:40:31 PM",
       "msg": "Querying: Medscape News",
       "type": "info",
       "name": "Medscape News"
     },
     {
-      "id": 1787236885111.0176,
-      "time": "2:41:25 PM",
+      "id": 1787323231724.4053,
+      "time": "2:40:31 PM",
       "msg": "Success (Raw: 5, Accepted: 1)",
       "type": "success",
       "name": "Fierce Pharma"
     },
     {
-      "id": 1787236885111.9143,
-      "time": "2:41:25 PM",
+      "id": 1787323231724.2085,
+      "time": "2:40:31 PM",
       "msg": "Querying: GSK",
       "type": "info",
       "name": "GSK"
     },
     {
-      "id": 1787236885302.4768,
-      "time": "2:41:25 PM",
-      "msg": "Success (Raw: 73, Accepted: 6)",
+      "id": 1787323231867.6394,
+      "time": "2:40:31 PM",
+      "msg": "Success (Raw: 74, Accepted: 8)",
       "type": "success",
       "name": "Medscape News"
     },
     {
-      "id": 1787236885302.448,
-      "time": "2:41:25 PM",
+      "id": 1787323231867.3748,
+      "time": "2:40:31 PM",
       "msg": "Querying: Sanofi",
       "type": "info",
       "name": "Sanofi"
     },
     {
-      "id": 1787236885436.319,
-      "time": "2:41:25 PM",
-      "msg": "Success (Raw: 59, Accepted: 3)",
+      "id": 1787323232181.8416,
+      "time": "2:40:32 PM",
+      "msg": "Success (Raw: 100, Accepted: 4)",
       "type": "success",
       "name": "GSK"
     },
     {
-      "id": 1787236885436.3389,
-      "time": "2:41:25 PM",
+      "id": 1787323232181.89,
+      "time": "2:40:32 PM",
       "msg": "Querying: Merck",
       "type": "info",
       "name": "Merck"
     },
     {
-      "id": 1787236885684.9949,
-      "time": "2:41:25 PM",
+      "id": 1787323232247.6453,
+      "time": "2:40:32 PM",
       "msg": "Success (Raw: 100, Accepted: 1)",
       "type": "success",
       "name": "Sanofi"
     },
     {
-      "id": 1787236885684.026,
-      "time": "2:41:25 PM",
+      "id": 1787323232247.813,
+      "time": "2:40:32 PM",
       "msg": "Querying: Pfizer",
       "type": "info",
       "name": "Pfizer"
     },
     {
-      "id": 1787236885802.0117,
-      "time": "2:41:25 PM",
-      "msg": "Success (Raw: 100, Accepted: 1)",
+      "id": 1787323232547.8706,
+      "time": "2:40:32 PM",
+      "msg": "Success (Raw: 100, Accepted: 2)",
       "type": "success",
       "name": "Merck"
     },
     {
-      "id": 1787236885802.418,
-      "time": "2:41:25 PM",
+      "id": 1787323232547.9165,
+      "time": "2:40:32 PM",
       "msg": "Querying: BioNTech",
       "type": "info",
       "name": "BioNTech"
     },
     {
-      "id": 1787236885984.2832,
-      "time": "2:41:25 PM",
-      "msg": "Success (Raw: 1, Accepted: 0)",
+      "id": 1787323232554.4678,
+      "time": "2:40:32 PM",
+      "msg": "Success (Raw: 100, Accepted: 22)",
       "type": "success",
-      "name": "BioNTech"
+      "name": "Amedeo"
     },
     {
-      "id": 1787236885984.524,
-      "time": "2:41:25 PM",
-      "msg": "Querying: Moderna",
-      "type": "info",
-      "name": "Moderna"
-    },
-    {
-      "id": 1787236886062.666,
-      "time": "2:41:26 PM",
+      "id": 1787323232627.597,
+      "time": "2:40:32 PM",
       "msg": "Success (Raw: 100, Accepted: 1)",
       "type": "success",
       "name": "Pfizer"
     },
     {
-      "id": 1787236886062.4436,
-      "time": "2:41:26 PM",
+      "id": 1787323232627.8264,
+      "time": "2:40:32 PM",
+      "msg": "Querying: Moderna",
+      "type": "info",
+      "name": "Moderna"
+    },
+    {
+      "id": 1787323232787.098,
+      "time": "2:40:32 PM",
+      "msg": "Success (Raw: 1, Accepted: 0)",
+      "type": "success",
+      "name": "BioNTech"
+    },
+    {
+      "id": 1787323232787.9192,
+      "time": "2:40:32 PM",
       "msg": "Querying: AstraZeneca",
       "type": "info",
       "name": "AstraZeneca"
     },
     {
-      "id": 1787236886282.0774,
-      "time": "2:41:26 PM",
-      "msg": "Success (Raw: 3, Accepted: 1)",
+      "id": 1787323232840.2869,
+      "time": "2:40:32 PM",
+      "msg": "Success (Raw: 5, Accepted: 1)",
       "type": "success",
       "name": "Moderna"
     },
     {
-      "id": 1787236886282.0825,
-      "time": "2:41:26 PM",
+      "id": 1787323232840.3264,
+      "time": "2:40:32 PM",
       "msg": "Querying: Novavax",
       "type": "info",
       "name": "Novavax"
     },
     {
-      "id": 1787236886322.3801,
-      "time": "2:41:26 PM",
-      "msg": "Success (Raw: 4, Accepted: 1)",
-      "type": "success",
-      "name": "AstraZeneca"
-    },
-    {
-      "id": 1787236886322.3833,
-      "time": "2:41:26 PM",
-      "msg": "Querying: Serum Institute",
-      "type": "info",
-      "name": "Serum Institute"
-    },
-    {
-      "id": 1787236886498.9663,
-      "time": "2:41:26 PM",
-      "msg": "Success (Raw: 0, Accepted: 0)",
-      "type": "success",
-      "name": "Serum Institute"
-    },
-    {
-      "id": 1787236886502.6248,
-      "time": "2:41:26 PM",
+      "id": 1787323233033.5762,
+      "time": "2:40:33 PM",
       "msg": "Success (Raw: 1, Accepted: 0)",
       "type": "success",
       "name": "Novavax"
     },
     {
-      "id": 1787236964234.0984,
-      "time": "2:42:44 PM",
-      "msg": "Success (Raw: 100, Accepted: 24)",
-      "type": "success",
-      "name": "Amedeo"
+      "id": 1787323233033.6477,
+      "time": "2:40:33 PM",
+      "msg": "Querying: Serum Institute",
+      "type": "info",
+      "name": "Serum Institute"
     },
     {
-      "id": 1787236964235.5767,
-      "time": "2:42:44 PM",
+      "id": 1787323233053.4504,
+      "time": "2:40:33 PM",
+      "msg": "Success (Raw: 6, Accepted: 1)",
+      "type": "success",
+      "name": "AstraZeneca"
+    },
+    {
+      "id": 1787323233208.8264,
+      "time": "2:40:33 PM",
+      "msg": "Success (Raw: 0, Accepted: 0)",
+      "type": "success",
+      "name": "Serum Institute"
+    },
+    {
+      "id": 1787323233208.0815,
+      "time": "2:40:33 PM",
       "msg": "Checking for AI files in: /home/runner/work/Josh-Dashboard/Josh-Dashboard/ai_inputs",
       "type": "info",
       "name": "ChatGPT"
     },
     {
-      "id": 1787236964235.828,
-      "time": "2:42:44 PM",
+      "id": 1787323233209.5442,
+      "time": "2:40:33 PM",
       "msg": "AI folder does not exist at /home/runner/work/Josh-Dashboard/Josh-Dashboard/ai_inputs",
       "type": "info",
       "name": "ChatGPT"
     },
     {
-      "id": 1787236964254.0776,
-      "time": "2:42:44 PM",
-      "msg": "Pipeline Complete: Extracted 216 unique signals.",
+      "id": 1787323233227.6694,
+      "time": "2:40:33 PM",
+      "msg": "Pipeline Complete: Extracted 209 unique signals.",
       "type": "success",
       "name": "System"
     }
@@ -8863,10 +8591,10 @@
     "completed": 111,
     "successful": 111,
     "failed": 0,
-    "rawFetched": 1801,
+    "rawFetched": 1862,
     "rejectedOld": 442,
-    "rejectedScore0": 1118,
-    "accepted": 241,
-    "dedupedUnique": 216
+    "rejectedScore0": 1184,
+    "accepted": 236,
+    "dedupedUnique": 209
   }
 }
